@@ -17,3 +17,19 @@ Thank you for contributing to **Awesome PHP Machine Learning & AI**!
 
 ```markdown
 - [repo/name](link) – Short description
+
+## Labels
+
+If applicable, add:
+- (experimental)
+- (unmaintained)
+- (bindings)
+
+## What Will Be Rejected
+
+- Dead or archived projects (unless clearly labeled)
+- SEO-style descriptions
+- Duplicate libraries
+- Non-AI-related tools
+
+By submitting a PR, you agree that your contribution can be redistributed under the repository license.
