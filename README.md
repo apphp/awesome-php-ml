@@ -35,7 +35,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 - [php-ai/php-ml](https://github.com/php-ai/php-ml) – Core machine learning algorithms for PHP
 - [RubixML/RubixML](https://github.com/RubixML/RubixML) – High-level ML framework with pipelines and datasets
 - [php-ai/php-ml-examples](https://github.com/php-ai/php-ml-examples) – Practical examples for PHP-ML
-- [theodorejb/polyfit](https://github.com/theodorejb/polyfit) – Polynomial regression for PHP
+- [dr-que/polynomial-regression](https://packagist.org/packages/dr-que/polynomial-regression) – Polynomial regression for PHP
 
 ---
 
@@ -84,7 +84,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 ## Embeddings & Vector Search
 
 - [openai-php/laravel](https://github.com/openai-php/laravel) – Laravel OpenAI integration
-- [hyvor/php-vector-search](https://github.com/hyvor/php-vector-search) – Lightweight vector similarity search
+- [pgvector/pgvector-php](https://github.com/pgvector/pgvector-php) – pgvector support for PHP
 - [milvus-io/milvus-sdk-php](https://github.com/milvus-io/milvus-sdk-php) – Milvus vector database SDK
 
 ---
@@ -116,7 +116,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 ## Laravel & Framework Integrations
 
 - [openai-php/laravel](https://github.com/openai-php/laravel) – Official OpenAI Laravel integration
-- [orhanerday/open-ai-laravel](https://github.com/orhanerday/open-ai-laravel) – Laravel wrapper for OpenAI
+- [shawnveltman/laravel-openai](https://github.com/shawnveltman/laravel-openai) – Laravel wrapper for OpenAI
 - [laravel/scout](https://github.com/laravel/scout) – Search abstraction (useful for vector search)
 - [teamtnt/laravel-scout-tntsearch-driver](https://github.com/teamtnt/laravel-scout-tntsearch-driver) – Local full-text search
 - [spatie/laravel-data](https://github.com/spatie/laravel-data) – Typed DTOs for AI responses
