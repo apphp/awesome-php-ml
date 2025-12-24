@@ -32,7 +32,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 
 ## Machine Learning
 
-- [php-ai/php-ml](https://github.com/php-ai/php-ml) – Core machine learning algorithms for PHP
+- [php-ai/php-ml](https://gitlab.com/php-ai/php-ml) – Core machine learning algorithms for PHP
 - [RubixML/RubixML](https://github.com/RubixML/RubixML) – High-level ML framework with pipelines and datasets
 - [php-ai/php-ml-examples](https://github.com/php-ai/php-ml-examples) – Practical examples for PHP-ML
 - [dr-que/polynomial-regression](https://packagist.org/packages/dr-que/polynomial-regression) – Polynomial regression for PHP
@@ -86,6 +86,8 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 - [openai-php/laravel](https://github.com/openai-php/laravel) – Laravel OpenAI integration
 - [pgvector/pgvector-php](https://github.com/pgvector/pgvector-php) – pgvector support for PHP
 - [milvus-io/milvus-sdk-php](https://github.com/milvus-io/milvus-sdk-php) – Milvus vector database SDK
+- [meilisearch/meilisearch-php](https://github.com/meilisearch/meilisearch-php) – PHP client for Meilisearch
+- [algolia/algoliasearch-client-php](https://github.com/algolia/algoliasearch-client-php) – Algolia PHP client
 
 ---
 
@@ -99,7 +101,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 
 ## Interop & Model Serving
 
-- [php-ai/php-onnxruntime](https://github.com/php-ai/php-onnxruntime) – Run ONNX models from PHP
+- [ankane/onnxruntime-php](https://github.com/ankane/onnxruntime-php) – Run ONNX models from PHP
 - [FFI](https://www.php.net/manual/en/book.ffi.php) – Native C/C++ bindings for ML inference
 - [grpc/grpc-php](https://github.com/grpc/grpc-php) – gRPC client for model services
 
@@ -110,6 +112,8 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 - [nunomaduro/collision](https://github.com/nunomaduro/collision) – CLI error handling (useful for ML tools)
 - [symfony/console](https://github.com/symfony/console) – CLI applications
 - [psr/log](https://github.com/php-fig/log) – Logging standard
+- [spatie/laravel-data](https://github.com/spatie/laravel-data) – Typed DTOs for API & AI responses
+- [symfony/http-client](https://github.com/symfony/http-client) – Robust HTTP client for AI APIs
 
 ---
 
