@@ -1,0 +1,18 @@
+
+name: Link Check
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # Weekly on Monday
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check links
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: --no-progress --exclude-mail --accept 200,429 README.md
