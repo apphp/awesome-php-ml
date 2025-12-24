@@ -1,5 +1,11 @@
 # Awesome PHP Machine Learning & AI
 
+![Awesome](https://awesome.re/badge.svg)
+![GitHub stars](https://img.shields.io/github/stars/YOURNAME/awesome-php-ml?style=social)
+![Last commit](https://img.shields.io/github/last-commit/YOURNAME/awesome-php-ml)
+![License](https://img.shields.io/github/license/YOURNAME/awesome-php-ml)
+![Link Check](https://github.com/YOURNAME/awesome-php-ml/actions/workflows/link-check.yml/badge.svg)
+
 A curated list of **Machine Learning, Artificial Intelligence, NLP, and Data Science libraries for PHP**.
 
 Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader **Awesome** ecosystem.
