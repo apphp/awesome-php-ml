@@ -7,7 +7,7 @@ Thank you for contributing to **Awesome PHP Machine Learning & AI**!
 - One library per pull request
 - Libraries must be:
   - Open source
-  - Actively maintained (last commit within ~18 months)
+  - Actively maintained (last commit within ~18-24 months)
   - Relevant to ML, AI, NLP, CV, or data science
 - Keep descriptions **short and factual**
 - Alphabetical order inside sections
