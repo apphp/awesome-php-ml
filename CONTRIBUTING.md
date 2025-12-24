@@ -17,6 +17,7 @@ Thank you for contributing to **Awesome PHP Machine Learning & AI**!
 
 ```markdown
 - [repo/name](link) – Short description
+```
 
 ## Labels
 
