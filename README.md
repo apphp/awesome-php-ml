@@ -1,5 +1,11 @@
 # Awesome PHP Machine Learning & AI
 
+![Awesome](https://awesome.re/badge.svg)
+![GitHub stars](https://img.shields.io/github/stars/YOURNAME/awesome-php-ml?style=social)
+![Last commit](https://img.shields.io/github/last-commit/YOURNAME/awesome-php-ml)
+![License](https://img.shields.io/github/license/YOURNAME/awesome-php-ml)
+![Link Check](https://github.com/YOURNAME/awesome-php-ml/actions/workflows/link-check.yml/badge.svg)
+
 A curated list of **Machine Learning, Artificial Intelligence, NLP, and Data Science libraries for PHP**.
 
 Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader **Awesome** ecosystem.
@@ -104,6 +110,16 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 - [nunomaduro/collision](https://github.com/nunomaduro/collision) – CLI error handling (useful for ML tools)
 - [symfony/console](https://github.com/symfony/console) – CLI applications
 - [psr/log](https://github.com/php-fig/log) – Logging standard
+
+---
+
+## Laravel & Framework Integrations
+
+- [openai-php/laravel](https://github.com/openai-php/laravel) – Official OpenAI Laravel integration
+- [orhanerday/open-ai-laravel](https://github.com/orhanerday/open-ai-laravel) – Laravel wrapper for OpenAI
+- [laravel/scout](https://github.com/laravel/scout) – Search abstraction (useful for vector search)
+- [teamtnt/laravel-scout-tntsearch-driver](https://github.com/teamtnt/laravel-scout-tntsearch-driver) – Local full-text search
+- [spatie/laravel-data](https://github.com/spatie/laravel-data) – Typed DTOs for AI responses
 
 ---
 
