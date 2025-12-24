@@ -107,6 +107,16 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 
 ---
 
+## Laravel & Framework Integrations
+
+- [openai-php/laravel](https://github.com/openai-php/laravel) – Official OpenAI Laravel integration
+- [orhanerday/open-ai-laravel](https://github.com/orhanerday/open-ai-laravel) – Laravel wrapper for OpenAI
+- [laravel/scout](https://github.com/laravel/scout) – Search abstraction (useful for vector search)
+- [teamtnt/laravel-scout-tntsearch-driver](https://github.com/teamtnt/laravel-scout-tntsearch-driver) – Local full-text search
+- [spatie/laravel-data](https://github.com/spatie/laravel-data) – Typed DTOs for AI responses
+
+---
+
 ## Resources
 
 - [Awesome PHP](https://github.com/ziadoz/awesome-php)
