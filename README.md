@@ -32,73 +32,76 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 
 ## Machine Learning
 
-- [php-ai/php-ml](https://gitlab.com/php-ai/php-ml) – Core machine learning algorithms for PHP
-- [RubixML/RubixML](https://github.com/RubixML/RubixML) – High-level ML framework with pipelines and datasets
-- [php-ai/php-ml-examples](https://github.com/php-ai/php-ml-examples) – Practical examples for PHP-ML
 - [dr-que/polynomial-regression](https://packagist.org/packages/dr-que/polynomial-regression) – Polynomial regression for PHP
+- [php-ai/php-ml](https://gitlab.com/php-ai/php-ml) – Core machine learning algorithms for PHP
+- [php-ai/php-ml-examples](https://github.com/php-ai/php-ml-examples) – Practical examples for PHP-ML
+- [RubixML/RubixML](https://github.com/RubixML/RubixML) – High-level ML framework with pipelines and datasets
 
 ---
 
 ## Deep Learning & Neural Networks
 
-- [RubixML/Tensor](https://github.com/RubixML/Tensor) – N-dimensional tensors for numerical computing
 - [RubixML/ML](https://github.com/RubixML/ML) – Neural networks and advanced learners
+- [RubixML/Tensor](https://github.com/RubixML/Tensor) – N-dimensional tensors for numerical computing
 
 ---
 
 ## Natural Language Processing
 
-- [yooper/php-text-analysis](https://github.com/yooper/php-text-analysis) – Sentiment analysis and NLP tools
-- [friteuseb/nlp_tools](https://github.com/friteuseb/nlp_tools) – Extension for nlp methods and text analysis
 - [angeloskath/php-nlp-tools](https://github.com/angeloskath/php-nlp-tools) – Natural Language Processing tools
-- [voku/stop-words](https://github.com/voku/stop-words) – Stop word lists for many languages
+- [friteuseb/nlp_tools](https://github.com/friteuseb/nlp_tools) – Extension for nlp methods and text analysis
 - [patrickschur/language-detection](https://github.com/patrickschur/language-detection) – Language detection library
+- [voku/stop-words](https://github.com/voku/stop-words) – Stop word lists for many languages
+- [yooper/php-text-analysis](https://github.com/yooper/php-text-analysis) – Sentiment analysis and NLP tools
 
 ---
 
 ## Computer Vision
 
-- [php-opencv/php-opencv](https://github.com/php-opencv/php-opencv) – OpenCV bindings for PHP
-- [jcupitt/vips](https://github.com/jcupitt/libvips) – Fast image processing library (PHP bindings available)
 - [Intervention/image](https://github.com/Intervention/image) – Image manipulation (useful for CV preprocessing)
+- [jcupitt/vips](https://github.com/jcupitt/libvips) – Fast image processing library (PHP bindings available)
+- [php-opencv/php-opencv](https://github.com/php-opencv/php-opencv) – OpenCV bindings for PHP
 
 ---
 
 ## Math, Statistics & Linear Algebra
 
 - [markrogoyski/math-php](https://github.com/markrogoyski/math-php) – Linear algebra, statistics, and calculus
-- [RubixML/Tensor](https://github.com/RubixML/Tensor) – Vectorized numerical operations
-- [rindow/rindow-math-matrix](https://github.com/rindow/rindow-math-matrix) – The fundamental package for scientific matrix operation
 - [mcordingley/LinearAlgebra](https://github.com/mcordingley/LinearAlgebra) – Stand-alone Linear Algebra Library for PHP
 - [NumPHP/NumPHP](https://github.com/NumPHP/NumPHP) – Mathematical PHP library for scientific computing
+- [rindow/rindow-math-matrix](https://github.com/rindow/rindow-math-matrix) – The fundamental package for scientific matrix operation
+- [RubixML/numpower](https://github.com/RubixML/numpower) – High-performance numerical computing library for PHP inspired by NumPy
+- [RubixML/Tensor](https://github.com/RubixML/Tensor) – Vectorized numerical operations
 
 ---
 
 ## LLMs & AI APIs
 
+- [google-gemini-php/client](https://github.com/google-gemini-php/client) – Google Gemini API client
 - [openai-php/client](https://github.com/openai-php/client) – Official OpenAI PHP client
 - [orhanerday/open-ai](https://github.com/orhanerday/open-ai) – Popular OpenAI API wrapper
-- [google-gemini-php/client](https://github.com/google-gemini-php/client) – Google Gemini API client _(if maintained)_
 
 ### Tokenizers & Prompt Utilities
-- [yethee/tiktoken-php](https://github.com/yethee/tiktoken-php) – PHP implementation of OpenAI’s *tiktoken* tokenizer for token counting and optimization
+
 - [Gioni06/GPT3Tokenizer](https://github.com/Gioni06/GPT3Tokenizer) – PHP tokenizer compatible with GPT-3 style models
+- [yethee/tiktoken-php](https://github.com/yethee/tiktoken-php) – PHP implementation of OpenAI’s *tiktoken* tokenizer for token counting and optimization
 
 ---
 
 ## Embeddings & Vector Search
 
+- [algolia/algoliasearch-client-php](https://github.com/algolia/algoliasearch-client-php) – Algolia PHP client
+- [meilisearch/meilisearch-php](https://github.com/meilisearch/meilisearch-php) – PHP client for Meilisearch
 - [openai-php/laravel](https://github.com/openai-php/laravel) – Laravel OpenAI integration
 - [pgvector/pgvector](https://github.com/pgvector/pgvector) – Open-source vector similarity search for Postgres
 - [pgvector/pgvector-php](https://github.com/pgvector/pgvector-php) – pgVector support for PHP
 - [voyanara/milvus-php-sdk](https://github.com/voyanara/milvus-php-sdk) – PHP SDK for Milvus vector database API v2
-- [meilisearch/meilisearch-php](https://github.com/meilisearch/meilisearch-php) – PHP client for Meilisearch
-- [algolia/algoliasearch-client-php](https://github.com/algolia/algoliasearch-client-php) – Algolia PHP client
 
 ---
 
 ## Data Processing
 
+- [flow-php/flow](https://github.com/flow-php/flow) – Data processing and ETL framework for PHP with typed pipelines
 - [league/csv](https://github.com/thephpleague/csv) – CSV data processing
 - [spatie/data-transfer-object](https://github.com/spatie/data-transfer-object) – Strongly typed DTOs
 - [symfony/serializer](https://github.com/symfony/serializer) – Data normalization & serialization
@@ -116,20 +119,20 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 ## Tools & Utilities
 
 - [nunomaduro/collision](https://github.com/nunomaduro/collision) – CLI error handling (useful for ML tools)
-- [symfony/console](https://github.com/symfony/console) – CLI applications
 - [psr/log](https://github.com/php-fig/log) – Logging standard
 - [spatie/laravel-data](https://github.com/spatie/laravel-data) – Typed DTOs for API & AI responses
+- [symfony/console](https://github.com/symfony/console) – CLI applications
 - [symfony/http-client](https://github.com/symfony/http-client) – Robust HTTP client for AI APIs
 
 ---
 
 ## Laravel & Framework Integrations
 
+- [laravel/scout](https://github.com/laravel/scout) – Search abstraction (useful for vector search)
 - [openai-php/laravel](https://github.com/openai-php/laravel) – Official OpenAI Laravel integration
 - [shawnveltman/laravel-openai](https://github.com/shawnveltman/laravel-openai) – Laravel wrapper for OpenAI
-- [laravel/scout](https://github.com/laravel/scout) – Search abstraction (useful for vector search)
-- [teamtnt/laravel-scout-tntsearch-driver](https://github.com/teamtnt/laravel-scout-tntsearch-driver) – Local full-text search
 - [spatie/laravel-data](https://github.com/spatie/laravel-data) – Typed DTOs for AI responses
+- [teamtnt/laravel-scout-tntsearch-driver](https://github.com/teamtnt/laravel-scout-tntsearch-driver) – Local full-text search
 
 ---
 
@@ -141,7 +144,6 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 ## Resources
 
 - [Awesome PHP](https://github.com/ziadoz/awesome-php)
-- [PHP AI Initiative](https://github.com/php-ai)
 - [ONNX Runtime](https://onnxruntime.ai)
 
 ---
