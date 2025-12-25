@@ -71,6 +71,8 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 - [rindow/rindow-math-matrix](https://github.com/rindow/rindow-math-matrix) – The fundamental package for scientific matrix operation
 - [mcordingley/LinearAlgebra](https://github.com/mcordingley/LinearAlgebra) – Stand-alone Linear Algebra Library for PHP
 - [NumPHP/NumPHP](https://github.com/NumPHP/NumPHP) – Mathematical PHP library for scientific computing
+- [markrogoyski/math-php](https://github.com/markrogoyski/math-php) – Linear algebra, statistics, and calculus
+- [RubixML/numpower](https://github.com/RubixML/numpower) – High-performance numerical computing library for PHP inspired by NumPy
 
 ---
 
@@ -99,6 +101,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 
 ## Data Processing
 
+- [flow-php/flow](https://github.com/flow-php/flow) – Data processing and ETL framework for PHP with typed pipelines
 - [league/csv](https://github.com/thephpleague/csv) – CSV data processing
 - [spatie/data-transfer-object](https://github.com/spatie/data-transfer-object) – Strongly typed DTOs
 - [symfony/serializer](https://github.com/symfony/serializer) – Data normalization & serialization
