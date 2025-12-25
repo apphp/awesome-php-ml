@@ -50,7 +50,8 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 ## Natural Language Processing
 
 - [yooper/php-text-analysis](https://github.com/yooper/php-text-analysis) – Sentiment analysis and NLP tools
-- [fieg/nlp-tools](https://github.com/fieg/nlp-tools) – Tokenizers and classifiers
+- [friteuseb/nlp_tools](https://github.com/friteuseb/nlp_tools) – Extension for nlp methods and text analysis
+- [angeloskath/php-nlp-tools](https://github.com/angeloskath/php-nlp-tools) – Natural Language Processing tools
 - [voku/stop-words](https://github.com/voku/stop-words) – Stop word lists for many languages
 - [patrickschur/language-detection](https://github.com/patrickschur/language-detection) – Language detection library
 
@@ -68,7 +69,9 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 
 - [markrogoyski/math-php](https://github.com/markrogoyski/math-php) – Linear algebra, statistics, and calculus
 - [RubixML/Tensor](https://github.com/RubixML/Tensor) – Vectorized numerical operations
-- [php-ai/php-ml-matrix](https://github.com/php-ai/php-ml-matrix) – Matrix operations for ML workloads
+- [rindow/rindow-math-matrix](https://github.com/rindow/rindow-math-matrix) – The fundamental package for scientific matrix operation
+- [mcordingley/LinearAlgebra](https://github.com/mcordingley/LinearAlgebra) – Stand-alone Linear Algebra Library for PHP
+- [NumPHP/NumPHP](https://github.com/NumPHP/NumPHP) – Mathematical PHP library for scientific computing
 
 ---
 
@@ -84,8 +87,8 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 ## Embeddings & Vector Search
 
 - [openai-php/laravel](https://github.com/openai-php/laravel) – Laravel OpenAI integration
-- [pgvector/pgvector-php](https://github.com/pgvector/pgvector-php) – pgvector support for PHP
-- [milvus-io/milvus-sdk-php](https://github.com/milvus-io/milvus-sdk-php) – Milvus vector database SDK
+- [pgvector/pgvector-php](https://github.com/pgvector/pgvector-php) – pgVector support for PHP
+- [voyanara/milvus-php-sdk](https://github.com/voyanara/milvus-php-sdk) – PHP SDK for Milvus vector database API v2
 - [meilisearch/meilisearch-php](https://github.com/meilisearch/meilisearch-php) – PHP client for Meilisearch
 - [algolia/algoliasearch-client-php](https://github.com/algolia/algoliasearch-client-php) – Algolia PHP client
 
