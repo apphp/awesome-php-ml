@@ -43,7 +43,6 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 
 - [RubixML/Tensor](https://github.com/RubixML/Tensor) – N-dimensional tensors for numerical computing
 - [RubixML/ML](https://github.com/RubixML/ML) – Neural networks and advanced learners
-- [php-ai/php-onnxruntime](https://github.com/php-ai/php-onnxruntime) – ONNX Runtime bindings for PHP
 
 ---
 
@@ -79,14 +78,18 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 
 - [openai-php/client](https://github.com/openai-php/client) – Official OpenAI PHP client
 - [orhanerday/open-ai](https://github.com/orhanerday/open-ai) – Popular OpenAI API wrapper
-- [tectalic/openai](https://github.com/tectalic/openai) – OpenAI REST client for PHP
 - [google-gemini-php/client](https://github.com/google-gemini-php/client) – Google Gemini API client _(if maintained)_
+
+### Tokenizers & Prompt Utilities
+- [yethee/tiktoken-php](https://github.com/yethee/tiktoken-php) – PHP implementation of OpenAI’s *tiktoken* tokenizer for token counting and optimization
+- [Gioni06/GPT3Tokenizer](https://github.com/Gioni06/GPT3Tokenizer) – PHP tokenizer compatible with GPT-3 style models
 
 ---
 
 ## Embeddings & Vector Search
 
 - [openai-php/laravel](https://github.com/openai-php/laravel) – Laravel OpenAI integration
+- [pgvector/pgvector](https://github.com/pgvector/pgvector) – Open-source vector similarity search for Postgres
 - [pgvector/pgvector-php](https://github.com/pgvector/pgvector-php) – pgVector support for PHP
 - [voyanara/milvus-php-sdk](https://github.com/voyanara/milvus-php-sdk) – PHP SDK for Milvus vector database API v2
 - [meilisearch/meilisearch-php](https://github.com/meilisearch/meilisearch-php) – PHP client for Meilisearch
@@ -128,6 +131,11 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 - [teamtnt/laravel-scout-tntsearch-driver](https://github.com/teamtnt/laravel-scout-tntsearch-driver) – Local full-text search
 - [spatie/laravel-data](https://github.com/spatie/laravel-data) – Typed DTOs for AI responses
 
+---
+
+## Symfony & Framework Integrations
+- [openai-php/symfony](https://github.com/openai-php/symfony) – OpenAI PHP for Symfony integration
+    
 ---
 
 ## Resources
