@@ -134,7 +134,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 
 - [laravel/scout](https://github.com/laravel/scout) – Search abstraction (useful for vector search)
 - [openai-php/laravel](https://github.com/openai-php/laravel) – Official OpenAI Laravel integration
-- [prism-php/prism](https://github://github.com/prism-php/prism) – Laravel interface for working with LLMs and AI providers
+- [prism-php/prism](https://github.com/prism-php/prism) – Laravel interface for working with LLMs and AI providers
 - [shawnveltman/laravel-openai](https://github.com/shawnveltman/laravel-openai) – Laravel wrapper for OpenAI
 - [spatie/laravel-data](https://github.com/spatie/laravel-data) – Typed DTOs for AI responses
 - [teamtnt/laravel-scout-tntsearch-driver](https://github.com/teamtnt/laravel-scout-tntsearch-driver) – Local full-text search
