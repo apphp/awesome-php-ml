@@ -6,7 +6,7 @@
 ![License](https://img.shields.io/github/license/apphp/awesome-php-ml)
 ![Link Check](https://github.com/apphp/awesome-php-ml/actions/workflows/link-check.yml/badge.svg)
 
-A curated list of **Machine Learning, Artificial Intelligence, NLP, and Data Science libraries for PHP**.
+The most comprehensive curated list of **Machine Learning, Artificial Intelligence, NLP, LLM and Data Science libraries for PHP**.
 
 Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader **Awesome** ecosystem.
 
