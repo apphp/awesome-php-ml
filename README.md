@@ -151,7 +151,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 - [Awesome PHP](https://github.com/ziadoz/awesome-php)
 - [ONNX Runtime](https://onnxruntime.ai)
 
-## Learning
+### Learning
 
 - [Artificial Intelligence with PHP (GitBook)](https://apphp.gitbook.io/artificial-intelligence-with-php/) – Guide and reference for doing AI/ML with PHP
 - [AI для PHP-разработчиков — интуитивно и на практике (GitBook)](https://apphp.gitbook.io/ai-dlya-php-razrabotchikov-intuitivno-i-na-praktike/) – Russian guide on AI with PHP
