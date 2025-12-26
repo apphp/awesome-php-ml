@@ -49,6 +49,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 ## Natural Language Processing
 
 - [angeloskath/php-nlp-tools](https://github.com/angeloskath/php-nlp-tools) – Natural Language Processing tools
+- [CodeWithKyrian/transformers-php](https://github.com/CodeWithKyrian/transformers-php) – Hugging Face–style Transformer inference in PHP using ONNX
 - [friteuseb/nlp_tools](https://github.com/friteuseb/nlp_tools) – Extension for nlp methods and text analysis
 - [patrickschur/language-detection](https://github.com/patrickschur/language-detection) – Language detection library
 - [voku/stop-words](https://github.com/voku/stop-words) – Stop word lists for many languages
@@ -113,14 +114,17 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 - [ankane/onnxruntime-php](https://github.com/ankane/onnxruntime-php) – Run ONNX models from PHP
 - [FFI](https://www.php.net/manual/en/book.ffi.php) – Native C/C++ bindings for ML inference
 - [grpc/grpc-php](https://github.com/grpc/grpc-php) – gRPC client for model services
+- [neuron-core/neuron-ai](https://github.com/neuron-core/neuron-ai) – PHP agentic AI framework for building and orchestrating LLMs, RAG etc.
 
 ---
 
 ## Tools & Utilities
 
+- [apphp/pretty-print](https://github.com/apphp/pretty-print) – Pretty-print PHP arrays and numeric data for ML debugging
 - [nunomaduro/collision](https://github.com/nunomaduro/collision) – CLI error handling (useful for ML tools)
 - [psr/log](https://github.com/php-fig/log) – Logging standard
 - [spatie/laravel-data](https://github.com/spatie/laravel-data) – Typed DTOs for API & AI responses
+- [swoole/phpy](https://github.com/swoole/phpy) – Bridge for calling Python from PHP via a runtime bridge
 - [symfony/console](https://github.com/symfony/console) – CLI applications
 - [symfony/http-client](https://github.com/symfony/http-client) – Robust HTTP client for AI APIs
 
@@ -130,6 +134,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 
 - [laravel/scout](https://github.com/laravel/scout) – Search abstraction (useful for vector search)
 - [openai-php/laravel](https://github.com/openai-php/laravel) – Official OpenAI Laravel integration
+- [prism-php/prism](https://github://github.com/prism-php/prism) – Laravel interface for working with LLMs and AI providers
 - [shawnveltman/laravel-openai](https://github.com/shawnveltman/laravel-openai) – Laravel wrapper for OpenAI
 - [spatie/laravel-data](https://github.com/spatie/laravel-data) – Typed DTOs for AI responses
 - [teamtnt/laravel-scout-tntsearch-driver](https://github.com/teamtnt/laravel-scout-tntsearch-driver) – Local full-text search
@@ -145,6 +150,12 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 
 - [Awesome PHP](https://github.com/ziadoz/awesome-php)
 - [ONNX Runtime](https://onnxruntime.ai)
+
+## Learning
+
+- [Artificial Intelligence with PHP (GitBook)](https://apphp.gitbook.io/artificial-intelligence-with-php/) – Guide and reference for doing AI/ML with PHP
+- [AI для PHP-разработчиков — интуитивно и на практике (GitBook)](https://apphp.gitbook.io/ai-dlya-php-razrabotchikov-intuitivno-i-na-praktike/) – Russian guide on AI with PHP
+- [Build Your Own LLM in PHP (GitBook)](https://apphp.gitbook.io/build-your-own-llm-in-php/) – Guide to building an LLM from scratch in PHP
 
 ---
 
