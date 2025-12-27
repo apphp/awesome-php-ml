@@ -26,6 +26,8 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 - [Data Processing](#data-processing)
 - [Interop & Model Serving](#interop--model-serving)
 - [Tools & Utilities](#tools--utilities)
+- [Laravel & Framework Integrations](#laravel--framework-integrations)
+- [Symfony & Framework Integrations](#symfony--framework-integrations)
 - [Resources](#resources)
 
 ---
