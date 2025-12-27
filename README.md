@@ -83,7 +83,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 
 - [angeloskath/php-nlp-tools](https://github.com/angeloskath/php-nlp-tools) – Natural Language Processing tools
 - [CodeWithKyrian/transformers-php](https://github.com/CodeWithKyrian/transformers-php) – Hugging Face–style Transformer inference in PHP using ONNX
-- [friteuseb/nlp_tools](https://github.com/friteuseb/nlp_tools) – Extension for nlp methods and text analysis
+- [friteuseb/nlp_tools](https://github.com/friteuseb/nlp_tools) – Extension for NLP methods and text analysis
 - ⚠️ [patrickschur/language-detection](https://github.com/patrickschur/language-detection) – Language detection library
 - [voku/stop-words](https://github.com/voku/stop-words) – Stop word lists for many languages
 - [yooper/php-text-analysis](https://github.com/yooper/php-text-analysis) – Sentiment analysis and NLP tools
@@ -92,27 +92,27 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 
 ## Computer Vision
 
-- [Intervention/image](https://github.com/Intervention/image) – Image manipulation (useful for CV preprocessing)
-- [jcupitt/vips](https://github.com/jcupitt/libvips) – Fast image processing library (PHP bindings available)
+- [Intervention/image](https://github.com/Intervention/image) – Image manipulation library for CV preprocessing
+- [jcupitt/vips](https://github.com/jcupitt/libvips) – Fast image processing library with PHP bindings
 - [php-opencv/php-opencv](https://github.com/php-opencv/php-opencv) – OpenCV bindings for PHP
 
 ---
 
 ## Math, Statistics & Linear Algebra
 
-- [markrogoyski/math-php](https://github.com/markrogoyski/math-php) – Linear algebra, statistics, and calculus
-- [mcordingley/LinearAlgebra](https://github.com/mcordingley/LinearAlgebra) – Stand-alone Linear Algebra Library for PHP
-- ⚠️ [NumPHP/NumPHP](https://github.com/NumPHP/NumPHP) – Mathematical PHP library for scientific computing
-- [rindow/rindow-math-matrix](https://github.com/rindow/rindow-math-matrix) – The fundamental package for scientific matrix operation
-- [RubixML/numpower](https://github.com/RubixML/numpower) – High-performance numerical computing library for PHP inspired by NumPy
-- 🌟 [RubixML/Tensor](https://github.com/RubixML/Tensor) – Vectorized numerical operations
+- [markrogoyski/math-php](https://github.com/markrogoyski/math-php) – Math library for linear algebra, statistics, and calculus
+- [mcordingley/LinearAlgebra](https://github.com/mcordingley/LinearAlgebra) – Stand-alone linear algebra library
+- ⚠️ [NumPHP/NumPHP](https://github.com/NumPHP/NumPHP) – Math library for scientific computing
+- [rindow/rindow-math-matrix](https://github.com/rindow/rindow-math-matrix) – Foundational package for scientific matrix operations
+- [RubixML/numpower](https://github.com/RubixML/numpower) – High-performance numerical computing library inspired by NumPy
+- 🌟 [RubixML/Tensor](https://github.com/RubixML/Tensor) – Vectorized tensor operations
 
 ---
 
 ## LLMs & AI APIs
 
-- [cognesy/instructor-php](https://github.com/cognesy/instructor-php) – Library for structured output extraction from LLM responses in PHP
-- [FunkyOz/mulagent](https://github.com/FunkyOz/mulagent) – PHP multi-agent implementation for LLM applications, enabling orchestration of multiple AI agents
+- [cognesy/instructor-php](https://github.com/cognesy/instructor-php) – Structured-output helper for LLM responses
+- [FunkyOz/mulagent](https://github.com/FunkyOz/mulagent) – Multi-agent orchestration framework for LLM applications
 - 🌟 [google-gemini-php/client](https://github.com/google-gemini-php/client) – Google Gemini API client
 - [mzarnecki/php-rag](https://github.com/mzarnecki/php-rag) – PHP RAG toolkit for connecting vector search and LLMs in retrieval-augmented workflows
 - 🌟 [openai-php/client](https://github.com/openai-php/client) – Official OpenAI PHP client
@@ -127,12 +127,12 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 
 ## Embeddings & Vector Search
 
-- 🌟 [algolia/algoliasearch-client-php](https://github.com/algolia/algoliasearch-client-php) – Algolia PHP client
+- 🌟 [algolia/algoliasearch-client-php](https://github.com/algolia/algoliasearch-client-php) – Algolia search client
 - 🌟 [LLPhant/LLPhant](https://github.com/LLPhant/LLPhant) – Comprehensive PHP generative AI framework supporting LLMs, embeddings, vector search and more
-- 🌟 [meilisearch/meilisearch-php](https://github.com/meilisearch/meilisearch-php) – PHP client for Meilisearch
+- 🌟 [meilisearch/meilisearch-php](https://github.com/meilisearch/meilisearch-php) – Client for Meilisearch search engine
 - 🌟 [openai-php/laravel](https://github.com/openai-php/laravel) – Laravel OpenAI integration
-- 🌟 [pgvector/pgvector](https://github.com/pgvector/pgvector) – Open-source vector similarity search for Postgres
-- 🌟 [pgvector/pgvector-php](https://github.com/pgvector/pgvector-php) – pgVector support for PHP
+- 🌟 [pgvector/pgvector](https://github.com/pgvector/pgvector) – Vector similarity search extension for PostgreSQL
+- 🌟 [pgvector/pgvector-php](https://github.com/pgvector/pgvector-php) – PHP client for pgvector on PostgreSQL
 - [voyanara/milvus-php-sdk](https://github.com/voyanara/milvus-php-sdk) – PHP SDK for Milvus vector database API v2
 
 ---
