@@ -78,7 +78,10 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 
 ## LLMs & AI APIs
 
+- [cognesy/instructor-php](https://github.com/cognesy/instructor-php) – Library for structured output extraction from LLM responses in PHP
+- [FunkyOz/mulagent](https://github.com/FunkyOz/mulagent) – PHP multi-agent implementation for LLM applications, enabling orchestration of multiple AI agents
 - [google-gemini-php/client](https://github.com/google-gemini-php/client) – Google Gemini API client
+- [mzarnecki/php-rag](https://github.com/mzarnecki/php-rag) – PHP RAG toolkit for connecting vector search and LLMs in retrieval-augmented workflows
 - [openai-php/client](https://github.com/openai-php/client) – Official OpenAI PHP client
 - [orhanerday/open-ai](https://github.com/orhanerday/open-ai) – Popular OpenAI API wrapper
 
@@ -92,6 +95,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 ## Embeddings & Vector Search
 
 - [algolia/algoliasearch-client-php](https://github.com/algolia/algoliasearch-client-php) – Algolia PHP client
+- [LLPhant/LLPhant](https://github.com/LLPhant/LLPhant) – Comprehensive PHP generative AI framework supporting LLMs, embeddings, vector search and more
 - [meilisearch/meilisearch-php](https://github.com/meilisearch/meilisearch-php) – PHP client for Meilisearch
 - [openai-php/laravel](https://github.com/openai-php/laravel) – Laravel OpenAI integration
 - [pgvector/pgvector](https://github.com/pgvector/pgvector) – Open-source vector similarity search for Postgres
@@ -132,7 +136,11 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 
 ## Laravel & Framework Integrations
 
+- [Capevace/llm-magic](https://github.com/Capevace/llm-magic) – Laravel-centric LLM toolkit with support for AI features like chat and structured data extraction
+- [coding-wisely/taskallama](https://github.com/coding-wisely/taskallama) – Laravel package for seamless integration with the Ollama LLM API for AI-powered content generation, task assistance, conversation and embeddings
+- [grok-php/laravel](https://github.com/grok-php/laravel) – Laravel package for integrating Grok AI models
 - [laravel/scout](https://github.com/laravel/scout) – Search abstraction (useful for vector search)
+- [moe-mizrak/laravel-openrouter](https://github.com/moe-mizrak/laravel-openrouter) – Laravel package to integrate OpenRouter LLM API
 - [openai-php/laravel](https://github.com/openai-php/laravel) – Official OpenAI Laravel integration
 - [prism-php/prism](https://github.com/prism-php/prism) – Laravel interface for working with LLMs and AI providers
 - [shawnveltman/laravel-openai](https://github.com/shawnveltman/laravel-openai) – Laravel wrapper for OpenAI
@@ -143,6 +151,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 
 ## Symfony & Framework Integrations
 - [openai-php/symfony](https://github.com/openai-php/symfony) – OpenAI PHP for Symfony integration
+- [symfony/ai](https://github.com/symfony/ai) – Symfony AI: built-in AI components and bundles for Symfony apps
     
 ---
 
