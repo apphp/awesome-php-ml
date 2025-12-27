@@ -28,6 +28,8 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 
 ### Recommended core stack (🌟)
 
+These are opinionated defaults you can reach for when you just want something that works in production.
+
 - **General ML:** 🌟 [RubixML/RubixML](https://github.com/RubixML/RubixML) for end-to-end ML pipelines.
 - **LLM clients:** 🌟 [openai-php/client](https://github.com/openai-php/client) and 🌟 [google-gemini-php/client](https://github.com/google-gemini-php/client) for major model providers.
 - **Embeddings & vector search:** 🌟 [LLPhant/LLPhant](https://github.com/LLPhant/LLPhant) with 🌟 [pgvector/pgvector](https://github.com/pgvector/pgvector), 🌟 [pgvector/pgvector-php](https://github.com/pgvector/pgvector-php), 🌟 [meilisearch/meilisearch-php](https://github.com/meilisearch/meilisearch-php) or 🌟 [algolia/algoliasearch-client-php](https://github.com/algolia/algoliasearch-client-php).
@@ -36,9 +38,11 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 
 ## Legend
 
+Not all projects are tagged yet – we’re gradually adding markers as the ecosystem evolves.
+
 - `🌟` – widely used / production-ready projects
 - `🧪` – experimental or research-oriented projects
-- `⚠️` – projects with limited maintenance or activity
+- `⚠️` – projects with limited maintenance, older APIs, or niche usage; review before using in new projects.
 
 ---
 
@@ -50,7 +54,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 - [Machine Learning](#machine-learning)
 - [Deep Learning & Neural Networks](#deep-learning--neural-networks)
 - [Natural Language Processing](#natural-language-processing)
-- [Computer Vision](#computer-vision)
+- [Computer Vision & Image Processing](#computer-vision--image-processing)
 - [Math, Statistics & Linear Algebra](#math-statistics--linear-algebra)
 - [LLMs & AI APIs](#llms--ai-apis)
 - [Embeddings & Vector Search](#embeddings--vector-search)
@@ -90,7 +94,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 
 ---
 
-## Computer Vision
+## Computer Vision & Image Processing
 
 - [Intervention/image](https://github.com/Intervention/image) – Image manipulation library for CV preprocessing
 - [jcupitt/vips](https://github.com/jcupitt/libvips) – Fast image processing library with PHP bindings
@@ -199,6 +203,10 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 - [Build Your Own LLM in PHP (GitBook)](https://apphp.gitbook.io/build-your-own-llm-in-php/) – Guide to building an LLM from scratch in PHP
 
 ---
+
+## License
+
+This list is licensed under the MIT License – see LICENSE for details.
 
 ## Contributing
 
