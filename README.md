@@ -115,12 +115,16 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 ## LLMs & AI APIs
 
+- [ArdaGnsrn/ollama-php](https://github.com/ArdaGnsrn/ollama-php) – A PHP client library for the Ollama LLM server, enabling completions, chat, model management, and embeddings via Ollama’s API
 - [cognesy/instructor-php](https://github.com/cognesy/instructor-php) – Structured-output helper for LLM responses
 - [FunkyOz/mulagent](https://github.com/FunkyOz/mulagent) – Multi-agent orchestration framework for LLM applications
+- ⚠️ [HosonoDE/EasyAI-PHP](https://github.com/HosonoDE/EasyAI-PHP) – High-level AI integration library for PHP that simplifies using LLMs
 - 🌟 [google-gemini-php/client](https://github.com/google-gemini-php/client) – Google Gemini API client
+- [ModelFlow-AI](https://github.com/modelflow-ai) – A comprehensive PHP framework of packages offering unified access to AI models, embeddings, chat, and provider adapters (OpenAI, Mistral, Ollama)
 - [mzarnecki/php-rag](https://github.com/mzarnecki/php-rag) – PHP RAG toolkit for connecting vector search and LLMs in retrieval-augmented workflows
 - 🌟 [openai-php/client](https://github.com/openai-php/client) – Official OpenAI PHP client
 - [orhanerday/open-ai](https://github.com/orhanerday/open-ai) – Popular OpenAI API wrapper
+- [skito/aipi-php](https://github.com/skito/aipi-php) – Universal API client for common AI models in PHP, offering a unified interface to interact with multiple LLM providers
 
 ### Tokenizers & Prompt Utilities
 
@@ -153,9 +157,11 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 ## Interop & Model Serving
 
 - [ankane/onnxruntime-php](https://github.com/ankane/onnxruntime-php) – Run ONNX models from PHP
+- [distantmagic/resonance](https://github.com/distantmagic/resonance) – Asynchronous PHP framework with built-in support for serving and integrating machine learning and LLM models
 - [FFI](https://www.php.net/manual/en/book.ffi.php) – Native C/C++ bindings for ML inference
+- 🧪 [garyblankenship/mcp-php](https://github.com/garyblankenship/mcp-php) – PHP example of a Model Context Protocol (MCP) server for connecting LLMs with application logic
 - [grpc/grpc-php](https://github.com/grpc/grpc-php) – gRPC client for model services
-- 🌟 [neuron-core/neuron-ai](https://github.com/neuron-core/neuron-ai) – PHP agentic AI framework for building and orchestrating LLMs, RAG etc.
+- 🌟 [neuron-core/neuron-ai](https://github.com/neuron-core/neuron-ai) – PHP agentic AI framework for building and orchestrating LLMs, RAG etc
 
 ---
 
@@ -172,12 +178,15 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 ## Laravel & Framework Integrations
 
+- [BorahLabs/LLM-Port-Laravel](https://github.com/BorahLabs/LLM-Port-Laravel) – Laravel package for interchangeable LLM providers, allowing drop-in replacements of large language models
 - [Capevace/llm-magic](https://github.com/Capevace/llm-magic) – Laravel-centric LLM toolkit with support for AI features like chat and structured data extraction
 - [coding-wisely/taskallama](https://github.com/coding-wisely/taskallama) – Laravel package for seamless integration with the Ollama LLM API for AI-powered content generation, task assistance, conversation and embeddings
 - [grok-php/laravel](https://github.com/grok-php/laravel) – Laravel package for integrating Grok AI models
+- [jeremysalmon/LaravelLLMContext](https://github.com/jeremysalmon/LaravelLLMContext) – Laravel package for managing and applying contextual data in LLM interactions
 - 🌟 [laravel/scout](https://github.com/laravel/scout) – Search abstraction (useful for vector search)
 - [moe-mizrak/laravel-openrouter](https://github.com/moe-mizrak/laravel-openrouter) – Laravel package to integrate OpenRouter LLM API
 - [openai-php/laravel](https://github.com/openai-php/laravel) – Official OpenAI Laravel integration
+- [PapaRascal2020/sidekick](https://github.com/PapaRascal2020/sidekick) – Laravel package offering a unified syntax for working with multiple AI provider APIs (OpenAI, Claude, Cohere, Mistral)
 - [prism-php/prism](https://github.com/prism-php/prism) – Laravel interface for working with LLMs and AI providers
 - [shawnveltman/laravel-openai](https://github.com/shawnveltman/laravel-openai) – Laravel wrapper for OpenAI
 - [spatie/laravel-data](https://github.com/spatie/laravel-data) – Typed DTOs for API & AI responses
@@ -201,6 +210,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [Artificial Intelligence with PHP (GitBook)](https://apphp.gitbook.io/artificial-intelligence-with-php/) – Guide and reference for doing AI/ML with PHP
 - [AI для PHP-разработчиков — интуитивно и на практике (GitBook)](https://apphp.gitbook.io/ai-dlya-php-razrabotchikov-intuitivno-i-na-praktike/) – Russian guide on AI with PHP
 - [Build Your Own LLM in PHP (GitBook)](https://apphp.gitbook.io/build-your-own-llm-in-php/) – Guide to building an LLM from scratch in PHP
+- [PHP and LLMs (eBook)](https://leanpub.com/php_and_llms) – Practical book on integrating and using large language models with PHP
 
 ---
 
