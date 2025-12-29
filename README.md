@@ -38,7 +38,7 @@ These are opinionated defaults you can reach for when you just want something th
 
 ## Legend
 
-Not all projects are tagged yet – we’re gradually adding markers as the ecosystem evolves.
+Not all projects are tagged yet – we’re gradually adding markers as the ecosystem evolves. Treat them as rough guidance, not strict rules.
 
 - `🌟` – widely used / production-ready projects
 - `🧪` – experimental or research-oriented projects
@@ -50,6 +50,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 - [What is this?](#what-is-this)
 - [How to use this list](#how-to-use-this-list)
+- [Recommended core stack](#recommended-core-stack-)
 - [Legend](#legend)
 - [Machine Learning](#machine-learning)
 - [Deep Learning & Neural Networks](#deep-learning--neural-networks)
@@ -69,6 +70,8 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 ## Machine Learning
 
+Core PHP libraries for supervised/unsupervised learning, classification, regression, and clustering.
+
 - [dr-que/polynomial-regression](https://packagist.org/packages/dr-que/polynomial-regression) – Polynomial regression for PHP
 - ⚠️ [php-ai/php-ml](https://gitlab.com/php-ai/php-ml) – Core machine learning algorithms for PHP
 - [php-ai/php-ml-examples](https://github.com/php-ai/php-ml-examples) – Practical examples for PHP-ML
@@ -78,12 +81,16 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 ## Deep Learning & Neural Networks
 
+- PHP libraries for neural networks, deep learning architectures, and advanced learners built on tensors.
+
 - 🌟 [RubixML/ML](https://github.com/RubixML/ML) – Neural networks and advanced learners
 - 🌟 [RubixML/Tensor](https://github.com/RubixML/Tensor) – N-dimensional tensors for numerical computing
 
 ---
 
 ## Natural Language Processing
+
+- Text processing, tokenization, language detection, sentiment analysis and other NLP tasks in PHP.
 
 - [angeloskath/php-nlp-tools](https://github.com/angeloskath/php-nlp-tools) – Natural Language Processing tools
 - [CodeWithKyrian/transformers-php](https://github.com/CodeWithKyrian/transformers-php) – Hugging Face–style Transformer inference in PHP using ONNX
@@ -95,6 +102,8 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 ---
 
 ## Computer Vision & Image Processing
+
+- Image manipulation, preprocessing, and computer vision workloads from PHP.
 
 - [Intervention/image](https://github.com/Intervention/image) – Image manipulation library for CV preprocessing
 - [jcupitt/vips](https://github.com/jcupitt/libvips) – Fast image processing library with PHP bindings
@@ -115,12 +124,14 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 ## LLMs & AI APIs
 
+- Clients, SDKs, and frameworks for calling hosted LLMs and other AI providers from PHP.
+
 - [ArdaGnsrn/ollama-php](https://github.com/ArdaGnsrn/ollama-php) – A PHP client library for the Ollama LLM server, enabling completions, chat, model management, and embeddings via Ollama’s API
 - [cognesy/instructor-php](https://github.com/cognesy/instructor-php) – Structured-output helper for LLM responses
 - [FunkyOz/mulagent](https://github.com/FunkyOz/mulagent) – Multi-agent orchestration framework for LLM applications
 - ⚠️ [HosonoDE/EasyAI-PHP](https://github.com/HosonoDE/EasyAI-PHP) – High-level AI integration library for PHP that simplifies using LLMs
 - 🌟 [google-gemini-php/client](https://github.com/google-gemini-php/client) – Google Gemini API client
-- [ModelFlow-AI](https://github.com/modelflow-ai) – A comprehensive PHP framework of packages offering unified access to AI models, embeddings, chat, and provider adapters (OpenAI, Mistral, Ollama)
+- [ModelFlow-AI (GitHub org)](https://github.com/modelflow-ai) – Collection of PHP packages for unified access to AI models, embeddings, and chat (OpenAI, Mistral, Ollama) 
 - [mzarnecki/php-rag](https://github.com/mzarnecki/php-rag) – PHP RAG toolkit for connecting vector search and LLMs in retrieval-augmented workflows
 - 🌟 [openai-php/client](https://github.com/openai-php/client) – Official OpenAI PHP client
 - [orhanerday/open-ai](https://github.com/orhanerday/open-ai) – Popular OpenAI API wrapper
@@ -134,6 +145,8 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 ---
 
 ## Embeddings & Vector Search
+
+- Libraries for generating embeddings and performing vector similarity search from PHP applications.
 
 - 🌟 [algolia/algoliasearch-client-php](https://github.com/algolia/algoliasearch-client-php) – Algolia search client
 - 🌟 [LLPhant/LLPhant](https://github.com/LLPhant/LLPhant) – Comprehensive PHP generative AI framework supporting LLMs, embeddings, vector search and more
@@ -221,4 +234,5 @@ This list is licensed under the MIT License – see LICENSE for details.
 ## Contributing
 
 Contributions are welcome!  
-Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details, including criteria for adding new projects (maintenance, documentation, tests, etc).
+
