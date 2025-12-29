@@ -55,7 +55,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [Machine Learning](#machine-learning)
 - [Deep Learning & Neural Networks](#deep-learning--neural-networks)
 - [Natural Language Processing](#natural-language-processing)
-- [Computer Vision & Image Processing](#computer-vision--image-processing)
+- [Computer Vision, Image & Video Processing](#computer-vision-image--video-processing)
 - [Math, Statistics & Linear Algebra](#math-statistics--linear-algebra)
 - [LLMs & AI APIs](#llms--ai-apis)
 - [Embeddings & Vector Search](#embeddings--vector-search)
@@ -72,7 +72,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 Core PHP libraries for supervised/unsupervised learning, classification, regression, and clustering.
 
-- [dr-que/polynomial-regression](https://packagist.org/packages/dr-que/polynomial-regression) – Polynomial regression for PHP
+- [dr-que/polynomial-regression](https://github.com/jbboehr/PolynomialRegression.php) – Polynomial regression for PHP
 - ⚠️ [php-ai/php-ml](https://gitlab.com/php-ai/php-ml) – Core machine learning algorithms for PHP
 - [php-ai/php-ml-examples](https://github.com/php-ai/php-ml-examples) – Practical examples for PHP-ML
 - 🌟 [RubixML/RubixML](https://github.com/RubixML/RubixML) – High-level ML framework with pipelines and datasets
@@ -101,10 +101,11 @@ Core PHP libraries for supervised/unsupervised learning, classification, regress
 
 ---
 
-## Computer Vision & Image Processing
+## Computer Vision, Image & Video Processing
 
 - Image manipulation, preprocessing, and computer vision workloads from PHP.
 
+- [aschmelyun/subvert](https://github.com/aschmelyun/subvert) - Generate subtitles, summaries, and chapters from videos in seconds
 - [Intervention/image](https://github.com/Intervention/image) – Image manipulation library for CV preprocessing
 - [jcupitt/vips](https://github.com/jcupitt/libvips) – Fast image processing library with PHP bindings
 - [php-opencv/php-opencv](https://github.com/php-opencv/php-opencv) – OpenCV bindings for PHP
@@ -131,6 +132,8 @@ Core PHP libraries for supervised/unsupervised learning, classification, regress
 - [FunkyOz/mulagent](https://github.com/FunkyOz/mulagent) – Multi-agent orchestration framework for LLM applications
 - ⚠️ [HosonoDE/EasyAI-PHP](https://github.com/HosonoDE/EasyAI-PHP) – High-level AI integration library for PHP that simplifies using LLMs
 - 🌟 [google-gemini-php/client](https://github.com/google-gemini-php/client) – Google Gemini API client
+- 🌟 [llm-agents-php/agents](https://github.com/llm-agents-php/agents) - LM Agents is a PHP library for building and managing Language Model (LLM) based agents
+- [llm-agents-php/prompt-generator](https://github.com/llm-agents-php/prompt-generator) - Prompt generator for LLM agents with interceptors
 - [ModelFlow-AI (GitHub org)](https://github.com/modelflow-ai) – Collection of PHP packages for unified access to AI models, embeddings, and chat (OpenAI, Mistral, Ollama) 
 - [mzarnecki/php-rag](https://github.com/mzarnecki/php-rag) – PHP RAG toolkit for connecting vector search and LLMs in retrieval-augmented workflows
 - 🌟 [openai-php/client](https://github.com/openai-php/client) – Official OpenAI PHP client
@@ -155,6 +158,7 @@ Core PHP libraries for supervised/unsupervised learning, classification, regress
 - 🌟 [pgvector/pgvector](https://github.com/pgvector/pgvector) – Vector similarity search extension for PostgreSQL
 - 🌟 [pgvector/pgvector-php](https://github.com/pgvector/pgvector-php) – PHP client for pgvector on PostgreSQL
 - [voyanara/milvus-php-sdk](https://github.com/voyanara/milvus-php-sdk) – PHP SDK for Milvus vector database API v2
+- [llm-agents-php/vector-storage](https://github.com/llm-agents-php/vector-storage) – LLM Agents Vector Storage
 
 ---
 
