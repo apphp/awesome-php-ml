@@ -70,7 +70,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 ## Machine Learning
 
-Core PHP libraries for supervised/unsupervised learning, classification, regression, and clustering.
+*Core PHP libraries for supervised/unsupervised learning, classification, regression, and clustering.*
 
 - [dr-que/polynomial-regression](https://github.com/jbboehr/PolynomialRegression.php) – Polynomial regression for PHP
 - ⚠️ [php-ai/php-ml](https://gitlab.com/php-ai/php-ml) – Core machine learning algorithms for PHP
@@ -81,7 +81,7 @@ Core PHP libraries for supervised/unsupervised learning, classification, regress
 
 ## Deep Learning & Neural Networks
 
-PHP libraries for neural networks, deep learning architectures, and advanced learners built on tensors.
+*PHP libraries for neural networks, deep learning architectures, and advanced learners built on tensors.*
 
 - 🌟 [RubixML/ML](https://github.com/RubixML/ML) – Neural networks and advanced learners
 - 🌟 [RubixML/Tensor](https://github.com/RubixML/Tensor) – N-dimensional tensors for numerical computing
@@ -90,7 +90,7 @@ PHP libraries for neural networks, deep learning architectures, and advanced lea
 
 ## Natural Language Processing
 
-Text processing, tokenization, language detection, sentiment analysis and other NLP tasks in PHP.
+*Text processing, tokenization, language detection, sentiment analysis and other NLP tasks in PHP.*
 
 - [angeloskath/php-nlp-tools](https://github.com/angeloskath/php-nlp-tools) – Natural Language Processing tools
 - [CodeWithKyrian/transformers-php](https://github.com/CodeWithKyrian/transformers-php) – Hugging Face–style Transformer inference in PHP using ONNX
@@ -103,7 +103,7 @@ Text processing, tokenization, language detection, sentiment analysis and other 
 
 ## Computer Vision, Image & Video Processing
 
-Image manipulation, preprocessing, and computer vision workloads from PHP.
+*Image manipulation, preprocessing, and computer vision workloads from PHP.*
 
 - [aschmelyun/subvert](https://github.com/aschmelyun/subvert) - Generate subtitles, summaries, and chapters from videos in seconds
 - [Intervention/image](https://github.com/Intervention/image) – Image manipulation library for CV preprocessing
@@ -113,6 +113,8 @@ Image manipulation, preprocessing, and computer vision workloads from PHP.
 ---
 
 ## Math, Statistics & Linear Algebra
+
+*Numerical computing, matrix operations, statistics, and related math foundations for ML and data science in PHP.*
 
 - [markrogoyski/math-php](https://github.com/markrogoyski/math-php) – Math library for linear algebra, statistics, and calculus
 - [mcordingley/LinearAlgebra](https://github.com/mcordingley/LinearAlgebra) – Stand-alone linear algebra library
@@ -125,7 +127,7 @@ Image manipulation, preprocessing, and computer vision workloads from PHP.
 
 ## LLMs & AI APIs
 
-Clients, SDKs, and frameworks for calling hosted LLMs and other AI providers from PHP.
+*Clients, SDKs, and frameworks for calling hosted LLMs and other AI providers from PHP.*
 
 - [ArdaGnsrn/ollama-php](https://github.com/ArdaGnsrn/ollama-php) – A PHP client library for the Ollama LLM server, enabling completions, chat, model management, and embeddings via Ollama’s API
 - [cognesy/instructor-php](https://github.com/cognesy/instructor-php) – Structured-output helper for LLM responses
@@ -149,7 +151,7 @@ Clients, SDKs, and frameworks for calling hosted LLMs and other AI providers fro
 
 ## Embeddings & Vector Search
 
-Libraries for generating embeddings and performing vector similarity search from PHP applications.
+*Libraries for generating embeddings and performing vector similarity search from PHP applications.*
 
 - 🌟 [algolia/algoliasearch-client-php](https://github.com/algolia/algoliasearch-client-php) – Algolia search client
 - 🌟 [LLPhant/LLPhant](https://github.com/LLPhant/LLPhant) – Comprehensive PHP generative AI framework supporting LLMs, embeddings, vector search and more
@@ -164,6 +166,8 @@ Libraries for generating embeddings and performing vector similarity search from
 
 ## Data Processing
 
+*ETL, data pipelines, serialization, and transformation utilities for preparing data for ML and analytics in PHP.*
+
 - 🌟 [flow-php/flow](https://github.com/flow-php/flow) – Data processing and ETL framework for PHP with typed pipelines
 - [league/csv](https://github.com/thephpleague/csv) – CSV data processing
 - [spatie/data-transfer-object](https://github.com/spatie/data-transfer-object) – Strongly typed DTOs
@@ -172,6 +176,8 @@ Libraries for generating embeddings and performing vector similarity search from
 ---
 
 ## Interop & Model Serving
+
+*Bridging PHP with native libraries, external services, and runtimes for deploying and serving ML and LLM models.*
 
 - [ankane/onnxruntime-php](https://github.com/ankane/onnxruntime-php) – Run ONNX models from PHP
 - [distantmagic/resonance](https://github.com/distantmagic/resonance) – Asynchronous PHP framework with built-in support for serving and integrating machine learning and LLM models
@@ -183,6 +189,8 @@ Libraries for generating embeddings and performing vector similarity search from
 ---
 
 ## Tools & Utilities
+
+*Supporting tools, debugging helpers, logging, and HTTP/CLI utilities commonly used in ML and AI workflows.*
 
 - 🧪 [apphp/pretty-print](https://github.com/apphp/pretty-print) – Pretty-print PHP arrays and numeric data for ML debugging
 - [nunomaduro/collision](https://github.com/nunomaduro/collision) – CLI error handling (useful for ML tools)
