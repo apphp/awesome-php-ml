@@ -81,7 +81,7 @@ Core PHP libraries for supervised/unsupervised learning, classification, regress
 
 ## Deep Learning & Neural Networks
 
-- PHP libraries for neural networks, deep learning architectures, and advanced learners built on tensors.
+PHP libraries for neural networks, deep learning architectures, and advanced learners built on tensors.
 
 - 🌟 [RubixML/ML](https://github.com/RubixML/ML) – Neural networks and advanced learners
 - 🌟 [RubixML/Tensor](https://github.com/RubixML/Tensor) – N-dimensional tensors for numerical computing
@@ -90,7 +90,7 @@ Core PHP libraries for supervised/unsupervised learning, classification, regress
 
 ## Natural Language Processing
 
-- Text processing, tokenization, language detection, sentiment analysis and other NLP tasks in PHP.
+Text processing, tokenization, language detection, sentiment analysis and other NLP tasks in PHP.
 
 - [angeloskath/php-nlp-tools](https://github.com/angeloskath/php-nlp-tools) – Natural Language Processing tools
 - [CodeWithKyrian/transformers-php](https://github.com/CodeWithKyrian/transformers-php) – Hugging Face–style Transformer inference in PHP using ONNX
@@ -103,7 +103,7 @@ Core PHP libraries for supervised/unsupervised learning, classification, regress
 
 ## Computer Vision, Image & Video Processing
 
-- Image manipulation, preprocessing, and computer vision workloads from PHP.
+Image manipulation, preprocessing, and computer vision workloads from PHP.
 
 - [aschmelyun/subvert](https://github.com/aschmelyun/subvert) - Generate subtitles, summaries, and chapters from videos in seconds
 - [Intervention/image](https://github.com/Intervention/image) – Image manipulation library for CV preprocessing
@@ -125,7 +125,7 @@ Core PHP libraries for supervised/unsupervised learning, classification, regress
 
 ## LLMs & AI APIs
 
-- Clients, SDKs, and frameworks for calling hosted LLMs and other AI providers from PHP.
+Clients, SDKs, and frameworks for calling hosted LLMs and other AI providers from PHP.
 
 - [ArdaGnsrn/ollama-php](https://github.com/ArdaGnsrn/ollama-php) – A PHP client library for the Ollama LLM server, enabling completions, chat, model management, and embeddings via Ollama’s API
 - [cognesy/instructor-php](https://github.com/cognesy/instructor-php) – Structured-output helper for LLM responses
@@ -149,7 +149,7 @@ Core PHP libraries for supervised/unsupervised learning, classification, regress
 
 ## Embeddings & Vector Search
 
-- Libraries for generating embeddings and performing vector similarity search from PHP applications.
+Libraries for generating embeddings and performing vector similarity search from PHP applications.
 
 - 🌟 [algolia/algoliasearch-client-php](https://github.com/algolia/algoliasearch-client-php) – Algolia search client
 - 🌟 [LLPhant/LLPhant](https://github.com/LLPhant/LLPhant) – Comprehensive PHP generative AI framework supporting LLMs, embeddings, vector search and more
