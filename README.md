@@ -92,7 +92,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 *Text processing, tokenization, language detection, sentiment analysis and other NLP tasks in PHP.*
 
-- [angeloskath/php-nlp-tools](https://github.com/angeloskath/php-nlp-tools) – Natural Language Processing tools
+- ⚠️ [angeloskath/php-nlp-tools](https://github.com/angeloskath/php-nlp-tools) – Natural Language Processing tools
 - [CodeWithKyrian/transformers-php](https://github.com/CodeWithKyrian/transformers-php) – Hugging Face–style Transformer inference in PHP using ONNX
 - [friteuseb/nlp_tools](https://github.com/friteuseb/nlp_tools) – Extension for NLP methods and text analysis
 - ⚠️ [patrickschur/language-detection](https://github.com/patrickschur/language-detection) – Language detection library
@@ -129,6 +129,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 *Clients, SDKs, and frameworks for calling hosted LLMs and other AI providers from PHP.*
 
+- [adrienbrault/instructrice](https://github.com/adrienbrault/instructrice) — Typed LLM outputs in PHP with flexible schema support (OpenAI, Claude, Gemini, etc.) and type-safe handling of structured responses
 - [ArdaGnsrn/ollama-php](https://github.com/ArdaGnsrn/ollama-php) – A PHP client library for the Ollama LLM server, enabling completions, chat, model management, and embeddings via Ollama’s API
 - [cognesy/instructor-php](https://github.com/cognesy/instructor-php) – Structured-output helper for LLM responses
 - [FunkyOz/mulagent](https://github.com/FunkyOz/mulagent) – Multi-agent orchestration framework for LLM applications
@@ -141,6 +142,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - 🌟 [openai-php/client](https://github.com/openai-php/client) – Official OpenAI PHP client
 - [orhanerday/open-ai](https://github.com/orhanerday/open-ai) – Popular OpenAI API wrapper
 - [skito/aipi-php](https://github.com/skito/aipi-php) – Universal API client for common AI models in PHP, offering a unified interface to interact with multiple LLM providers
+- [takaaki-mizuno/php-llm-json-adapter](https://github.com/takaaki-mizuno/php-llm-json-adapter) — Adapter to normalize and return LLM responses as structured JSON using JSON Schema, with support for multiple providers (OpenAI, Gemini, Bedrock, Ollama)
 
 ### Tokenizers & Prompt Utilities
 
@@ -168,6 +170,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 *ETL, data pipelines, serialization, and transformation utilities for preparing data for ML and analytics in PHP.*
 
+- 🌟 [cocur/slugify](https://github.com/cocur/slugify) — Converts strings into URL-friendly slugs, includes integrations for many frameworks
 - 🌟 [flow-php/flow](https://github.com/flow-php/flow) – Data processing and ETL framework for PHP with typed pipelines
 - [league/csv](https://github.com/thephpleague/csv) – CSV data processing
 - [spatie/data-transfer-object](https://github.com/spatie/data-transfer-object) – Strongly typed DTOs
@@ -203,6 +206,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 ## Laravel & Framework Integrations
 
+- [artisan-build/llm](https://github.com/artisan-build/llm) — Laravel integration for multiple LLM providers (OpenAI, Azure, OpenRouter, etc.), simplifying usage of large language models in Laravel apps
 - [BorahLabs/LLM-Port-Laravel](https://github.com/BorahLabs/LLM-Port-Laravel) – Laravel package for interchangeable LLM providers, allowing drop-in replacements of large language models
 - [Capevace/llm-magic](https://github.com/Capevace/llm-magic) – Laravel-centric LLM toolkit with support for AI features like chat and structured data extraction
 - [coding-wisely/taskallama](https://github.com/coding-wisely/taskallama) – Laravel package for seamless integration with the Ollama LLM API for AI-powered content generation, task assistance, conversation and embeddings
@@ -216,6 +220,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [shawnveltman/laravel-openai](https://github.com/shawnveltman/laravel-openai) – Laravel wrapper for OpenAI
 - [spatie/laravel-data](https://github.com/spatie/laravel-data) – Typed DTOs for API & AI responses
 - [teamtnt/laravel-scout-tntsearch-driver](https://github.com/teamtnt/laravel-scout-tntsearch-driver) – Local full-text search
+- [rahasistiyakofficial/laravel-ai-integration](https://github.com/rahasistiyakofficial/laravel-ai-integration) — This is a comprehensive, enterprise-ready package that provides seamless integration with multiple AI providers through a unified, elegant API
 
 ---
 
