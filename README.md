@@ -232,13 +232,18 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 ## Resources
 
+### General
+
 - [Awesome PHP](https://github.com/ziadoz/awesome-php)
+
+### ML / AI Platforms
+
 - [ONNX Runtime](https://onnxruntime.ai)
 
-### Learning
+### Learning Resources
 
 - [Artificial Intelligence with PHP (GitBook)](https://apphp.gitbook.io/artificial-intelligence-with-php/) – Guide and reference for doing AI/ML with PHP
-- [AI для PHP-разработчиков — интуитивно и на практике (GitBook)](https://apphp.gitbook.io/ai-dlya-php-razrabotchikov-intuitivno-i-na-praktike/) – Russian guide on AI with PHP
+- 🌟 [AI для PHP-разработчиков — интуитивно и на практике (GitBook)](https://apphp.gitbook.io/ai-dlya-php-razrabotchikov-intuitivno-i-na-praktike/) – Russian guide on AI with PHP
 - [Build Your Own LLM in PHP (GitBook)](https://apphp.gitbook.io/build-your-own-llm-in-php/) – Guide to building an LLM from scratch in PHP
 - [PHP and LLMs (eBook)](https://leanpub.com/php_and_llms) – Practical book on integrating and using large language models with PHP
 
