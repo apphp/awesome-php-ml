@@ -114,6 +114,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 *Numerical computing, matrix operations, statistics, and related math foundations for ML and data science in PHP.*
 
+- 🌟 [brick/math](https://github.com/brick/math) — Arbitrary-precision arithmetic for PHP (BigInteger, BigDecimal, BigRational)
 - [markrogoyski/math-php](https://github.com/markrogoyski/math-php) – Math library for linear algebra, statistics, and calculus
 - [mcordingley/LinearAlgebra](https://github.com/mcordingley/LinearAlgebra) – Stand-alone linear algebra library
 - ⚠️ [NumPHP/NumPHP](https://github.com/NumPHP/NumPHP) – Math library for scientific computing
@@ -133,14 +134,17 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [FunkyOz/mulagent](https://github.com/FunkyOz/mulagent) – Multi-agent orchestration framework for LLM applications
 - ⚠️ [HosonoDE/EasyAI-PHP](https://github.com/HosonoDE/EasyAI-PHP) – High-level AI integration library for PHP that simplifies using LLMs
 - 🌟 [google-gemini-php/client](https://github.com/google-gemini-php/client) – ![GitHub stars](https://img.shields.io/github/stars/google-gemini-php/client?style=social) Google Gemini API client
+- 🌟 [kambo-1st/langchain-php](https://github.com/kambo-1st/langchain-php) — A PHP port of the LangChain framework for building composable LLM-powered applications
 - 🌟 [llm-agents-php/agents](https://github.com/llm-agents-php/agents) - ![GitHub stars](https://img.shields.io/github/stars/llm-agents-php/agents?style=social) LM Agents is a PHP library for building and managing Language Model (LLM) based agents
 - [llm-agents-php/prompt-generator](https://github.com/llm-agents-php/prompt-generator) - Prompt generator for LLM agents with interceptors
 - [ModelFlow-AI (GitHub org)](https://github.com/modelflow-ai) – Collection of PHP packages for unified access to AI models, embeddings, and chat (OpenAI, Mistral, Ollama) 
 - [mzarnecki/php-rag](https://github.com/mzarnecki/php-rag) – PHP RAG toolkit for connecting vector search and LLMs in retrieval-augmented workflows
 - 🌟 [openai-php/client](https://github.com/openai-php/client) – ![GitHub stars](https://img.shields.io/github/stars/penai-php/client?style=social) Official OpenAI PHP client
 - [orhanerday/open-ai](https://github.com/orhanerday/open-ai) – Popular OpenAI API wrapper
+- [sarfraznawaz2005/ai-team](https://github.com/sarfraznawaz2005/ai-team) — Package to build and run collaborative teams of AI members with role/task assignments
 - [skito/aipi-php](https://github.com/skito/aipi-php) – Universal API client for common AI models in PHP, offering a unified interface to interact with multiple LLM providers
 - [takaaki-mizuno/php-llm-json-adapter](https://github.com/takaaki-mizuno/php-llm-json-adapter) — Adapter to normalize and return LLM responses as structured JSON using JSON Schema, with support for multiple providers (OpenAI, Gemini, Bedrock, Ollama)
+- [thojou/php-llm-documents](https://github.com/thojou/php-llm-documents) — PHP library for LLM-based document processing (splitting, embeddings, vector store, search) inspired by LangChain/DocTran
 
 ### Tokenizers & Prompt Utilities
 
@@ -154,13 +158,14 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 *Libraries for generating embeddings and performing vector similarity search from PHP applications.*
 
 - 🌟 [algolia/algoliasearch-client-php](https://github.com/algolia/algoliasearch-client-php) – ![GitHub stars](https://img.shields.io/github/stars/algolia/algoliasearch-client-php?style=social) Algolia search client
+- [llm-agents-php/vector-storage](https://github.com/llm-agents-php/vector-storage) – LLM Agents Vector Storage
 - 🌟 [LLPhant/LLPhant](https://github.com/LLPhant/LLPhant) – ![GitHub stars](https://img.shields.io/github/stars/LLPhant/LLPhant?style=social) Comprehensive PHP generative AI framework supporting LLMs, embeddings, vector search and more
 - 🌟 [meilisearch/meilisearch-php](https://github.com/meilisearch/meilisearch-php) – ![GitHub stars](https://img.shields.io/github/stars/meilisearch/meilisearch-php?style=social) Client for Meilisearch search engine
 - 🌟 [openai-php/laravel](https://github.com/openai-php/laravel) – ![GitHub stars](https://img.shields.io/github/stars/openai-php/laravel?style=social) Laravel OpenAI integration
 - 🌟 [pgvector/pgvector](https://github.com/pgvector/pgvector) – ![GitHub stars](https://img.shields.io/github/stars/pgvector/pgvector?style=social) Vector similarity search extension for PostgreSQL
 - 🌟 [pgvector/pgvector-php](https://github.com/pgvector/pgvector-php) – ![GitHub stars](https://img.shields.io/github/stars/pgvector/pgvector-php?style=social) PHP client for pgvector on PostgreSQL
+- [redis-applied-ai/redis-vector-php](https://github.com/redis-applied-ai/redis-vector-php) — PHP client for Redis Vector Library (RedisVL) to support vector similarity search and AI-oriented queries
 - [voyanara/milvus-php-sdk](https://github.com/voyanara/milvus-php-sdk) – PHP SDK for Milvus vector database API v2
-- [llm-agents-php/vector-storage](https://github.com/llm-agents-php/vector-storage) – LLM Agents Vector Storage
 
 ---
 
@@ -237,6 +242,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 ### ML / AI Platforms
 
 - [ONNX Runtime](https://onnxruntime.ai)
+- [tensorflow/tfjs](https://github.com/tensorflow/tfjs) — JavaScript machine learning platform for training and running models in the browser or Node.js (TensorFlow.js)
 
 ### Learning Resources
 
