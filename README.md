@@ -241,7 +241,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 ### ML / AI Platforms
 
-- [ONNX Runtime](https://onnxruntime.ai)
+- [ONNX Runtime](https://onnxruntime.ai) - Cross-platform, high performance ML inferencing and training accelerator
 - [tensorflow/tfjs](https://github.com/tensorflow/tfjs) — JavaScript machine learning platform for training and running models in the browser or Node.js (TensorFlow.js)
 
 ### Learning Resources
