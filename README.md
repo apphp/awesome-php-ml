@@ -73,6 +73,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 *Core PHP libraries for supervised/unsupervised learning, classification, regression, and clustering.*
 
 - [dr-que/polynomial-regression](https://github.com/jbboehr/PolynomialRegression.php) – Polynomial regression for PHP
+- [kyriansfriends/transformers](https://github.com/kyriansfriends/transformers) — A PHP toolkit for running Hugging Face–style Transformer models with ONNX Runtime (text generation, summarization, classification, etc.)
 - ⚠️ [php-ai/php-ml](https://gitlab.com/php-ai/php-ml) – Core machine learning algorithms for PHP
 - [php-ai/php-ml-examples](https://github.com/php-ai/php-ml-examples) – Practical examples for PHP-ML
 
@@ -94,6 +95,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [CodeWithKyrian/transformers-php](https://github.com/CodeWithKyrian/transformers-php) – Hugging Face–style Transformer inference in PHP using ONNX
 - [friteuseb/nlp_tools](https://github.com/friteuseb/nlp_tools) – Extension for NLP methods and text analysis
 - ⚠️ [patrickschur/language-detection](https://github.com/patrickschur/language-detection) – Language detection library
+- 🧪 [RubixML/Sentiment](https://github.com/RubixML/Sentiment) — Example project demonstrating sentiment analysis with a neural network (IMDB reviews) using Rubix ML in PHP
 - [voku/stop-words](https://github.com/voku/stop-words) – Stop word lists for many languages
 - [yooper/php-text-analysis](https://github.com/yooper/php-text-analysis) – Sentiment analysis and NLP tools
 
@@ -176,6 +178,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - 🌟 [cocur/slugify](https://github.com/cocur/slugify) — ![GitHub stars](https://img.shields.io/github/stars/cocur/slugify?style=social) Converts strings into URL-friendly slugs, includes integrations for many frameworks
 - 🌟 [flow-php/flow](https://github.com/flow-php/flow) – ![GitHub stars](https://img.shields.io/github/stars/flow-php/flow?style=social) Data processing and ETL framework for PHP with typed pipelines
 - [league/csv](https://github.com/thephpleague/csv) – CSV data processing
+- 🌟 [php-ds/ext-ds](https://github.com/php-ds/ext-ds) — ![GitHub stars](https://img.shields.io/github/stars/php-ds/ext-ds?style=social) PHP Data Structures extension: efficient vectors, maps, sets, etc.
 - [spatie/data-transfer-object](https://github.com/spatie/data-transfer-object) – Strongly typed DTOs
 - [symfony/serializer](https://github.com/symfony/serializer) – Data normalization & serialization
 
@@ -186,11 +189,14 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 *Bridging PHP with native libraries, external services, and runtimes for deploying and serving ML and LLM models.*
 
 - [ankane/onnxruntime-php](https://github.com/ankane/onnxruntime-php) – Run ONNX models from PHP
+- 🌟 [deepl-php](https://github.com/DeepLcom/deepl-php) — ![GitHub stars](https://img.shields.io/github/stars/DeepLcom/deepl-php?style=social) Official PHP client library for the DeepL API, enabling high-quality language translation via DeepL’s AI/ML service
 - [distantmagic/resonance](https://github.com/distantmagic/resonance) – Asynchronous PHP framework with built-in support for serving and integrating machine learning and LLM models
 - [FFI](https://www.php.net/manual/en/book.ffi.php) – Native C/C++ bindings for ML inference
 - 🧪 [garyblankenship/mcp-php](https://github.com/garyblankenship/mcp-php) – PHP example of a Model Context Protocol (MCP) server for connecting LLMs with application logic
+- 🌟 [googleapis/google-cloud-php](https://github.com/googleapis/google-cloud-php) — ![GitHub stars](https://img.shields.io/github/stars/googleapis/google-cloud-php?style=social) Official PHP client library for Google Cloud APIs (including ML/AI services like Vision, Translate, AutoML, Vertex AI, etc.)
 - [grpc/grpc-php](https://github.com/grpc/grpc-php) – gRPC client for model services
 - 🌟 [neuron-core/neuron-ai](https://github.com/neuron-core/neuron-ai) – ![GitHub stars](https://img.shields.io/github/stars/neuron-core/neuron-ai?style=social) PHP agentic AI framework for building and orchestrating LLMs, RAG etc
+- [nlpcloud/nlpcloud-php](https://github.com/nlpcloud/nlpcloud-php) — PHP client for the NLP Cloud API (access NLP/ML services like NER, sentiment analysis, summarization, text generation, embeddings, translation, and more)
 
 ---
 
@@ -199,6 +205,8 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 *Supporting tools, debugging helpers, logging, and HTTP/CLI utilities commonly used in ML and AI workflows.*
 
 - 🧪 [apphp/pretty-print](https://github.com/apphp/pretty-print) – Pretty-print PHP arrays and numeric data for ML debugging
+- [guanguans/ai-commit](https://github.com/guanguans/ai-commit) — AI-powered CLI to automatically generate conventional Git commit messages
+- [joshembling/laragenie](https://github.com/joshembling/laragenie) — AI chatbot/assistant for Laravel that indexes and understands your codebase via the command line (OpenAI + Pinecone)
 - [nunomaduro/collision](https://github.com/nunomaduro/collision) – CLI error handling (useful for ML tools)
 - [psr/log](https://github.com/php-fig/log) – Logging standard
 - 🌟 [swoole/phpy](https://github.com/swoole/phpy) – ![GitHub stars](https://img.shields.io/github/stars/swoole/phpy?style=social) Bridge for calling Python from PHP via a runtime bridge
