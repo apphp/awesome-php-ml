@@ -26,6 +26,14 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 - **Numerical computing & math** – explore [Math, Statistics & Linear Algebra](#math-statistics--linear-algebra) for tensors, matrices, and statistics.
 - **Production integration** – use [Interop & Model Serving](#interop--model-serving) and framework integrations to wire models into real apps.
 
+### Example "recipes"
+
+- **I want to build a Laravel RAG app**  
+  Use an LLM client like 🌟 [openai-php/client](https://github.com/openai-php/client), embeddings + vector search via 🌟 [LLPhant/LLPhant](https://github.com/LLPhant/LLPhant) with 🌟 [pgvector/pgvector](https://github.com/pgvector/pgvector) or 🌟 [meilisearch/meilisearch-php](https://github.com/meilisearch/meilisearch-php), and orchestrate agents/RAG flows with 🌟 [neuron-core/neuron-ai](https://github.com/neuron-core/neuron-ai), integrating into Laravel using 🌟 [openai-php/laravel](https://github.com/openai-php/laravel) and the packages under [Laravel & Framework Integrations](#laravel--framework-integrations).
+
+- **I only need translation or vision**  
+  For translation, see 🌟 [deepl-php](https://github.com/DeepLcom/deepl-php) and 🌟 [googleapis/google-cloud-php](https://github.com/googleapis/google-cloud-php) under [Interop & Model Serving](#interop--model-serving). For image/vision workloads, combine [Computer Vision, Image & Video Processing](#computer-vision-image--video-processing) libraries with cloud AI services via 🌟 [symfony/ai](https://github.com/symfony/ai) or [openai-php/client](https://github.com/openai-php/client) from [LLMs & AI APIs](#llms--ai-apis).
+
 ### Recommended core stack
 
 These are opinionated defaults you can reach for when you just want something that works in production.
