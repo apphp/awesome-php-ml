@@ -1,0 +1,25 @@
+{
+    "name": "apphp/awesome-php-ml",
+    "description": "Awesome list of Machine Learning, Artificial Intelligence, NLP, LLM and Data Science libraries for PHP.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "machine-learning",
+        "ml",
+        "ai",
+        "nlp",
+        "llm",
+        "awesome-list"
+    ],
+    "homepage": "https://github.com/apphp/awesome-php-ml",
+    "authors": [
+        {
+            "name": "apphp",
+            "homepage": "https://github.com/apphp"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    }
+}
