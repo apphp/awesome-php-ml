@@ -1,10 +1,10 @@
 # Awesome PHP Machine Learning & AI
 
-![Awesome](https://awesome.re/badge.svg)
-![GitHub stars](https://img.shields.io/github/stars/apphp/awesome-php-ml?style=social)
-![Last commit](https://img.shields.io/github/last-commit/apphp/awesome-php-ml)
-![License](https://img.shields.io/github/license/apphp/awesome-php-ml)
-![Link Check](https://github.com/apphp/awesome-php-ml/actions/workflows/link-check.yml/badge.svg)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![GitHub stars](https://img.shields.io/github/stars/apphp/awesome-php-ml?style=social)](https://github.com/apphp/awesome-php-ml)
+[![Last commit](https://img.shields.io/github/last-commit/apphp/awesome-php-ml)](https://github.com/apphp/awesome-php-ml/commits)
+[![License](https://img.shields.io/github/license/apphp/awesome-php-ml)](https://github.com/apphp/awesome-php-ml/blob/main/LICENSE)
+[![Link Check](https://github.com/apphp/awesome-php-ml/actions/workflows/link-check.yml/badge.svg)](https://github.com/apphp/awesome-php-ml/actions/workflows/link-check.yml)
 
 The most comprehensive curated list of **Machine Learning, Artificial Intelligence, NLP, LLM and Data Science libraries for PHP**.
 
