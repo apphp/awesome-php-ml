@@ -141,6 +141,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [adrienbrault/instructrice](https://github.com/adrienbrault/instructrice) — Typed LLM outputs in PHP with flexible schema support (OpenAI, Claude, Gemini, etc.) and type-safe handling of structured responses
 - [ArdaGnsrn/ollama-php](https://github.com/ArdaGnsrn/ollama-php) – A PHP client library for the Ollama LLM server, enabling completions, chat, model management, and embeddings via Ollama’s API
 - [cognesy/instructor-php](https://github.com/cognesy/instructor-php) – Structured-output helper for LLM responses
+- [elastic/elasticsearch-chatgpt-php](https://github.com/elastic/elasticsearch-chatgpt-php) – Experimental PHP library that uses ChatGPT to translate natural language into Elasticsearch DSL queries and perform semantic search over your indices
 - [FunkyOz/mulagent](https://github.com/FunkyOz/mulagent) – Multi-agent orchestration framework for LLM applications
 - ⚠️ [HosonoDE/EasyAI-PHP](https://github.com/HosonoDE/EasyAI-PHP) – High-level AI integration library for PHP that simplifies using LLMs
 - 🌟 [google-gemini-php/client](https://github.com/google-gemini-php/client) – ![GitHub stars](https://img.shields.io/github/stars/google-gemini-php/client?style=social) Gemini PHP is a community-maintained PHP API client that allows you to interact with the Gemini AI API
