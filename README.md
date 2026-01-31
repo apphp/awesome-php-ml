@@ -236,13 +236,13 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [moe-mizrak/laravel-openrouter](https://github.com/moe-mizrak/laravel-openrouter) – Laravel package to integrate OpenRouter LLM API
 - 🌟 [openai-php/laravel](https://github.com/openai-php/laravel) – ![GitHub stars](https://img.shields.io/github/stars/openai-php/laravel?style=social) Laravel OpenAI integration 
 - [PapaRascal2020/sidekick](https://github.com/PapaRascal2020/sidekick) – Laravel package offering a unified syntax for working with multiple AI provider APIs (OpenAI, Claude, Cohere, Mistral)
-- [prism-php/prism](https://github.com/prism-php/prism) – Laravel interface for working with LLMs and AI providers
 - [shawnveltman/laravel-openai](https://github.com/shawnveltman/laravel-openai) – Laravel wrapper for OpenAI
 - [rahasistiyakofficial/laravel-ai-integration](https://github.com/rahasistiyakofficial/laravel-ai-integration) — This is a comprehensive, enterprise-ready package that provides seamless integration with multiple AI providers through a unified, elegant API
 
 ### Data & DTO tools
 
 - [jeremysalmon/LaravelLLMContext](https://github.com/jeremysalmon/LaravelLLMContext) – Laravel package for managing and applying contextual data in LLM interactions
+- [prism-php/prism](https://github.com/prism-php/prism) – Laravel interface for working with LLMs and AI providers
 - [spatie/laravel-data](https://github.com/spatie/laravel-data) – Typed DTOs for API & AI responses
 
 ### Search & vector search
