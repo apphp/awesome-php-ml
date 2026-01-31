@@ -264,6 +264,9 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 - [Awesome PHP](https://github.com/ziadoz/awesome-php)
 
+### Courses & Tutorials
+- [Fun With OpenAI and Laravel](https://laracasts.com/series/fun-with-openai-and-laravel) – Laracasts series showing how to integrate OpenAI into Laravel apps
+
 ### ML / AI Platforms
 
 - [ONNX Runtime](https://onnxruntime.ai) - Cross-platform, high performance ML inferencing and training accelerator
