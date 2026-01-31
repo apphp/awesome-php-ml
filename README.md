@@ -195,7 +195,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 *Bridging PHP with native libraries, external services, and runtimes for deploying and serving ML and LLM models.*
 
-- [ankane/onnxruntime-php](https://github.com/ankane/onnxruntime-php) – Run ONNX models from PHP
+- 🌟 [ankane/onnxruntime-php](https://github.com/ankane/onnxruntime-php) – ![GitHub stars](https://img.shields.io/github/stars/ankane/onnxruntime-php?style=social) Run ONNX models from PHP
 - 🌟 [deepl-php](https://github.com/DeepLcom/deepl-php) — ![GitHub stars](https://img.shields.io/github/stars/DeepLcom/deepl-php?style=social) Official PHP client library for the DeepL API, enabling high-quality language translation via DeepL’s AI/ML service
 - [distantmagic/resonance](https://github.com/distantmagic/resonance) – Asynchronous PHP framework with built-in support for serving and integrating machine learning and LLM models
 - [FFI](https://www.php.net/manual/en/book.ffi.php) – Native C/C++ bindings for ML inference
@@ -270,7 +270,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 ### Learning Resources
 
 - [Artificial Intelligence with PHP (GitBook)](https://apphp.gitbook.io/artificial-intelligence-with-php/) – Guide and reference for doing AI/ML with PHP
-- 🌟 [AI для PHP-разработчиков — интуитивно и на практике (GitBook)](https://apphp.gitbook.io/ai-dlya-php-razrabotchikov-intuitivno-i-na-praktike/) – Russian guide on AI with PHP
+- 🌟 [AI для PHP-разработчиков: интуитивно и на практике (GitBook)](https://apphp.gitbook.io/ai-for-php-developers/) – Guide on AI with PHP in Russian / English
 - [Build Your Own LLM in PHP (GitBook)](https://apphp.gitbook.io/build-your-own-llm-in-php/) – Guide to building an LLM from scratch in PHP
 - [PHP and LLMs (eBook)](https://leanpub.com/php_and_llms) – Practical book on integrating and using large language models with PHP
 
