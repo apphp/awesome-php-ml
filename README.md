@@ -277,6 +277,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [Artificial Intelligence with PHP (GitBook)](https://apphp.gitbook.io/artificial-intelligence-with-php/) – Guide and reference for doing AI/ML with PHP
 - 🌟 [AI для PHP-разработчиков: интуитивно и на практике (GitBook)](https://apphp.gitbook.io/ai-for-php-developers/) – Guide on AI with PHP in Russian / English
 - [Build Your Own LLM in PHP (GitBook)](https://apphp.gitbook.io/build-your-own-llm-in-php/) – Guide to building an LLM from scratch in PHP
+- [PHP FANN installation](https://www.php.net/manual/en/fann.installation.php) – Official PHP manual page for installing the FANN (Fast Artificial Neural Network) extension
 - [PHP and LLMs (eBook)](https://leanpub.com/php_and_llms) – Practical book on integrating and using large language models with PHP
 - [PHP-ML Tutorials](https://php-ml.readthedocs.io/en/latest/) - Documentation for PHP-ML for machine learning
 - [Rubix ML Docs](https://rubixml.github.io/ML/latest/) - Comprehensive documentation for Rubix ML
