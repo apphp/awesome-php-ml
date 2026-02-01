@@ -80,6 +80,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 *Core PHP libraries for supervised/unsupervised learning, classification, regression, and clustering.*
 
+- ⚠️ [danielefavi/brainy](https://github.com/danielefavi/brainy) – Simple PHP class for neural networks and machine learning
 - [dr-que/polynomial-regression](https://github.com/jbboehr/PolynomialRegression.php) – Polynomial regression for PHP
 - [kyriansfriends/transformers](https://github.com/kyriansfriends/transformers) — A PHP toolkit for running Hugging Face–style Transformer models with ONNX Runtime (text generation, summarization, classification, etc.)
 - [php-ai/php-ml](https://gitlab.com/php-ai/php-ml) – Core machine learning algorithms for PHP
