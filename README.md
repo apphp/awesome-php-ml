@@ -2,6 +2,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![GitHub stars](https://img.shields.io/github/stars/apphp/awesome-php-ml?style=social)](https://github.com/apphp/awesome-php-ml)
+[![Resources](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/apphp/awesome-php-ml/main/badge/resources.json)](https://github.com/apphp/awesome-php-ml#readme)
 [![Last commit](https://img.shields.io/github/last-commit/apphp/awesome-php-ml)](https://github.com/apphp/awesome-php-ml/commits)
 [![License](https://img.shields.io/github/license/apphp/awesome-php-ml)](https://github.com/apphp/awesome-php-ml/blob/main/LICENSE)
 [![Link Check](https://github.com/apphp/awesome-php-ml/actions/workflows/link-check.yml/badge.svg)](https://github.com/apphp/awesome-php-ml/actions/workflows/link-check.yml)
