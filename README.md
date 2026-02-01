@@ -160,6 +160,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [sarfraznawaz2005/ai-team](https://github.com/sarfraznawaz2005/ai-team) — Package to build and run collaborative teams of AI members with role/task assignments
 - [SearchAugmentedLLM](https://github.com/EliasPereirah/SearchAugmentedLLM) – PHP search-augmented LLM tool that performs web search, extracts, chunks and ranks content to provide context for LLM responses (ideal for RAG applications)
 - [skito/aipi-php](https://github.com/skito/aipi-php) – Universal API client for common AI models in PHP, offering a unified interface to interact with multiple LLM providers
+- [softcreatr/php-mistral-ai-sdk](https://github.com/SoftCreatR/php-mistral-ai-sdk) – PHP SDK for the Mistral AI API, providing an easy wrapper to call Mistral’s LLM and AI endpoints (chat, embeddings, fine-tuning etc.)
 - [takaaki-mizuno/php-llm-json-adapter](https://github.com/takaaki-mizuno/php-llm-json-adapter) — Adapter to normalize and return LLM responses as structured JSON using JSON Schema, with support for multiple providers (OpenAI, Gemini, Bedrock, Ollama)
 - [thojou/php-llm-documents](https://github.com/thojou/php-llm-documents) — PHP library for LLM-based document processing (splitting, embeddings, vector store, search) inspired by LangChain/DocTran
 - [utopia-php/agents](https://github.com/utopia-php/agents) – Simple, lightweight PHP library for AI agent orchestration with multi-provider support (OpenAI, Anthropic, Deepseek, Perplexity, XAI)
