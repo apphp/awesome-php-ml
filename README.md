@@ -272,7 +272,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [openai-php/symfony](https://github.com/openai-php/symfony) – OpenAI PHP for Symfony integration
 - 🌟 [symfony/ai](https://github.com/symfony/ai) – ![GitHub stars](https://img.shields.io/github/stars/symfony/ai?style=social) Symfony AI: built-in AI components and bundles for Symfony apps
 - [symfony/ai-store](https://github.com/symfony/ai-store) – Symfony AI component providing a vector store abstraction for semantic search and RAG workflows
-    
+
 ---
 
 ## Resources
@@ -310,3 +310,4 @@ This list is licensed under the MIT License – see LICENSE for details.
 Contributions are welcome!  
 Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details, including criteria for adding new projects (maintenance, documentation, tests, etc).
 
+[↑ Back to top](#Awesome-PHP-Machine-Learning--AI)
