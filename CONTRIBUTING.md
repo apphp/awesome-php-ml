@@ -26,6 +26,10 @@ If applicable, add:
 - (unmaintained)
 - (bindings)
 
+## Resources badge
+
+The **Resources** badge in the README is powered by `badge/resources.json`. If your PR adds or removes entries from the list, please update the `message` value in that file to reflect the new total.
+
 ## What Will Be Rejected
 
 - Dead or archived projects (unless clearly labeled)
