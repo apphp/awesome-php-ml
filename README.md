@@ -101,6 +101,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 - ⚠️ [angeloskath/php-nlp-tools](https://github.com/angeloskath/php-nlp-tools) – Natural Language Processing tools
 - [CodeWithKyrian/transformers-php](https://github.com/CodeWithKyrian/transformers-php) – Hugging Face–style Transformer inference in PHP using ONNX
+- [davmixcool/php-sentiment-analyzer](https://github.com/davmixcool/php-sentiment-analyzer) – Lightweight PHP library for sentiment analysis using lexical rules
 - [friteuseb/nlp_tools](https://github.com/friteuseb/nlp_tools) – Extension for NLP methods and text analysis
 - ⚠️ [patrickschur/language-detection](https://github.com/patrickschur/language-detection) – Language detection library
 - 🧪 [RubixML/Sentiment](https://github.com/RubixML/Sentiment) — Example project demonstrating sentiment analysis with a neural network (IMDB reviews) using Rubix ML in PHP
@@ -257,6 +258,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 ## Symfony & Framework Integrations
 - [openai-php/symfony](https://github.com/openai-php/symfony) – OpenAI PHP for Symfony integration
 - 🌟 [symfony/ai](https://github.com/symfony/ai) – ![GitHub stars](https://img.shields.io/github/stars/symfony/ai?style=social) Symfony AI: built-in AI components and bundles for Symfony apps
+- [symfony/ai-store](https://github.com/symfony/ai-store) – Symfony AI component providing a vector store abstraction for semantic search and RAG workflows
     
 ---
 
