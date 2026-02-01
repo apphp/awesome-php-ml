@@ -143,6 +143,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 - [adrienbrault/instructrice](https://github.com/adrienbrault/instructrice) — Typed LLM outputs in PHP with flexible schema support (OpenAI, Claude, Gemini, etc.) and type-safe handling of structured responses
 - [ArdaGnsrn/ollama-php](https://github.com/ArdaGnsrn/ollama-php) – A PHP client library for the Ollama LLM server, enabling completions, chat, model management, and embeddings via Ollama’s API
+- [Clarifai/clarifai-php-grpc](https://github.com/Clarifai/clarifai-php-grpc) – Official Clarifai gRPC PHP client for accessing Clarifai’s AI APIs (vision and text recognition)
 - [cognesy/instructor-php](https://github.com/cognesy/instructor-php) – Structured-output helper for LLM responses
 - [deepseek-php/deepseek-php-client](https://github.com/deepseek-php/deepseek-php-client) – PHP client library for integrating with the DeepSeek AI API, providing a fluent API for model queries, streaming results, and support for multiple HTTP clients and models
 - [elastic/elasticsearch-chatgpt-php](https://github.com/elastic/elasticsearch-chatgpt-php) – Experimental PHP library that uses ChatGPT to translate natural language into Elasticsearch DSL queries and perform semantic search over your indices
