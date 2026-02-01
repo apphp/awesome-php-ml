@@ -103,6 +103,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [CodeWithKyrian/transformers-php](https://github.com/CodeWithKyrian/transformers-php) – Hugging Face–style Transformer inference in PHP using ONNX
 - [davmixcool/php-sentiment-analyzer](https://github.com/davmixcool/php-sentiment-analyzer) – Lightweight PHP library for sentiment analysis using lexical rules
 - [friteuseb/nlp_tools](https://github.com/friteuseb/nlp_tools) – Extension for NLP methods and text analysis
+- ⚠️ [googlei18n/myanmar-tools](https://github.com/googlei18n/myanmar-tools) – Myanmar text encoding detection and Zawgyi ↔ Unicode conversion using a trained model (includes PHP support)
 - ⚠️ [patrickschur/language-detection](https://github.com/patrickschur/language-detection) – Language detection library
 - 🧪 [RubixML/Sentiment](https://github.com/RubixML/Sentiment) — Example project demonstrating sentiment analysis with a neural network (IMDB reviews) using Rubix ML in PHP
 - [voku/stop-words](https://github.com/voku/stop-words) – Stop word lists for many languages
@@ -159,6 +160,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [skito/aipi-php](https://github.com/skito/aipi-php) – Universal API client for common AI models in PHP, offering a unified interface to interact with multiple LLM providers
 - [takaaki-mizuno/php-llm-json-adapter](https://github.com/takaaki-mizuno/php-llm-json-adapter) — Adapter to normalize and return LLM responses as structured JSON using JSON Schema, with support for multiple providers (OpenAI, Gemini, Bedrock, Ollama)
 - [thojou/php-llm-documents](https://github.com/thojou/php-llm-documents) — PHP library for LLM-based document processing (splitting, embeddings, vector store, search) inspired by LangChain/DocTran
+- [utopia-php/agents](https://github.com/utopia-php/agents) – Simple, lightweight PHP library for AI agent orchestration with multi-provider support (OpenAI, Anthropic, Deepseek, Perplexity, XAI)
 
 ### Tokenizers & Prompt Utilities
 
