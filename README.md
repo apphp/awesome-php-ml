@@ -208,6 +208,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - 🧪 [garyblankenship/mcp-php](https://github.com/garyblankenship/mcp-php) – PHP example of a Model Context Protocol (MCP) server for connecting LLMs with application logic
 - 🌟 [googleapis/google-cloud-php](https://github.com/googleapis/google-cloud-php) — ![GitHub stars](https://img.shields.io/github/stars/googleapis/google-cloud-php?style=social) Official PHP client library for Google Cloud APIs (including ML/AI services like Vision, Translate, AutoML, Vertex AI, etc.)
 - [grpc/grpc-php](https://github.com/grpc/grpc-php) – gRPC client for model services
+- 🧪 [HossamBalaha/Deep-Learning-Classification-System-using-PHP-and-Keras](https://github.com/HossamBalaha/Deep-Learning-Classification-System-using-PHP-and-Keras) – Example system showing how to integrate a Keras deep learning classifier with a PHP backend
 - 🌟 [neuron-core/neuron-ai](https://github.com/neuron-core/neuron-ai) – ![GitHub stars](https://img.shields.io/github/stars/neuron-core/neuron-ai?style=social) PHP agentic AI framework for building and orchestrating LLMs, RAG etc
 - [nlpcloud/nlpcloud-php](https://github.com/nlpcloud/nlpcloud-php) — PHP client for the NLP Cloud API (access NLP/ML services like NER, sentiment analysis, summarization, text generation, embeddings, translation, and more)
 
