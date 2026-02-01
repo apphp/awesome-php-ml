@@ -20,8 +20,9 @@ jobs:
         run: |
           set -euo pipefail
           COUNT=$(grep -E '^\- .*\[[^]]+\]\(https?://[^)]+\)' README.md \
-            | grep -Ev '\\(https?://(img\\.shields\\.io|awesome\\.re)/' \
-            | grep -Ev '/badge\\.svg(\)|\?)' \
+            | grep -vF 'https://img.shields.io/' \
+            | grep -vF 'https://awesome.re/' \
+            | grep -vF '/badge.svg' \
             | wc -l \
             | tr -d ' ')
           mkdir -p badge
