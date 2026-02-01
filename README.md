@@ -241,6 +241,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [grok-php/laravel](https://github.com/grok-php/laravel) – Laravel package for integrating Grok AI models
 - [moe-mizrak/laravel-openrouter](https://github.com/moe-mizrak/laravel-openrouter) – Laravel package to integrate OpenRouter LLM API
 - 🌟 [neuron-core/neuron-laravel](https://github.com/neuron-core/neuron-laravel) – ![GitHub stars](https://img.shields.io/github/stars/neuron-core/neuron-laravel?style=social) Laravel integration for Neuron Core to build and orchestrate AI/LLM workflows
+- [atlas-php/atlas](https://github.com/atlas-php/atlas) – Laravel AI application framework for structuring agents, tools, prompts, and pipelines on top of Prism PHP
 - 🌟 [openai-php/laravel](https://github.com/openai-php/laravel) – ![GitHub stars](https://img.shields.io/github/stars/openai-php/laravel?style=social) Laravel OpenAI integration 
 - [PapaRascal2020/sidekick](https://github.com/PapaRascal2020/sidekick) – Laravel package offering a unified syntax for working with multiple AI provider APIs (OpenAI, Claude, Cohere, Mistral)
 - [shawnveltman/laravel-openai](https://github.com/shawnveltman/laravel-openai) – Laravel wrapper for OpenAI
