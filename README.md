@@ -166,6 +166,11 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [thojou/php-llm-documents](https://github.com/thojou/php-llm-documents) — PHP library for LLM-based document processing (splitting, embeddings, vector store, search) inspired by LangChain/DocTran
 - [utopia-php/agents](https://github.com/utopia-php/agents) – Simple, lightweight PHP library for AI agent orchestration with multi-provider support (OpenAI, Anthropic, Deepseek, Perplexity, XAI)
 
+### Speech & Text-to-Speech
+- [b7s/fluentvox](https://github.com/b7s/fluentvox) – Fluent PHP API for state-of-the-art text-to-speech and voice cloning (Resemble AI’s Chatterbox), with CLI, GPU acceleration, and multilingual support
+- [b7s/whisper-php](https://github.com/b7s/whisper-php) – PHP wrapper/client for Whisper speech-to-text (ASR), enabling audio transcription via Whisper models
+
+
 ### Tokenizers & Prompt Utilities
 
 - [Gioni06/GPT3Tokenizer](https://github.com/Gioni06/GPT3Tokenizer) – PHP tokenizer compatible with GPT-3 style models
