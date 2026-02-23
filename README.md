@@ -287,6 +287,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 ### General
 
 - [Awesome PHP](https://github.com/ziadoz/awesome-php)
+- 🧪 [dykyi-roman/awesome-claude-code](https://github.com/dykyi-roman/awesome-claude-code) – Curated collection of commands, agents, skills, hooks, and tools for enhancing Claude Code AI workflows
 
 ### Courses & Tutorials
 - [Fun With OpenAI and Laravel](https://laracasts.com/series/fun-with-openai-and-laravel) – Laracasts series showing how to integrate OpenAI into Laravel apps
