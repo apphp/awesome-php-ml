@@ -300,7 +300,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 ### Learning Resources
 
 - [Artificial Intelligence with PHP (GitBook)](https://apphp.gitbook.io/artificial-intelligence-with-php/ "Link to resource") – Guide and reference for doing AI/ML with PHP
-- 🌟 [AI для PHP-разработчиков: интуитивно и на практике (GitBook)](https://apphp.gitbook.io/ai-for-php-developers/ "Link to resource") – Guide on AI with PHP in Russian / English
+- 🌟 [AI for PHP Developers: Intuitive and Practical (GitBook)](https://apphp.gitbook.io/ai-for-php-developers/ "Link to resource") – Guide on AI with PHP in Russian / English
 - [Build Your Own LLM in PHP (GitBook)](https://apphp.gitbook.io/build-your-own-llm-in-php/ "Link to resource") – Guide to building an LLM from scratch in PHP
 - [PHP FANN installation](https://www.php.net/manual/en/fann.installation.php "Link to resource") – Official PHP manual page for installing the FANN (Fast Artificial Neural Network) extension
 - [PHP and LLMs (eBook)](https://leanpub.com/php_and_llms "Link to resource") – Practical book on integrating and using large language models with PHP
