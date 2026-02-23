@@ -1,23 +1,33 @@
 
 name: Badge Update
 
+# Run after merges (push to main) and allow manual runs
 on:
   push:
     branches:
       - main
   workflow_dispatch:
 
+# Required to commit and push updated badge/resources.json
 permissions:
   contents: write
+
+# Prevent overlapping runs on the same ref (avoids push races)
+concurrency:
+  group: badge-update-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   badge-update:
     runs-on: ubuntu-latest
     steps:
+      # Checkout full history so we can reset/rebase and push safely
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
+      # Compute count ("Link to resource" marker) and update badge/resources.json,
+      # then commit + push the change back to main
       - name: Update resources badge
         run: |
           git fetch origin "$GITHUB_REF_NAME"
@@ -51,4 +61,15 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add badge/resources.json
           git commit -m "chore: update resources badge"
-          git push origin "HEAD:$GITHUB_REF_NAME"
+
+          # Rebase/retry to tolerate main advancing while this job runs
+          for i in 1 2 3; do
+            git pull --rebase origin "$GITHUB_REF_NAME" || true
+            if git push origin "HEAD:$GITHUB_REF_NAME"; then
+              exit 0
+            fi
+            sleep 2
+          done
+
+          git pull --rebase origin "$GITHUB_REF_NAME" || true
+          git push --force-with-lease origin "HEAD:$GITHUB_REF_NAME"
