@@ -1,0 +1,54 @@
+
+name: Badge Update
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  badge-update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Update resources badge
+        run: |
+          git fetch origin "$GITHUB_REF_NAME"
+          git reset --hard "origin/$GITHUB_REF_NAME"
+
+          cat > update-badge.php <<'PHP'
+          <?php
+          $readme = file_get_contents('README.md');
+          preg_match_all('~\s+"Link to resource"~', $readme, $matches);
+          $count = (string) count($matches[0]);
+
+          $badgePath = 'badge/resources.json';
+          $badge = json_decode(file_get_contents($badgePath), true);
+          if (!is_array($badge)) {
+              $badge = [];
+          }
+          $badge['schemaVersion'] = $badge['schemaVersion'] ?? 1;
+          $badge['label'] = $badge['label'] ?? 'resources';
+          $badge['message'] = $count;
+          $badge['color'] = $badge['color'] ?? 'blue';
+          file_put_contents($badgePath, json_encode($badge, JSON_UNESCAPED_SLASHES) . "\n");
+          PHP
+
+          php update-badge.php
+
+          if git diff --quiet -- badge/resources.json; then
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add badge/resources.json
+          git commit -m "chore: update resources badge"
+          git push origin "HEAD:$GITHUB_REF_NAME"
