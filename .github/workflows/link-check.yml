@@ -7,11 +7,18 @@ on:
   pull_request:
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   link-check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.head_ref || github.ref_name }}
       - name: Count resources
         id: resources
         run: |
@@ -42,12 +49,48 @@ jobs:
           echo "Resources (\"Link to resource\"): $COUNT" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Ensure badge/resources.json is updated in the PR
-        if: github.event_name == 'pull_request'
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
         run: |
-          if ! git diff --exit-code -- badge/resources.json; then
-            echo "badge/resources.json is out of date. Please commit the updated file." >> "$GITHUB_STEP_SUMMARY"
+          if git diff --quiet -- badge/resources.json; then
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add badge/resources.json
+
+          BRANCH="${GITHUB_HEAD_REF:-$GITHUB_REF_NAME}"
+          git fetch origin "$BRANCH"
+          git rebase "origin/$BRANCH"
+
+          git commit -m "chore: update resources badge"
+          git push --force-with-lease origin "HEAD:$BRANCH"
+
+      - name: Ensure badge/resources.json is updated in fork PRs
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository
+        run: |
+          if ! git diff --quiet -- badge/resources.json; then
+            echo "badge/resources.json is out of date, but this PR comes from a fork so the workflow cannot push commits automatically." >> "$GITHUB_STEP_SUMMARY"
             exit 1
           fi
+
+      - name: Auto-commit updated badge on default branch runs
+        if: github.event_name != 'pull_request'
+        run: |
+          if git diff --quiet -- badge/resources.json; then
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add badge/resources.json
+
+          BRANCH="${GITHUB_REF_NAME}"
+          git fetch origin "$BRANCH"
+          git rebase "origin/$BRANCH"
+
+          git commit -m "chore: update resources badge"
+          git push --force-with-lease origin "HEAD:$BRANCH"
       - name: Check links
         uses: lycheeverse/lychee-action@v1
         with:
