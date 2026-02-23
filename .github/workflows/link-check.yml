@@ -32,7 +32,7 @@ jobs:
           $badge['message'] = (string) $count;
           $badge['color'] = $badge['color'] ?? 'blue';
 
-          file_put_contents($badgePath, json_encode($badge, JSON_UNESCAPED_SLASHES));
+          file_put_contents($badgePath, json_encode($badge, JSON_UNESCAPED_SLASHES) . "\n");
           echo $count, "\n";
           PHP
           php count-resources.php
