@@ -266,14 +266,15 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 ### Search & vector search
 
-- 🌟 [laravel/scout](https://github.com/laravel/scout) – ![GitHub stars](https://img.shields.io/github/stars/laravel/scout?style=social) Search abstraction (useful for vector search)
+- 🌟 [laravel/scout](https://github.com/laravel/scout) – ![GitHub stars](https://img.shields.io/github/stars/laravel/scout?style=social) – Search abstraction (useful for vector search)
 - [teamtnt/laravel-scout-tntsearch-driver](https://github.com/teamtnt/laravel-scout-tntsearch-driver) – Local full-text search
 
 ---
 
 ## Symfony & Framework Integrations
 - [openai-php/symfony](https://github.com/openai-php/symfony) – OpenAI PHP for Symfony integration
-- 🌟 [symfony/ai](https://github.com/symfony/ai) – ![GitHub stars](https://img.shields.io/github/stars/symfony/ai?style=social) Symfony AI: built-in AI components and bundles for Symfony apps
+- 🌟 [symfony/ai](https://github.com/symfony/ai) – ![GitHub stars](https://img.shields.io/github/stars/symfony/ai?style=social) – Symfony AI: built-in AI components and bundles for Symfony apps
+- [soleinjast/symfony-markdown-response-bundle](https://github.com/soleinjast/symfony-markdown-response-bundle) – Symfony bundle that automatically serves Markdown versions of HTML responses to clients
 - [symfony/ai-store](https://github.com/symfony/ai-store) – Symfony AI component providing a vector store abstraction for semantic search and RAG workflows
 
 ---
