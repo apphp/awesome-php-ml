@@ -51,6 +51,12 @@ jobs:
       - name: Ensure badge/resources.json is updated in the PR
         if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
         run: |
+          BRANCH="${GITHUB_HEAD_REF:-$GITHUB_REF_NAME}"
+          git fetch origin "$BRANCH"
+          git rebase "origin/$BRANCH"
+
+          php count-resources.php
+
           if git diff --quiet -- badge/resources.json; then
             exit 0
           fi
@@ -58,10 +64,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add badge/resources.json
-
-          BRANCH="${GITHUB_HEAD_REF:-$GITHUB_REF_NAME}"
-          git fetch origin "$BRANCH"
-          git rebase "origin/$BRANCH"
 
           git commit -m "chore: update resources badge"
           git push --force-with-lease origin "HEAD:$BRANCH"
@@ -77,6 +79,12 @@ jobs:
       - name: Auto-commit updated badge on default branch runs
         if: github.event_name != 'pull_request'
         run: |
+          BRANCH="${GITHUB_REF_NAME}"
+          git fetch origin "$BRANCH"
+          git rebase "origin/$BRANCH"
+
+          php count-resources.php
+
           if git diff --quiet -- badge/resources.json; then
             exit 0
           fi
@@ -84,10 +92,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add badge/resources.json
-
-          BRANCH="${GITHUB_REF_NAME}"
-          git fetch origin "$BRANCH"
-          git rebase "origin/$BRANCH"
 
           git commit -m "chore: update resources badge"
           git push --force-with-lease origin "HEAD:$BRANCH"
