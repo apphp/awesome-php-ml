@@ -128,7 +128,8 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 *Numerical computing, matrix operations, statistics, and related math foundations for ML and data science in PHP.*
 
-- 🌟 [brick/math](https://github.com/brick/math) — Arbitrary-precision arithmetic for PHP (BigInteger, BigDecimal, BigRational)
+- 🌟 [brick/math](https://github.com/brick/math) — ![GitHub stars](https://img.shields.io/github/stars/brick/math?style=social) Arbitrary-precision arithmetic for PHP (BigInteger, BigDecimal, BigRational)
+- 🌟 [Hi-Folks/statistics](https://github.com/Hi-Folks/statistics) – ![GitHub stars](https://img.shields.io/github/stars/Hi-Folks/statistics?style=social) Probability distributions and statistical functions library for PHP
 - [markrogoyski/math-php](https://github.com/markrogoyski/math-php) – Math library for linear algebra, statistics, and calculus
 - [mcordingley/LinearAlgebra](https://github.com/mcordingley/LinearAlgebra) – Stand-alone linear algebra library
 - ⚠️ [NumPHP/NumPHP](https://github.com/NumPHP/NumPHP) – Math library for scientific computing
@@ -152,8 +153,8 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - 🌟 [google-gemini-php/client](https://github.com/google-gemini-php/client) – ![GitHub stars](https://img.shields.io/github/stars/google-gemini-php/client?style=social) Gemini PHP is a community-maintained PHP API client that allows you to interact with the Gemini AI API
 - ⚠️ [HosonoDE/EasyAI-PHP](https://github.com/HosonoDE/EasyAI-PHP) – High-level AI integration library for PHP that simplifies using LLMs
 - 🌟 [kambo-1st/langchain-php](https://github.com/kambo-1st/langchain-php) ![GitHub stars](https://img.shields.io/github/stars/kambo-1st/langchain-php?style=social) A PHP port of the LangChain framework for building composable LLM-powered applications
-- 🌟 [llm-agents-php/agents](https://github.com/llm-agents-php/agents) - ![GitHub stars](https://img.shields.io/github/stars/llm-agents-php/agents?style=social) LM Agents is a PHP library for building and managing Language Model (LLM) based agents
-- [llm-agents-php/prompt-generator](https://github.com/llm-agents-php/prompt-generator) - Prompt generator for LLM agents with interceptors
+- 🌟 [llm-agents-php/agents](https://github.com/llm-agents-php/agents) – ![GitHub stars](https://img.shields.io/github/stars/llm-agents-php/agents?style=social) LM Agents is a PHP library for building and managing Language Model (LLM) based agents
+- [llm-agents-php/prompt-generator](https://github.com/llm-agents-php/prompt-generator) – Prompt generator for LLM agents with interceptors
 - [ModelFlow-AI (GitHub org)](https://github.com/modelflow-ai) – Collection of PHP packages for unified access to AI models, embeddings, and chat (OpenAI, Mistral, Ollama) 
 - [mzarnecki/php-rag](https://github.com/mzarnecki/php-rag) – PHP RAG toolkit for connecting vector search and LLMs in retrieval-augmented workflows
 - 🌟 [openai-php/client](https://github.com/openai-php/client) – ![GitHub stars](https://img.shields.io/github/stars/openai-php/client?style=social) Official OpenAI PHP client
@@ -286,7 +287,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 ### ML / AI Platforms
 
-- [ONNX Runtime](https://onnxruntime.ai) - Cross-platform, high performance ML inferencing and training accelerator
+- [ONNX Runtime](https://onnxruntime.ai) – Cross-platform, high performance ML inferencing and training accelerator
 - [tensorflow/tfjs](https://github.com/tensorflow/tfjs) — JavaScript machine learning platform for training and running models in the browser or Node.js (TensorFlow.js)
 
 ### Learning Resources
@@ -296,8 +297,8 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [Build Your Own LLM in PHP (GitBook)](https://apphp.gitbook.io/build-your-own-llm-in-php/) – Guide to building an LLM from scratch in PHP
 - [PHP FANN installation](https://www.php.net/manual/en/fann.installation.php) – Official PHP manual page for installing the FANN (Fast Artificial Neural Network) extension
 - [PHP and LLMs (eBook)](https://leanpub.com/php_and_llms) – Practical book on integrating and using large language models with PHP
-- [PHP-ML Tutorials](https://php-ml.readthedocs.io/en/latest/) - Documentation for PHP-ML for machine learning
-- [Rubix ML Docs](https://rubixml.github.io/ML/latest/) - Comprehensive documentation for Rubix ML
+- [PHP-ML Tutorials](https://php-ml.readthedocs.io/en/latest/) – Documentation for PHP-ML for machine learning
+- [Rubix ML Docs](https://rubixml.github.io/ML/latest/) – Comprehensive documentation for Rubix ML
  
 ---
 
