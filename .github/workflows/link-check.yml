@@ -7,6 +7,7 @@ on:
   push:
     branches:
       - main
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -20,7 +21,28 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Show resources count diff (PR)
+        if: github.event_name == 'pull_request'
+        run: |
+          cat > resources-diff.php <<'PHP'
+          <?php
+          $readme = file_get_contents('README.md');
+          preg_match_all('~\s+"Link to resource"~', $readme, $matches);
+          $new = (string) count($matches[0]);
+
+          $badge = json_decode(file_get_contents('badge/resources.json'), true);
+          $old = (string) (($badge['message'] ?? ''));
+
+          echo "OLD=$old\n";
+          echo "NEW=$new\n";
+          PHP
+
+          php resources-diff.php | tee resources-diff.txt
+          OLD="$(grep '^OLD=' resources-diff.txt | cut -d= -f2- | tr -d '\r' | tr -d '\n')"
+          NEW="$(grep '^NEW=' resources-diff.txt | cut -d= -f2- | tr -d '\r' | tr -d '\n')"
+          echo "Resources badge: $OLD -> $NEW" >> "$GITHUB_STEP_SUMMARY"
       - name: Update resources badge
+        if: github.event_name != 'pull_request'
         run: |
           cat > update-badge.php <<'PHP'
           <?php
@@ -51,3 +73,8 @@ jobs:
           git commit -m "chore: update resources badge"
           git pull --rebase origin "$GITHUB_REF_NAME"
           git push origin "HEAD:$GITHUB_REF_NAME"
+
+      - name: Check links
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: --no-progress --exclude-mail --accept 200,429 README.md
