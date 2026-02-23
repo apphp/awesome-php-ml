@@ -28,7 +28,15 @@ If applicable, add:
 
 ## Resources badge
 
-The **Resources** badge in the README is powered by `badge/resources.json`. If your PR adds or removes entries from the list, please update the `message` value in that file to reflect the new total.
+The **Resources** badge in the README is powered by `badge/resources.json`.
+
+When you add a new resource link to `README.md`, include the link title `"Link to resource"` so it can be counted automatically:
+
+```markdown
+- [repo/name](link "Link to resource") – Short description
+```
+
+If your PR changes the number of resources, ensure `badge/resources.json` is updated accordingly.
 
 ## What Will Be Rejected
 

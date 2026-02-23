@@ -12,6 +12,42 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Count resources
+        id: resources
+        run: |
+          cat > count-resources.php <<'PHP'
+          <?php
+          $readme = file_get_contents('README.md');
+          preg_match_all('~\s+"Link to resource"~', $readme, $matches);
+          $count = count($matches[0]);
+
+          $badgePath = 'badge/resources.json';
+          $badge = json_decode(file_get_contents($badgePath), true);
+          if (!is_array($badge)) {
+              $badge = [];
+          }
+
+          $badge['schemaVersion'] = $badge['schemaVersion'] ?? 1;
+          $badge['label'] = $badge['label'] ?? 'resources';
+          $badge['message'] = (string) $count;
+          $badge['color'] = $badge['color'] ?? 'blue';
+
+          file_put_contents($badgePath, json_encode($badge, JSON_UNESCAPED_SLASHES));
+          echo $count, "\n";
+          PHP
+          php count-resources.php
+
+          COUNT="$(php -r '$badge=json_decode(file_get_contents("badge/resources.json"), true); echo (string)($badge["message"] ?? "");')"
+          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+          echo "Resources (\"Link to resource\"): $COUNT" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Ensure badge/resources.json is updated in the PR
+        if: github.event_name == 'pull_request'
+        run: |
+          if ! git diff --exit-code -- badge/resources.json; then
+            echo "badge/resources.json is out of date. Please commit the updated file." >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
       - name: Check links
         uses: lycheeverse/lychee-action@v1
         with:
