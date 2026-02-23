@@ -248,6 +248,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [Capevace/llm-magic](https://github.com/Capevace/llm-magic) – Laravel-centric LLM toolkit with support for AI features like chat and structured data extraction
 - [coding-wisely/taskallama](https://github.com/coding-wisely/taskallama) – Laravel package for seamless integration with the Ollama LLM API for AI-powered content generation, task assistance, conversation and embeddings
 - [grok-php/laravel](https://github.com/grok-php/laravel) – Laravel package for integrating Grok AI models
+- 🌟 [laravel/ai](https://github.com/laravel/ai) – ![GitHub stars](https://img.shields.io/github/stars/laravel/ai?style=social) The Laravel AI SDK: a unified, expressive Laravel API for interacting with AI providers (LLMs, images, embeddings, agents, tools)
 - [moe-mizrak/laravel-openrouter](https://github.com/moe-mizrak/laravel-openrouter) – Laravel package to integrate OpenRouter LLM API
 - 🌟 [neuron-core/neuron-laravel](https://github.com/neuron-core/neuron-laravel) – ![GitHub stars](https://img.shields.io/github/stars/neuron-core/neuron-laravel?style=social) Laravel integration for Neuron Core to build and orchestrate AI/LLM workflows
 - [atlas-php/atlas](https://github.com/atlas-php/atlas) – Laravel AI application framework for structuring agents, tools, prompts, and pipelines on top of Prism PHP
