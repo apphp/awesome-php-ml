@@ -311,7 +311,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 ## License
 
-This list is licensed under the MIT License – see LICENSE for details.
+This list is licensed under the MIT License – see LICENSE for details..
 
 ## Contributing
 
