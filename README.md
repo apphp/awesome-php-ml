@@ -159,6 +159,8 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [mzarnecki/php-rag](https://github.com/mzarnecki/php-rag) – PHP RAG toolkit for connecting vector search and LLMs in retrieval-augmented workflows
 - 🌟 [openai-php/client](https://github.com/openai-php/client) – ![GitHub stars](https://img.shields.io/github/stars/openai-php/client?style=social) Official OpenAI PHP client
 - 🌟 [orhanerday/open-ai](https://github.com/orhanerday/open-ai) – ![GitHub stars](https://img.shields.io/github/stars/orhanerday/open-ai?style=social) Popular OpenAI PHP SDK
+- 🌟 [prism-php/prism](https://github.com/prism-php/prism) – Laravel package offering a unified, expressive interface for integrating Large Language Models (LLMs) and AI tools across multiple providers in your application
+- [prism-php/bedrock](https://github.com/prism-php/bedrock) – AWS Bedrock provider for the Prism PHP framework, adding Bedrock LLM and embeddings support to Laravel Prism integrations
 - [sarfraznawaz2005/ai-team](https://github.com/sarfraznawaz2005/ai-team) — Package to build and run collaborative teams of AI members with role/task assignments
 - [SearchAugmentedLLM](https://github.com/EliasPereirah/SearchAugmentedLLM) – PHP search-augmented LLM tool that performs web search, extracts, chunks and ranks content to provide context for LLM responses (ideal for RAG applications)
 - [skito/aipi-php](https://github.com/skito/aipi-php) – Universal API client for common AI models in PHP, offering a unified interface to interact with multiple LLM providers
