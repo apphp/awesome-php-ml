@@ -155,7 +155,8 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - 🌟 [kambo-1st/langchain-php](https://github.com/kambo-1st/langchain-php "Link to resource") ![GitHub stars](https://img.shields.io/github/stars/kambo-1st/langchain-php?style=social) A PHP port of the LangChain framework for building composable LLM-powered applications
 - 🌟 [llm-agents-php/agents](https://github.com/llm-agents-php/agents "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/llm-agents-php/agents?style=social) LM Agents is a PHP library for building and managing Language Model (LLM) based agents
 - [llm-agents-php/prompt-generator](https://github.com/llm-agents-php/prompt-generator "Link to resource") – Prompt generator for LLM agents with interceptors
-- [ModelFlow-AI (GitHub org)](https://github.com/modelflow-ai "Link to resource") – Collection of PHP packages for unified access to AI models, embeddings, and chat (OpenAI, Mistral, Ollama) 
+- [ModelFlow-AI (GitHub org)](https://github.com/modelflow-ai "Link to resource") – Collection of PHP packages for unified access to AI models, embeddings, and chat (OpenAI, Mistral, Ollama)
+- [mozex/anthropic-php](https://github.com/mozex/anthropic-php "Link to resource") – Community-maintained PHP API client for the Anthropic (Claude) AI API, supporting messages, streaming, tool use, and batch processing
 - [mzarnecki/php-rag](https://github.com/mzarnecki/php-rag "Link to resource") – PHP RAG toolkit for connecting vector search and LLMs in retrieval-augmented workflows
 - 🌟 [openai-php/client](https://github.com/openai-php/client "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/openai-php/client?style=social) Official OpenAI PHP client
 - 🌟 [orhanerday/open-ai](https://github.com/orhanerday/open-ai "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/orhanerday/open-ai?style=social) Popular OpenAI PHP SDK
