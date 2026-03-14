@@ -130,7 +130,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 - 🌟 [brick/math](https://github.com/brick/math "Link to resource") — ![GitHub stars](https://img.shields.io/github/stars/brick/math?style=social) Arbitrary-precision arithmetic for PHP (BigInteger, BigDecimal, BigRational)
 - 🌟 [Hi-Folks/statistics](https://github.com/Hi-Folks/statistics "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/Hi-Folks/statistics?style=social) Probability distributions and statistical functions library for PHP
-- [markrogoyski/math-php](https://github.com/markrogoyski/math-php "Link to resource") – Math library for linear algebra, statistics, and calculus
+- [markrogoyski/math-php](https://github.com/markrogoyski/math-php "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/markrogoyski/math-php?style=social) Math library for linear algebra, statistics, and calculus
 - [mcordingley/LinearAlgebra](https://github.com/mcordingley/LinearAlgebra "Link to resource") – Stand-alone linear algebra library
 - ⚠️ [NumPHP/NumPHP](https://github.com/NumPHP/NumPHP "Link to resource") – Math library for scientific computing
 - [rindow/rindow-math-matrix](https://github.com/rindow/rindow-math-matrix "Link to resource") – Foundational package for scientific matrix operations
