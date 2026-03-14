@@ -264,6 +264,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [atlas-php/atlas](https://github.com/atlas-php/atlas "Link to resource") – Laravel AI application framework for structuring agents, tools, prompts, and pipelines on top of Prism PHP
 - 🌟 [openai-php/laravel](https://github.com/openai-php/laravel "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/openai-php/laravel?style=social) Laravel OpenAI integration 
 - [PapaRascal2020/sidekick](https://github.com/PapaRascal2020/sidekick "Link to resource") – Laravel package offering a unified syntax for working with multiple AI provider APIs (OpenAI, Claude, Cohere, Mistral)
+- 🌟 [php-mcp/laravel](https://github.com/php-mcp/laravel "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/php-mcp/laravel?style=social) – Laravel package for building Model Context Protocol (MCP) servers and exposing application tools to LLMs
 - [shawnveltman/laravel-openai](https://github.com/shawnveltman/laravel-openai "Link to resource") – Laravel wrapper for OpenAI
 - [rahasistiyakofficial/laravel-ai-integration](https://github.com/rahasistiyakofficial/laravel-ai-integration "Link to resource") — This is a comprehensive, enterprise-ready package that provides seamless integration with multiple AI providers through a unified, elegant API
 
