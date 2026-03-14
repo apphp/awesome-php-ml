@@ -13,6 +13,29 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 
 > **Goal:** make it easy to build intelligent systems with PHP — from classic ML to modern LLM-based workflows.
 
+## Contents
+
+- [What is this?](#what-is-this)
+- [How to use this list](#how-to-use-this-list)
+- [Example "recipes"](#example-recipes)
+- [Recommended core stack](#recommended-core-stack)
+- [Legend](#legend)
+- [Machine Learning](#machine-learning)
+- [Deep Learning & Neural Networks](#deep-learning--neural-networks)
+- [Natural Language Processing](#natural-language-processing)
+- [Computer Vision, Image & Video Processing](#computer-vision-image--video-processing)
+- [Math, Statistics & Linear Algebra](#math-statistics--linear-algebra)
+- [LLMs & AI APIs](#llms--ai-apis)
+- [Embeddings & Vector Search](#embeddings--vector-search)
+- [Data Processing](#data-processing)
+- [Interop & Model Serving](#interop--model-serving)
+- [Tools & Utilities](#tools--utilities)
+- [Laravel & Framework Integrations](#laravel--framework-integrations)
+- [Symfony & Framework Integrations](#symfony--framework-integrations)
+- [Resources](#resources)
+
+---
+
 ## What is this?
 
 - Curated list of **PHP libraries and tools** for Machine Learning, AI, NLP, LLMs and Data Science.
@@ -52,29 +75,6 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - `🌟` – widely used / production-ready projects
 - `🧪` – experimental or research-oriented projects
 - `⚠️` – projects with limited maintenance, older APIs, or niche usage; review before using in new projects
-
----
-
-## Contents
-
-- [What is this?](#what-is-this)
-- [How to use this list](#how-to-use-this-list)
-- [Example "recipes"](#example-recipes)
-- [Recommended core stack](#recommended-core-stack)
-- [Legend](#legend)
-- [Machine Learning](#machine-learning)
-- [Deep Learning & Neural Networks](#deep-learning--neural-networks)
-- [Natural Language Processing](#natural-language-processing)
-- [Computer Vision, Image & Video Processing](#computer-vision-image--video-processing)
-- [Math, Statistics & Linear Algebra](#math-statistics--linear-algebra)
-- [LLMs & AI APIs](#llms--ai-apis)
-- [Embeddings & Vector Search](#embeddings--vector-search)
-- [Data Processing](#data-processing)
-- [Interop & Model Serving](#interop--model-serving)
-- [Tools & Utilities](#tools--utilities)
-- [Laravel & Framework Integrations](#laravel--framework-integrations)
-- [Symfony & Framework Integrations](#symfony--framework-integrations)
-- [Resources](#resources)
 
 ---
 
