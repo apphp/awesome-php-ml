@@ -194,6 +194,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - 🌟 [meilisearch/meilisearch-php](https://github.com/meilisearch/meilisearch-php "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/meilisearch/meilisearch-php?style=social) Client for Meilisearch search engine
 - 🌟 [pgvector/pgvector](https://github.com/pgvector/pgvector "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/pgvector/pgvector?style=social) Vector similarity search extension for PostgreSQL
 - 🌟 [pgvector/pgvector-php](https://github.com/pgvector/pgvector-php "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/pgvector/pgvector-php?style=social) PHP client for pgvector on PostgreSQL
+- [probots-io/pinecone-php](https://github.com/probots-io/pinecone-php) – PHP client for Pinecone vector database used in semantic search and RAG pipelines
 - [redis-applied-ai/redis-vector-php](https://github.com/redis-applied-ai/redis-vector-php "Link to resource") — PHP client for Redis Vector Library (RedisVL) to support vector similarity search and AI-oriented queries
 - [voyanara/milvus-php-sdk](https://github.com/voyanara/milvus-php-sdk "Link to resource") – PHP SDK for Milvus vector database API v2
 
