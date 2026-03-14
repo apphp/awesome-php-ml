@@ -59,7 +59,8 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 - [What is this?](#what-is-this)
 - [How to use this list](#how-to-use-this-list)
-- [Recommended core stack](#recommended-core-stack-)
+- [Example "recipes"](#example-recipes)
+- [Recommended core stack](#recommended-core-stack)
 - [Legend](#legend)
 - [Machine Learning](#machine-learning)
 - [Deep Learning & Neural Networks](#deep-learning--neural-networks)
