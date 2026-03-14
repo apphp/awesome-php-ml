@@ -13,6 +13,50 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 
 > **Goal:** make it easy to build intelligent systems with PHP — from classic ML to modern LLM-based workflows.
 
+## Contents
+
+- [Contents](#contents)
+- [Requirements](#requirements)
+- [What is this?](#what-is-this)
+- [How to use this list](#how-to-use-this-list)
+- [Quick Start](#quick-start)
+- [Example "recipes"](#example-recipes)
+- [Recommended core stack](#recommended-core-stack)
+- [Legend](#legend)
+- [Machine Learning](#machine-learning)
+- [Deep Learning & Neural Networks](#deep-learning--neural-networks)
+- [Natural Language Processing](#natural-language-processing)
+- [Computer Vision, Image & Video Processing](#computer-vision-image--video-processing)
+- [Math, Statistics & Linear Algebra](#math-statistics--linear-algebra)
+- [LLMs & AI APIs](#llms--ai-apis)
+- [Embeddings & Vector Search](#embeddings--vector-search)
+- [Data Processing](#data-processing)
+- [Interop & Model Serving](#interop--model-serving)
+- [Tools & Utilities](#tools--utilities)
+- [Laravel & Framework Integrations](#laravel--framework-integrations)
+- [Symfony & Framework Integrations](#symfony--framework-integrations)
+- [Resources](#resources)
+
+---
+
+## Requirements
+
+**PHP Version Requirements:**
+- **Minimum**: PHP 7.4+ (most libraries)
+- **Recommended**: PHP 8.1+ for best performance and features
+- **Latest features**: PHP 8.2+ for some cutting-edge libraries
+
+**Common dependencies:**
+- **Extensions**: `mbstring`, `curl`, `json`, `gd` (for image processing)
+- **Optional**: `redis`, `pdo_pgsql` (for vector search), `ffi` (for native bindings)
+
+**Memory considerations:**
+- **Basic ML**: 256MB+ RAM
+- **Neural networks**: 512MB+ RAM  
+- **Large datasets**: 1GB+ RAM recommended
+
+---
+
 ## What is this?
 
 - Curated list of **PHP libraries and tools** for Machine Learning, AI, NLP, LLMs and Data Science.
@@ -26,6 +70,28 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 - **RAG (Retrieval-Augmented Generation)** – combine [php-rag](https://github.com/mzarnecki/php-rag) with vector databases like [pgvector](https://github.com/pgvector/pgvector) or [Meilisearch](https://github.com/meilisearch/meilisearch-php).
 - **Numerical computing & math** – explore [Math, Statistics & Linear Algebra](#math-statistics--linear-algebra) for tensors, matrices, and statistics.
 - **Production integration** – use [Interop & Model Serving](#interop--model-serving) and framework integrations to wire models into real apps.
+
+### Quick Start
+
+**For beginners new to PHP ML/AI:**
+
+```bash
+# Install a core ML library
+composer require rubix/ml
+composer require php-ai/phpml
+
+# Install LLM client
+composer require openai-php/client
+
+# Install vector search for RAG
+composer require llphant/llphant
+```
+
+**Basic examples:**
+- **Classification**: Use `RubixML/RubixML` with `KNearestNeighbors` for simple classification tasks
+- **LLM integration**: Use `openai-php/client` to call GPT models from PHP
+- **Text analysis**: Use `php-ai/php-ml` for sentiment analysis and tokenization
+- **Vector search**: Use `LLPhant/LLPhant` with `pgvector` for semantic search
 
 ### Example "recipes"
 
@@ -51,29 +117,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 - `🌟` – widely used / production-ready projects
 - `🧪` – experimental or research-oriented projects
-- `⚠️` – projects with limited maintenance, older APIs, or niche usage; review before using in new projects.
-
----
-
-## Contents
-
-- [What is this?](#what-is-this)
-- [How to use this list](#how-to-use-this-list)
-- [Recommended core stack](#recommended-core-stack-)
-- [Legend](#legend)
-- [Machine Learning](#machine-learning)
-- [Deep Learning & Neural Networks](#deep-learning--neural-networks)
-- [Natural Language Processing](#natural-language-processing)
-- [Computer Vision, Image & Video Processing](#computer-vision-image--video-processing)
-- [Math, Statistics & Linear Algebra](#math-statistics--linear-algebra)
-- [LLMs & AI APIs](#llms--ai-apis)
-- [Embeddings & Vector Search](#embeddings--vector-search)
-- [Data Processing](#data-processing)
-- [Interop & Model Serving](#interop--model-serving)
-- [Tools & Utilities](#tools--utilities)
-- [Laravel & Framework Integrations](#laravel--framework-integrations)
-- [Symfony & Framework Integrations](#symfony--framework-integrations)
-- [Resources](#resources)
+- `⚠️` – projects with limited maintenance, older APIs, or niche usage; review before using in new projects
 
 ---
 
@@ -83,8 +127,9 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 - ⚠️ [danielefavi/brainy](https://github.com/danielefavi/brainy "Link to resource") – Simple PHP class for neural networks and machine learning
 - [dr-que/polynomial-regression](https://github.com/jbboehr/PolynomialRegression.php "Link to resource") – Polynomial regression for PHP
+- ⚠️ [pecl/svm](https://pecl.php.net/package/svm/0.2.3 "Link to resource") – PHP extension providing bindings to the LIBSVM library for Support Vector Machine classification and regression
 - 🌟 [CodeWithKyrian/transformers-php](https://github.com/CodeWithKyrian/transformers-php "Link to resource") — ![GitHub stars](https://img.shields.io/github/stars/CodeWithKyrian/transformers-php?style=social) A PHP toolkit for running Hugging Face–style Transformer models with ONNX Runtime (text generation, summarization, classification, etc.)
-- [php-ai/php-ml](https://gitlab.com/php-ai/php-ml "Link to resource") – Core machine learning algorithms for PHP
+- 🌟 [php-ai/php-ml](https://gitlab.com/php-ai/php-ml "Link to resource") – Core machine learning algorithms for PHP
 - [php-ai/php-ml-examples](https://github.com/php-ai/php-ml-examples "Link to resource") – Practical examples for PHP-ML
 
 ---
@@ -93,6 +138,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 *PHP libraries for neural networks, deep learning architectures, and advanced learners built on tensors.*
 
+- 🧪 [rindow/rindow-neuralnetworks](https://github.com/rindow/rindow-neuralnetworks "Link to resource") – Deep learning framework for PHP providing neural network layers, training utilities, and GPU/accelerated backends via the Rindow numerical computing ecosystem
 - 🌟 [RubixML/RubixML](https://github.com/RubixML/RubixML "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/RubixML/RubixML?style=social) High-level ML framework with pipelines and datasets
 
 ---
@@ -117,10 +163,10 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 *Image manipulation, preprocessing, and computer vision workloads from PHP.*
 
-- [aschmelyun/subvert](https://github.com/aschmelyun/subvert "Link to resource") - Generate subtitles, summaries, and chapters from videos in seconds
-- [Intervention/image](https://github.com/Intervention/image "Link to resource") – Image manipulation library for CV preprocessing
+- 🧪 [aschmelyun/subvert](https://github.com/aschmelyun/subvert "Link to resource") - Generate subtitles, summaries, and chapters from videos in seconds
+- 🌟 [Intervention/image](https://github.com/Intervention/image "Link to resource") — ![GitHub stars](https://img.shields.io/github/stars/Intervention/image?style=social) Image manipulation library for CV preprocessing
 - [jcupitt/vips](https://github.com/jcupitt/libvips "Link to resource") – Fast image processing library with PHP bindings
-- [php-opencv/php-opencv](https://github.com/php-opencv/php-opencv "Link to resource") – OpenCV bindings for PHP
+- 🧪 [php-opencv/php-opencv](https://github.com/php-opencv/php-opencv "Link to resource") – OpenCV bindings for PHP
 
 ---
 
@@ -130,11 +176,12 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 - 🌟 [brick/math](https://github.com/brick/math "Link to resource") — ![GitHub stars](https://img.shields.io/github/stars/brick/math?style=social) Arbitrary-precision arithmetic for PHP (BigInteger, BigDecimal, BigRational)
 - 🌟 [Hi-Folks/statistics](https://github.com/Hi-Folks/statistics "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/Hi-Folks/statistics?style=social) Probability distributions and statistical functions library for PHP
-- [markrogoyski/math-php](https://github.com/markrogoyski/math-php "Link to resource") – Math library for linear algebra, statistics, and calculus
+- 🌟 [markrogoyski/math-php](https://github.com/markrogoyski/math-php "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/markrogoyski/math-php?style=social) Math library for linear algebra, statistics, and calculus
 - [mcordingley/LinearAlgebra](https://github.com/mcordingley/LinearAlgebra "Link to resource") – Stand-alone linear algebra library
 - ⚠️ [NumPHP/NumPHP](https://github.com/NumPHP/NumPHP "Link to resource") – Math library for scientific computing
-- [rindow/rindow-math-matrix](https://github.com/rindow/rindow-math-matrix "Link to resource") – Foundational package for scientific matrix operations
-- [RubixML/numpower](https://github.com/RubixML/numpower "Link to resource") – High-performance numerical computing library inspired by NumPy
+- 🧪 [phpmlkit/ndarray](https://github.com/phpmlkit/ndarray "Link to resource") – Multidimensional array (ndarray) implementation for PHP inspired by NumPy, useful for numerical computing and machine learning workloads
+- 🧪 [rindow/rindow-math-matrix](https://github.com/rindow/rindow-math-matrix "Link to resource") – Foundational package for scientific matrix operations
+- 🌟 [RubixML/numpower](https://github.com/RubixML/numpower "Link to resource") – High-performance numerical computing library inspired by NumPy
 - 🌟 [RubixML/Tensor](https://github.com/RubixML/Tensor "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/RubixML/Tensor?style=social) N-dimensional tensors for numerical computing
 
 ---
@@ -143,7 +190,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 *Clients, SDKs, and frameworks for calling hosted LLMs and other AI providers from PHP.*
 
-- [adrienbrault/instructrice](https://github.com/adrienbrault/instructrice "Link to resource") — Typed LLM outputs in PHP with flexible schema support (OpenAI, Claude, Gemini, etc.) and type-safe handling of structured responses
+- 🧪 [adrienbrault/instructrice](https://github.com/adrienbrault/instructrice "Link to resource") — Typed LLM outputs in PHP with flexible schema support (OpenAI, Claude, Gemini, etc.) and type-safe handling of structured responses
 - [ArdaGnsrn/ollama-php](https://github.com/ArdaGnsrn/ollama-php "Link to resource") – A PHP client library for the Ollama LLM server, enabling completions, chat, model management, and embeddings via Ollama’s API
 - [Clarifai/clarifai-php-grpc](https://github.com/Clarifai/clarifai-php-grpc "Link to resource") – Official Clarifai gRPC PHP client for accessing Clarifai’s AI APIs (vision and text recognition)
 - [cognesy/instructor-php](https://github.com/cognesy/instructor-php "Link to resource") – Structured-output helper for LLM responses
@@ -152,6 +199,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [FunkyOz/mulagent](https://github.com/FunkyOz/mulagent "Link to resource") – Multi-agent orchestration framework for LLM applications
 - 🌟 [google-gemini-php/client](https://github.com/google-gemini-php/client "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/google-gemini-php/client?style=social) Gemini PHP is a community-maintained PHP API client that allows you to interact with the Gemini AI API
 - ⚠️ [HosonoDE/EasyAI-PHP](https://github.com/HosonoDE/EasyAI-PHP "Link to resource") – High-level AI integration library for PHP that simplifies using LLMs
+- 🧪 [carmelosantana/php-agents](https://github.com/carmelosantana/php-agents) – PHP framework for building AI agents with tool use, provider abstraction and multi-model support
 - 🌟 [kambo-1st/langchain-php](https://github.com/kambo-1st/langchain-php "Link to resource") ![GitHub stars](https://img.shields.io/github/stars/kambo-1st/langchain-php?style=social) A PHP port of the LangChain framework for building composable LLM-powered applications
 - 🌟 [llm-agents-php/agents](https://github.com/llm-agents-php/agents "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/llm-agents-php/agents?style=social) LM Agents is a PHP library for building and managing Language Model (LLM) based agents
 - [llm-agents-php/prompt-generator](https://github.com/llm-agents-php/prompt-generator "Link to resource") – Prompt generator for LLM agents with interceptors
@@ -177,6 +225,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 ### Tokenizers & Prompt Utilities
 
+- [CodeWithKyrian/tokenizers-php](https://github.com/CodeWithKyrian/tokenizers-php "Link to resource") – PHP bindings for Hugging Face Tokenizers, enabling fast tokenization for transformer and LLM models
 - [Gioni06/GPT3Tokenizer](https://github.com/Gioni06/GPT3Tokenizer "Link to resource") – PHP tokenizer compatible with GPT-3 style models
 - [yethee/tiktoken-php](https://github.com/yethee/tiktoken-php "Link to resource") – PHP implementation of OpenAI’s *tiktoken* tokenizer for token counting and optimization
 
@@ -187,11 +236,14 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 *Libraries for generating embeddings and performing vector similarity search from PHP applications.*
 
 - 🌟 [algolia/algoliasearch-client-php](https://github.com/algolia/algoliasearch-client-php "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/algolia/algoliasearch-client-php?style=social) Algolia search client
+- [CodeWithKyrian/chromadb-php](https://github.com/CodeWithKyrian/chromadb-php "Link to resource") – PHP client for ChromaDB, enabling vector similarity search and embedding storage for AI and RAG applications
+- [hkulekci/qdrant-php](https://github.com/hkulekci/qdrant-php "Link to resource") – PHP client for the Qdrant vector database, enabling vector similarity search and embedding storage for AI and RAG applications
 - [llm-agents-php/vector-storage](https://github.com/llm-agents-php/vector-storage "Link to resource") – LLM Agents Vector Storage
 - 🌟 [LLPhant/LLPhant](https://github.com/LLPhant/LLPhant "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/LLPhant/LLPhant?style=social) Comprehensive PHP generative AI framework supporting LLMs, embeddings, vector search and more
 - 🌟 [meilisearch/meilisearch-php](https://github.com/meilisearch/meilisearch-php "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/meilisearch/meilisearch-php?style=social) Client for Meilisearch search engine
 - 🌟 [pgvector/pgvector](https://github.com/pgvector/pgvector "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/pgvector/pgvector?style=social) Vector similarity search extension for PostgreSQL
 - 🌟 [pgvector/pgvector-php](https://github.com/pgvector/pgvector-php "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/pgvector/pgvector-php?style=social) PHP client for pgvector on PostgreSQL
+- [probots-io/pinecone-php](https://github.com/probots-io/pinecone-php) – PHP client for Pinecone vector database used in semantic search and RAG pipelines
 - [redis-applied-ai/redis-vector-php](https://github.com/redis-applied-ai/redis-vector-php "Link to resource") — PHP client for Redis Vector Library (RedisVL) to support vector similarity search and AI-oriented queries
 - [voyanara/milvus-php-sdk](https://github.com/voyanara/milvus-php-sdk "Link to resource") – PHP SDK for Milvus vector database API v2
 
@@ -222,6 +274,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - 🌟 [googleapis/google-cloud-php](https://github.com/googleapis/google-cloud-php "Link to resource") — ![GitHub stars](https://img.shields.io/github/stars/googleapis/google-cloud-php?style=social) Official PHP client library for Google Cloud APIs (including ML/AI services like Vision, Translate, AutoML, Vertex AI, etc.)
 - [grpc/grpc-php](https://github.com/grpc/grpc-php "Link to resource") – gRPC client for model services
 - 🧪 [HossamBalaha/Deep-Learning-Classification-System-using-PHP-and-Keras](https://github.com/HossamBalaha/Deep-Learning-Classification-System-using-PHP-and-Keras "Link to resource") – Example system showing how to integrate a Keras deep learning classifier with a PHP backend
+- [logiscape/mcp-sdk-php](https://github.com/logiscape/mcp-sdk-php "Link to resource") – PHP SDK for building Model Context Protocol (MCP) clients and servers to connect LLMs with external tools and services
 - 🌟 [neuron-core/neuron-ai](https://github.com/neuron-core/neuron-ai "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/neuron-core/neuron-ai?style=social) PHP agentic AI framework for building and orchestrating LLMs, RAG etc
 - [nlpcloud/nlpcloud-php](https://github.com/nlpcloud/nlpcloud-php "Link to resource") — PHP client for the NLP Cloud API (access NLP/ML services like NER, sentiment analysis, summarization, text generation, embeddings, translation, and more)
 
@@ -260,6 +313,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [atlas-php/atlas](https://github.com/atlas-php/atlas "Link to resource") – Laravel AI application framework for structuring agents, tools, prompts, and pipelines on top of Prism PHP
 - 🌟 [openai-php/laravel](https://github.com/openai-php/laravel "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/openai-php/laravel?style=social) Laravel OpenAI integration 
 - [PapaRascal2020/sidekick](https://github.com/PapaRascal2020/sidekick "Link to resource") – Laravel package offering a unified syntax for working with multiple AI provider APIs (OpenAI, Claude, Cohere, Mistral)
+- 🌟 [php-mcp/laravel](https://github.com/php-mcp/laravel "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/php-mcp/laravel?style=social) – Laravel package for building Model Context Protocol (MCP) servers and exposing application tools to LLMs
 - [shawnveltman/laravel-openai](https://github.com/shawnveltman/laravel-openai "Link to resource") – Laravel wrapper for OpenAI
 - [rahasistiyakofficial/laravel-ai-integration](https://github.com/rahasistiyakofficial/laravel-ai-integration "Link to resource") — This is a comprehensive, enterprise-ready package that provides seamless integration with multiple AI providers through a unified, elegant API
 
@@ -293,6 +347,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 ### Courses & Tutorials
 - [Fun With OpenAI and Laravel](https://laracasts.com/series/fun-with-openai-and-laravel "Link to resource") – Laracasts series showing how to integrate OpenAI into Laravel apps
+- [Laravel Cloud Skills](https://skills.laravel.cloud) – Interactive learning platform for building and deploying Laravel applications, including modern AI and cloud workflows
 
 ### ML / AI Platforms
 
