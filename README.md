@@ -191,6 +191,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 *Libraries for generating embeddings and performing vector similarity search from PHP applications.*
 
 - 🌟 [algolia/algoliasearch-client-php](https://github.com/algolia/algoliasearch-client-php "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/algolia/algoliasearch-client-php?style=social) Algolia search client
+- [CodeWithKyrian/chromadb-php](https://github.com/CodeWithKyrian/chromadb-php "Link to resource") – PHP client for ChromaDB, enabling vector similarity search and embedding storage for AI and RAG applications
 - [hkulekci/qdrant-php](https://github.com/hkulekci/qdrant-php "Link to resource") – PHP client for the Qdrant vector database, enabling vector similarity search and embedding storage for AI and RAG applications
 - [llm-agents-php/vector-storage](https://github.com/llm-agents-php/vector-storage "Link to resource") – LLM Agents Vector Storage
 - 🌟 [LLPhant/LLPhant](https://github.com/LLPhant/LLPhant "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/LLPhant/LLPhant?style=social) Comprehensive PHP generative AI framework supporting LLMs, embeddings, vector search and more
