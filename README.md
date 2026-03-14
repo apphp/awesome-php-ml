@@ -95,6 +95,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 *PHP libraries for neural networks, deep learning architectures, and advanced learners built on tensors.*
 
+- [rindow/rindow-neuralnetworks](https://github.com/rindow/rindow-neuralnetworks "Link to resource") – Deep learning framework for PHP providing neural network layers, training utilities, and GPU/accelerated backends via the Rindow numerical computing ecosystem
 - 🌟 [RubixML/RubixML](https://github.com/RubixML/RubixML "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/RubixML/RubixML?style=social) High-level ML framework with pipelines and datasets
 
 ---
