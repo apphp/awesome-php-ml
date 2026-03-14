@@ -15,8 +15,11 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 
 ## Contents
 
+- [Contents](#contents)
+- [Requirements](#requirements)
 - [What is this?](#what-is-this)
 - [How to use this list](#how-to-use-this-list)
+- [Quick Start](#quick-start)
 - [Example "recipes"](#example-recipes)
 - [Recommended core stack](#recommended-core-stack)
 - [Legend](#legend)
@@ -36,6 +39,24 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 
 ---
 
+## Requirements
+
+**PHP Version Requirements:**
+- **Minimum**: PHP 7.4+ (most libraries)
+- **Recommended**: PHP 8.1+ for best performance and features
+- **Latest features**: PHP 8.2+ for some cutting-edge libraries
+
+**Common dependencies:**
+- **Extensions**: `mbstring`, `curl`, `json`, `gd` (for image processing)
+- **Optional**: `redis`, `pdo_pgsql` (for vector search), `ffi` (for native bindings)
+
+**Memory considerations:**
+- **Basic ML**: 256MB+ RAM
+- **Neural networks**: 512MB+ RAM  
+- **Large datasets**: 1GB+ RAM recommended
+
+---
+
 ## What is this?
 
 - Curated list of **PHP libraries and tools** for Machine Learning, AI, NLP, LLMs and Data Science.
@@ -49,6 +70,28 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 - **RAG (Retrieval-Augmented Generation)** – combine [php-rag](https://github.com/mzarnecki/php-rag) with vector databases like [pgvector](https://github.com/pgvector/pgvector) or [Meilisearch](https://github.com/meilisearch/meilisearch-php).
 - **Numerical computing & math** – explore [Math, Statistics & Linear Algebra](#math-statistics--linear-algebra) for tensors, matrices, and statistics.
 - **Production integration** – use [Interop & Model Serving](#interop--model-serving) and framework integrations to wire models into real apps.
+
+### Quick Start
+
+**For beginners new to PHP ML/AI:**
+
+```bash
+# Install a core ML library
+composer require rubix/ml
+composer require php-ai/phpml
+
+# Install LLM client
+composer require openai-php/client
+
+# Install vector search for RAG
+composer require llphant/llphant
+```
+
+**Basic examples:**
+- **Classification**: Use `RubixML/RubixML` with `KNearestNeighbors` for simple classification tasks
+- **LLM integration**: Use `openai-php/client` to call GPT models from PHP
+- **Text analysis**: Use `php-ai/php-ml` for sentiment analysis and tokenization
+- **Vector search**: Use `LLPhant/LLPhant` with `pgvector` for semantic search
 
 ### Example "recipes"
 
@@ -86,7 +129,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [dr-que/polynomial-regression](https://github.com/jbboehr/PolynomialRegression.php "Link to resource") – Polynomial regression for PHP
 - ⚠️ [pecl/svm](https://pecl.php.net/package/svm/0.2.3 "Link to resource") – PHP extension providing bindings to the LIBSVM library for Support Vector Machine classification and regression
 - 🌟 [CodeWithKyrian/transformers-php](https://github.com/CodeWithKyrian/transformers-php "Link to resource") — ![GitHub stars](https://img.shields.io/github/stars/CodeWithKyrian/transformers-php?style=social) A PHP toolkit for running Hugging Face–style Transformer models with ONNX Runtime (text generation, summarization, classification, etc.)
-- [php-ai/php-ml](https://gitlab.com/php-ai/php-ml "Link to resource") – Core machine learning algorithms for PHP
+- 🌟 [php-ai/php-ml](https://gitlab.com/php-ai/php-ml "Link to resource") – Core machine learning algorithms for PHP
 - [php-ai/php-ml-examples](https://github.com/php-ai/php-ml-examples "Link to resource") – Practical examples for PHP-ML
 
 ---
@@ -95,7 +138,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 *PHP libraries for neural networks, deep learning architectures, and advanced learners built on tensors.*
 
-- [rindow/rindow-neuralnetworks](https://github.com/rindow/rindow-neuralnetworks "Link to resource") – Deep learning framework for PHP providing neural network layers, training utilities, and GPU/accelerated backends via the Rindow numerical computing ecosystem
+- 🧪 [rindow/rindow-neuralnetworks](https://github.com/rindow/rindow-neuralnetworks "Link to resource") – Deep learning framework for PHP providing neural network layers, training utilities, and GPU/accelerated backends via the Rindow numerical computing ecosystem
 - 🌟 [RubixML/RubixML](https://github.com/RubixML/RubixML "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/RubixML/RubixML?style=social) High-level ML framework with pipelines and datasets
 
 ---
@@ -120,10 +163,10 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 *Image manipulation, preprocessing, and computer vision workloads from PHP.*
 
-- [aschmelyun/subvert](https://github.com/aschmelyun/subvert "Link to resource") - Generate subtitles, summaries, and chapters from videos in seconds
-- [Intervention/image](https://github.com/Intervention/image "Link to resource") – Image manipulation library for CV preprocessing
+- 🧪 [aschmelyun/subvert](https://github.com/aschmelyun/subvert "Link to resource") - Generate subtitles, summaries, and chapters from videos in seconds
+- 🌟 [Intervention/image](https://github.com/Intervention/image "Link to resource") — ![GitHub stars](https://img.shields.io/github/stars/Intervention/image?style=social) Image manipulation library for CV preprocessing
 - [jcupitt/vips](https://github.com/jcupitt/libvips "Link to resource") – Fast image processing library with PHP bindings
-- [php-opencv/php-opencv](https://github.com/php-opencv/php-opencv "Link to resource") – OpenCV bindings for PHP
+- 🧪 [php-opencv/php-opencv](https://github.com/php-opencv/php-opencv "Link to resource") – OpenCV bindings for PHP
 
 ---
 
@@ -133,12 +176,12 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 - 🌟 [brick/math](https://github.com/brick/math "Link to resource") — ![GitHub stars](https://img.shields.io/github/stars/brick/math?style=social) Arbitrary-precision arithmetic for PHP (BigInteger, BigDecimal, BigRational)
 - 🌟 [Hi-Folks/statistics](https://github.com/Hi-Folks/statistics "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/Hi-Folks/statistics?style=social) Probability distributions and statistical functions library for PHP
-- [markrogoyski/math-php](https://github.com/markrogoyski/math-php "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/markrogoyski/math-php?style=social) Math library for linear algebra, statistics, and calculus
+- 🌟 [markrogoyski/math-php](https://github.com/markrogoyski/math-php "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/markrogoyski/math-php?style=social) Math library for linear algebra, statistics, and calculus
 - [mcordingley/LinearAlgebra](https://github.com/mcordingley/LinearAlgebra "Link to resource") – Stand-alone linear algebra library
 - ⚠️ [NumPHP/NumPHP](https://github.com/NumPHP/NumPHP "Link to resource") – Math library for scientific computing
-- [phpmlkit/ndarray](https://github.com/phpmlkit/ndarray "Link to resource") – Multidimensional array (ndarray) implementation for PHP inspired by NumPy, useful for numerical computing and machine learning workloads
-- [rindow/rindow-math-matrix](https://github.com/rindow/rindow-math-matrix "Link to resource") – Foundational package for scientific matrix operations
-- [RubixML/numpower](https://github.com/RubixML/numpower "Link to resource") – High-performance numerical computing library inspired by NumPy
+- 🧪 [phpmlkit/ndarray](https://github.com/phpmlkit/ndarray "Link to resource") – Multidimensional array (ndarray) implementation for PHP inspired by NumPy, useful for numerical computing and machine learning workloads
+- 🧪 [rindow/rindow-math-matrix](https://github.com/rindow/rindow-math-matrix "Link to resource") – Foundational package for scientific matrix operations
+- 🌟 [RubixML/numpower](https://github.com/RubixML/numpower "Link to resource") – High-performance numerical computing library inspired by NumPy
 - 🌟 [RubixML/Tensor](https://github.com/RubixML/Tensor "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/RubixML/Tensor?style=social) N-dimensional tensors for numerical computing
 
 ---
@@ -147,7 +190,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 *Clients, SDKs, and frameworks for calling hosted LLMs and other AI providers from PHP.*
 
-- [adrienbrault/instructrice](https://github.com/adrienbrault/instructrice "Link to resource") — Typed LLM outputs in PHP with flexible schema support (OpenAI, Claude, Gemini, etc.) and type-safe handling of structured responses
+- 🧪 [adrienbrault/instructrice](https://github.com/adrienbrault/instructrice "Link to resource") — Typed LLM outputs in PHP with flexible schema support (OpenAI, Claude, Gemini, etc.) and type-safe handling of structured responses
 - [ArdaGnsrn/ollama-php](https://github.com/ArdaGnsrn/ollama-php "Link to resource") – A PHP client library for the Ollama LLM server, enabling completions, chat, model management, and embeddings via Ollama’s API
 - [Clarifai/clarifai-php-grpc](https://github.com/Clarifai/clarifai-php-grpc "Link to resource") – Official Clarifai gRPC PHP client for accessing Clarifai’s AI APIs (vision and text recognition)
 - [cognesy/instructor-php](https://github.com/cognesy/instructor-php "Link to resource") – Structured-output helper for LLM responses
