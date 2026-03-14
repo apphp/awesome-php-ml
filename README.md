@@ -297,6 +297,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 ### Courses & Tutorials
 - [Fun With OpenAI and Laravel](https://laracasts.com/series/fun-with-openai-and-laravel "Link to resource") – Laracasts series showing how to integrate OpenAI into Laravel apps
+- [Laravel Cloud Skills](https://skills.laravel.cloud) – Interactive learning platform for building and deploying Laravel applications, including modern AI and cloud workflows
 
 ### ML / AI Platforms
 
