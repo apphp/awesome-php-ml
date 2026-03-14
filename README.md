@@ -180,6 +180,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 ### Tokenizers & Prompt Utilities
 
+- [CodeWithKyrian/tokenizers-php](https://github.com/CodeWithKyrian/tokenizers-php "Link to resource") – PHP bindings for Hugging Face Tokenizers, enabling fast tokenization for transformer and LLM models
 - [Gioni06/GPT3Tokenizer](https://github.com/Gioni06/GPT3Tokenizer "Link to resource") – PHP tokenizer compatible with GPT-3 style models
 - [yethee/tiktoken-php](https://github.com/yethee/tiktoken-php "Link to resource") – PHP implementation of OpenAI’s *tiktoken* tokenizer for token counting and optimization
 
