@@ -206,6 +206,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 ### Ecosystems
 
+- [phpmlkit (GitHub org)](https://github.com/phpmlkit) – Collection of high-performance ML infrastructure libraries for PHP, including NDArray (NumPy-like arrays) and ONNX Runtime bindings
 
 ---
 
