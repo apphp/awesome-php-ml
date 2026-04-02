@@ -188,6 +188,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 *Low-level building blocks for numerical computing, tensors, and model execution in PHP.*
 
 ### Numerical computing & tensors
+
 - 🌟 [RubixML/Tensor](https://github.com/RubixML/Tensor "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/RubixML/Tensor?style=social) N-dimensional tensors for numerical computing
 - 🌟 [RubixML/numpower](https://github.com/RubixML/numpower "Link to resource") – High-performance numerical computing library inspired by NumPy
 - 🧪 [rindow/rindow-math-matrix](https://github.com/rindow/rindow-math-matrix "Link to resource") – Foundational package for scientific matrix operations
