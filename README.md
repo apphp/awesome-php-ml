@@ -183,7 +183,6 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - 🧪 [rindow/rindow-math-matrix](https://github.com/rindow/rindow-math-matrix "Link to resource") – Foundational package for scientific matrix operations
 - 🌟 [RubixML/numpower](https://github.com/RubixML/numpower "Link to resource") – High-performance numerical computing library inspired by NumPy
 - 🌟 [RubixML/Tensor](https://github.com/RubixML/Tensor "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/RubixML/Tensor?style=social) N-dimensional tensors for numerical computing
-
 ---
 
 ## LLMs & AI APIs
@@ -266,7 +265,6 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 *Bridging PHP with native libraries, external services, and runtimes for deploying and serving ML and LLM models.*
 
-- 🌟 [ankane/onnxruntime-php](https://github.com/ankane/onnxruntime-php "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/ankane/onnxruntime-php?style=social) Run ONNX models from PHP
 - 🌟 [deepl-php](https://github.com/DeepLcom/deepl-php "Link to resource") — ![GitHub stars](https://img.shields.io/github/stars/DeepLcom/deepl-php?style=social) Official PHP client library for the DeepL API, enabling high-quality language translation via DeepL’s AI/ML service
 - [distantmagic/resonance](https://github.com/distantmagic/resonance "Link to resource") – Asynchronous PHP framework with built-in support for serving and integrating machine learning and LLM models
 - [FFI](https://www.php.net/manual/en/book.ffi.php "Link to resource") – Native C/C++ bindings for ML inference
@@ -277,6 +275,11 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [logiscape/mcp-sdk-php](https://github.com/logiscape/mcp-sdk-php "Link to resource") – PHP SDK for building Model Context Protocol (MCP) clients and servers to connect LLMs with external tools and services
 - 🌟 [neuron-core/neuron-ai](https://github.com/neuron-core/neuron-ai "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/neuron-core/neuron-ai?style=social) PHP agentic AI framework for building and orchestrating LLMs, RAG etc
 - [nlpcloud/nlpcloud-php](https://github.com/nlpcloud/nlpcloud-php "Link to resource") — PHP client for the NLP Cloud API (access NLP/ML services like NER, sentiment analysis, summarization, text generation, embeddings, translation, and more)
+
+### ONNX Runtime bindings
+
+- 🌟 [ankane/onnxruntime-php](https://github.com/ankane/onnxruntime-php "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/ankane/onnxruntime-php?style=social) Run ONNX models from PHP
+- [phpmlkit/onnxruntime](https://github.com/phpmlkit/onnxruntime "Link to resource") – High-performance ONNX Runtime bindings for PHP using FFI, enabling inference of models from PyTorch, TensorFlow, scikit-learn and other frameworks
 
 ---
 
@@ -304,6 +307,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [Capevace/llm-magic](https://github.com/Capevace/llm-magic "Link to resource") – Laravel-centric LLM toolkit with support for AI features like chat and structured data extraction
 - [coding-wisely/taskallama](https://github.com/coding-wisely/taskallama "Link to resource") – Laravel package for seamless integration with the Ollama LLM API for AI-powered content generation, task assistance, conversation and embeddings
 - [grok-php/laravel](https://github.com/grok-php/laravel "Link to resource") – Laravel package for integrating Grok AI models
+- [jayeshmepani/laravel-gemini-translator](https://github.com/jayeshmepani/laravel-gemini-translator "Link to resource") — Laravel Gemini AI Translation Extractor scans your Laravel project for translation keys, uses Google Gemini AI for translations, and generates language files automatically—streamlining and accelerating your localization workflow
 - 🌟 [laravel/ai](https://github.com/laravel/ai "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/laravel/ai?style=social) The Laravel AI SDK: a unified, expressive Laravel API for interacting with AI providers (LLMs, images, embeddings, agents, tools)
 - 🌟 [laravel/boost](https://github.com/laravel/boost "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/laravel/boost?style=social) Official Laravel Boost: a development server and AI context provider that accelerates AI-assisted code generation by giving AI tools detailed insight into your Laravel app (MCP server, schema inspection, docs + guidelines)
 - [maestroerror/laragent](https://github.com/maestroerror/laragent "Link to resource") – AI agent development framework for Laravel: define agents, tools, workflows, and manage LLM interactions with an Eloquent-style API
