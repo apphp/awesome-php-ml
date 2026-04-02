@@ -28,6 +28,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php) and the broader
 - [Natural Language Processing](#natural-language-processing)
 - [Computer Vision, Image & Video Processing](#computer-vision-image--video-processing)
 - [Math, Statistics & Linear Algebra](#math-statistics--linear-algebra)
+- [Core ML Infrastructure](#core-ml-infrastructure)
 - [LLMs & AI APIs](#llms--ai-apis)
 - [Embeddings & Vector Search](#embeddings--vector-search)
 - [Data Processing](#data-processing)
@@ -179,10 +180,32 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - 🌟 [markrogoyski/math-php](https://github.com/markrogoyski/math-php "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/markrogoyski/math-php?style=social) Math library for linear algebra, statistics, and calculus
 - [mcordingley/LinearAlgebra](https://github.com/mcordingley/LinearAlgebra "Link to resource") – Stand-alone linear algebra library
 - ⚠️ [NumPHP/NumPHP](https://github.com/NumPHP/NumPHP "Link to resource") – Math library for scientific computing
-- 🧪 [phpmlkit/ndarray](https://github.com/phpmlkit/ndarray "Link to resource") – Multidimensional array (ndarray) implementation for PHP inspired by NumPy, useful for numerical computing and machine learning workloads
-- 🧪 [rindow/rindow-math-matrix](https://github.com/rindow/rindow-math-matrix "Link to resource") – Foundational package for scientific matrix operations
-- 🌟 [RubixML/numpower](https://github.com/RubixML/numpower "Link to resource") – High-performance numerical computing library inspired by NumPy
+
+---
+
+## Core ML Infrastructure
+
+*Low-level building blocks for numerical computing, tensors, and model execution in PHP.*
+
+### Numerical computing & tensors
 - 🌟 [RubixML/Tensor](https://github.com/RubixML/Tensor "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/RubixML/Tensor?style=social) N-dimensional tensors for numerical computing
+- 🌟 [RubixML/numpower](https://github.com/RubixML/numpower "Link to resource") – High-performance numerical computing library inspired by NumPy
+- 🧪 [rindow/rindow-math-matrix](https://github.com/rindow/rindow-math-matrix "Link to resource") – Foundational package for scientific matrix operations
+- 🧪 [phpmlkit/ndarray](https://github.com/phpmlkit/ndarray "Link to resource") – Multidimensional array (ndarray) implementation for PHP inspired by NumPy, useful for numerical computing and machine learning workloads
+
+### Model execution & runtimes
+
+- 🌟 [ankane/onnxruntime-php](https://github.com/ankane/onnxruntime-php "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/ankane/onnxruntime-php?style=social) Run ONNX models from PHP
+- [phpmlkit/onnxruntime](https://github.com/phpmlkit/onnxruntime "Link to resource") – High-performance ONNX Runtime bindings for PHP using FFI, enabling inference of models from PyTorch, TensorFlow, scikit-learn and other frameworks
+- 🧪 [phpmlkit/onnxruntime-gpu](https://github.com/phpmlkit/onnxruntime-gpu "Link to resource") – GPU-accelerated ONNX Runtime bindings for PHP using CUDA, enabling high-performance inference of models from PyTorch, TensorFlow, and other frameworks
+
+### Interoperability
+
+- 🌟 [swoole/phpy](https://github.com/swoole/phpy "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/swoole/phpy?style=social) Bridge for calling Python from PHP via a runtime bridge
+
+### Ecosystems
+
+
 ---
 
 ## LLMs & AI APIs
@@ -218,9 +241,9 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [utopia-php/agents](https://github.com/utopia-php/agents "Link to resource") – Simple, lightweight PHP library for AI agent orchestration with multi-provider support (OpenAI, Anthropic, Deepseek, Perplexity, XAI)
 
 ### Speech & Text-to-Speech
+
 - [b7s/fluentvox](https://github.com/b7s/fluentvox "Link to resource") – Fluent PHP API for state-of-the-art text-to-speech and voice cloning (Resemble AI’s Chatterbox), with CLI, GPU acceleration, and multilingual support
 - [b7s/whisper-php](https://github.com/b7s/whisper-php "Link to resource") – PHP wrapper/client for Whisper speech-to-text (ASR), enabling audio transcription via Whisper models
-
 
 ### Tokenizers & Prompt Utilities
 
@@ -276,12 +299,6 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - 🌟 [neuron-core/neuron-ai](https://github.com/neuron-core/neuron-ai "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/neuron-core/neuron-ai?style=social) PHP agentic AI framework for building and orchestrating LLMs, RAG etc
 - [nlpcloud/nlpcloud-php](https://github.com/nlpcloud/nlpcloud-php "Link to resource") — PHP client for the NLP Cloud API (access NLP/ML services like NER, sentiment analysis, summarization, text generation, embeddings, translation, and more)
 
-### ONNX Runtime bindings
-
-- 🌟 [ankane/onnxruntime-php](https://github.com/ankane/onnxruntime-php "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/ankane/onnxruntime-php?style=social) Run ONNX models from PHP
-- [phpmlkit/onnxruntime](https://github.com/phpmlkit/onnxruntime "Link to resource") – High-performance ONNX Runtime bindings for PHP using FFI, enabling inference of models from PyTorch, TensorFlow, scikit-learn and other frameworks
-- 🧪 [phpmlkit/onnxruntime-gpu](https://github.com/phpmlkit/onnxruntime-gpu "Link to resource") – GPU-accelerated ONNX Runtime bindings for PHP using CUDA, enabling high-performance inference of models from PyTorch, TensorFlow, and other frameworks
-
 ---
 
 ## Tools & Utilities
@@ -293,7 +310,6 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [joshembling/laragenie](https://github.com/joshembling/laragenie "Link to resource") — AI chatbot/assistant for Laravel that indexes and understands your codebase via the command line (OpenAI + Pinecone)
 - [nunomaduro/collision](https://github.com/nunomaduro/collision "Link to resource") – CLI error handling (useful for ML tools)
 - [psr/log](https://github.com/php-fig/log "Link to resource") – Logging standard
-- 🌟 [swoole/phpy](https://github.com/swoole/phpy "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/swoole/phpy?style=social) Bridge for calling Python from PHP via a runtime bridge
 - [symfony/console](https://github.com/symfony/console "Link to resource") – CLI applications
 - [symfony/http-client](https://github.com/symfony/http-client "Link to resource") – Robust HTTP client for AI APIs
 
@@ -351,6 +367,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - 🧪 [dykyi-roman/awesome-claude-code](https://github.com/dykyi-roman/awesome-claude-code "Link to resource") – Curated collection of commands, agents, skills, hooks, and tools for enhancing Claude Code AI workflows
 
 ### Courses & Tutorials
+
 - [Fun With OpenAI and Laravel](https://laracasts.com/series/fun-with-openai-and-laravel "Link to resource") – Laracasts series showing how to integrate OpenAI into Laravel apps
 - [Laravel Cloud Skills](https://skills.laravel.cloud) – Interactive learning platform for building and deploying Laravel applications, including modern AI and cloud workflows
 
