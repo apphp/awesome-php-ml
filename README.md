@@ -196,6 +196,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 ### Model execution & runtimes
 
 - 🌟 [ankane/onnxruntime-php](https://github.com/ankane/onnxruntime-php "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/ankane/onnxruntime-php?style=social) Run ONNX models from PHP
+- [FFI](https://www.php.net/manual/en/book.ffi.php "Link to resource") – Native C/C++ bindings in PHP for high-performance ML inference
 - [phpmlkit/onnxruntime](https://github.com/phpmlkit/onnxruntime "Link to resource") – High-performance ONNX Runtime bindings for PHP using FFI, enabling inference of models from PyTorch, TensorFlow, scikit-learn and other frameworks
 - 🧪 [phpmlkit/onnxruntime-gpu](https://github.com/phpmlkit/onnxruntime-gpu "Link to resource") – GPU-accelerated ONNX Runtime bindings for PHP using CUDA, enabling high-performance inference of models from PyTorch, TensorFlow, and other frameworks
 
