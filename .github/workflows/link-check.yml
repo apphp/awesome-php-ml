@@ -10,7 +10,7 @@ jobs:
   link-check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Show resources count diff (PR)
         if: github.event_name == 'pull_request'
         run: |
