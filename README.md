@@ -128,12 +128,13 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 *Core PHP libraries for supervised/unsupervised learning, classification, regression, and clustering.*
 
+- 🌟 [CodeWithKyrian/transformers-php](https://github.com/CodeWithKyrian/transformers-php "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/CodeWithKyrian/transformers-php?style=social) A PHP toolkit for running Hugging Face–style Transformer models with ONNX Runtime (text generation, summarization, classification, etc.)
 - ⚠️ [danielefavi/brainy](https://github.com/danielefavi/brainy "Link to resource") – Simple PHP class for neural networks and machine learning
 - [dr-que/polynomial-regression](https://github.com/jbboehr/PolynomialRegression.php "Link to resource") – Polynomial regression for PHP
 - ⚠️ [pecl/svm](https://pecl.php.net/package/svm/0.2.3 "Link to resource") – PHP extension providing bindings to the LIBSVM library for Support Vector Machine classification and regression
-- 🌟 [CodeWithKyrian/transformers-php](https://github.com/CodeWithKyrian/transformers-php "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/CodeWithKyrian/transformers-php?style=social) A PHP toolkit for running Hugging Face–style Transformer models with ONNX Runtime (text generation, summarization, classification, etc.)
 - 🌟 [php-ai/php-ml](https://gitlab.com/php-ai/php-ml "Link to resource") – Core machine learning algorithms for PHP
 - [php-ai/php-ml-examples](https://github.com/php-ai/php-ml-examples "Link to resource") – Practical examples for PHP-ML
+- [sphamster/bayes](https://github.com/sphamster/bayes "Link to resource") – Naive Bayes classifier implementation in PHP for probabilistic classification tasks
 
 ---
 
