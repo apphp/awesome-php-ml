@@ -346,6 +346,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [PapaRascal2020/sidekick](https://github.com/PapaRascal2020/sidekick "Link to resource") – Laravel package offering a unified syntax for working with multiple AI provider APIs (OpenAI, Claude, Cohere, Mistral)
 - 🌟 [php-mcp/laravel](https://github.com/php-mcp/laravel "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/php-mcp/laravel?style=social) – Laravel package for building Model Context Protocol (MCP) servers and exposing application tools to LLMs
 - [shawnveltman/laravel-openai](https://github.com/shawnveltman/laravel-openai "Link to resource") – Laravel wrapper for OpenAI
+- [vizra-ai/vizra-adk](https://github.com/vizra-ai/vizra-adk "Link to resource") – Laravel AI Agent Development Kit for building autonomous agents with tools, persistent memory, workflows, streaming, evaluations, tracing, and Prism-powered multi-model support
 - [rahasistiyakofficial/laravel-ai-integration](https://github.com/rahasistiyakofficial/laravel-ai-integration "Link to resource") – This is a comprehensive, enterprise-ready package that provides seamless integration with multiple AI providers through a unified, elegant API
 
 ### Data & DTO tools
