@@ -38,6 +38,7 @@ Want to add a project? See the [Contributing](#contributing) section below for i
 - [Tools & Utilities](#tools--utilities)
 - [Laravel & Framework Integrations](#laravel--framework-integrations)
 - [Symfony & Framework Integrations](#symfony--framework-integrations)
+- [WordPress Integrations](#wordPress-integrations)
 - [Resources](#resources)
 
 ---
@@ -170,6 +171,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - 🧪 [aschmelyun/subvert](https://github.com/aschmelyun/subvert "Link to resource") - Generate subtitles, summaries, and chapters from videos in seconds
 - 🌟 [Intervention/image](https://github.com/Intervention/image "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/Intervention/image?style=social) Image manipulation library for CV preprocessing
 - [jcupitt/vips](https://github.com/jcupitt/libvips "Link to resource") – Fast image processing library with PHP bindings
+- 🧪 [mailmug/php-dlib](https://github.com/mailmug/php-dlib "Link to resource") – PHP extension for Dlib, supporting face detection, facial landmarks, face recognition descriptors, CNN detection, and clustering
 - 🧪 [php-opencv/php-opencv](https://github.com/php-opencv/php-opencv "Link to resource") – OpenCV bindings for PHP
 
 ---
@@ -202,7 +204,6 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - 🌟 [ankane/onnxruntime-php](https://github.com/ankane/onnxruntime-php "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/ankane/onnxruntime-php?style=social) Run ONNX models from PHP
 - [FFI](https://www.php.net/manual/en/book.ffi.php "Link to resource") – Native C/C++ bindings in PHP for high-performance ML inference
 - [phpmlkit/onnxruntime](https://github.com/phpmlkit/onnxruntime "Link to resource") – High-performance ONNX Runtime bindings for PHP using FFI, enabling inference of models from PyTorch, TensorFlow, scikit-learn and other frameworks
-- 🧪 [phpmlkit/onnxruntime-gpu](https://github.com/phpmlkit/onnxruntime-gpu "Link to resource") – GPU-accelerated ONNX Runtime bindings for PHP using CUDA, enabling high-performance inference of models from PyTorch, TensorFlow, and other frameworks
 
 ### Interoperability
 
@@ -218,11 +219,13 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 *Clients, SDKs, and frameworks for calling hosted LLMs and other AI providers from PHP.*
 
+- [aiaccess/ai-access](https://github.com/aiaccess/ai-access "Link to resource") – Unified PHP AI client providing a consistent interface for multiple providers (OpenAI, Anthropic, Gemini, DeepSeek, Grok) with support for chat, embeddings, batch processing, and provider switching
 - 🧪 [adrienbrault/instructrice](https://github.com/adrienbrault/instructrice "Link to resource") – Typed LLM outputs in PHP with flexible schema support (OpenAI, Claude, Gemini, etc.) and type-safe handling of structured responses
 - [ArdaGnsrn/ollama-php](https://github.com/ArdaGnsrn/ollama-php "Link to resource") – A PHP client library for the Ollama LLM server, enabling completions, chat, model management, and embeddings via Ollama’s API
 - [Clarifai/clarifai-php-grpc](https://github.com/Clarifai/clarifai-php-grpc "Link to resource") – Official Clarifai gRPC PHP client for accessing Clarifai’s AI APIs (vision and text recognition)
 - [cognesy/instructor-php](https://github.com/cognesy/instructor-php "Link to resource") – Structured-output helper for LLM responses
 - [deepseek-php/deepseek-php-client](https://github.com/deepseek-php/deepseek-php-client "Link to resource") – PHP client library for integrating with the DeepSeek AI API, providing a fluent API for model queries, streaming results, and support for multiple HTTP clients and models
+- 🌟 [dtyq/magic](https://github.com/dtyq/magic "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/dtyq/magic?style=social) Open-source enterprise AI agent platform with generalist agents, workflow orchestration, IM integration, collaborative office features, and support for multiple LLMs
 - [elastic/elasticsearch-chatgpt-php](https://github.com/elastic/elasticsearch-chatgpt-php "Link to resource") – Experimental PHP library that uses ChatGPT to translate natural language into Elasticsearch DSL queries and perform semantic search over your indices
 - [FunkyOz/mulagent](https://github.com/FunkyOz/mulagent "Link to resource") – Multi-agent orchestration framework for LLM applications
 - 🌟 [google-gemini-php/client](https://github.com/google-gemini-php/client "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/google-gemini-php/client?style=social) Gemini PHP is a community-maintained PHP API client that allows you to interact with the Gemini AI API
@@ -236,7 +239,6 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [mzarnecki/php-rag](https://github.com/mzarnecki/php-rag "Link to resource") – PHP RAG toolkit for connecting vector search and LLMs in retrieval-augmented workflows
 - 🌟 [openai-php/client](https://github.com/openai-php/client "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/openai-php/client?style=social) Official OpenAI PHP client
 - 🌟 [orhanerday/open-ai](https://github.com/orhanerday/open-ai "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/orhanerday/open-ai?style=social) Popular OpenAI PHP SDK
-- 🌟 [prism-php/prism](https://github.com/prism-php/prism "Link to resource") – Laravel package offering a unified, expressive interface for integrating Large Language Models (LLMs) and AI tools across multiple providers in your application
 - [prism-php/bedrock](https://github.com/prism-php/bedrock "Link to resource") – AWS Bedrock provider for the Prism PHP framework, adding Bedrock LLM and embeddings support to Laravel Prism integrations
 - [sarfraznawaz2005/ai-team](https://github.com/sarfraznawaz2005/ai-team "Link to resource") – Package to build and run collaborative teams of AI members with role/task assignments
 - [SearchAugmentedLLM](https://github.com/EliasPereirah/SearchAugmentedLLM "Link to resource") – PHP search-augmented LLM tool that performs web search, extracts, chunks and ranks content to provide context for LLM responses (ideal for RAG applications)
@@ -245,6 +247,11 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [takaaki-mizuno/php-llm-json-adapter](https://github.com/takaaki-mizuno/php-llm-json-adapter "Link to resource") – Adapter to normalize and return LLM responses as structured JSON using JSON Schema, with support for multiple providers (OpenAI, Gemini, Bedrock, Ollama)
 - [thojou/php-llm-documents](https://github.com/thojou/php-llm-documents "Link to resource") – PHP library for LLM-based document processing (splitting, embeddings, vector store, search) inspired by LangChain/DocTran
 - [utopia-php/agents](https://github.com/utopia-php/agents "Link to resource") – Simple, lightweight PHP library for AI agent orchestration with multi-provider support (OpenAI, Anthropic, Deepseek, Perplexity, XAI)
+
+### Agents & Tooling / MCP
+
+- [logiscape/mcp-sdk-php](https://github.com/logiscape/mcp-sdk-php "Link to resource") – PHP SDK for building Model Context Protocol (MCP) clients and servers to connect LLMs with external tools and services
+- [prism-php/relay](https://github.com/prism-php/relay "Link to resource") – MCP client for Prism that lets PHP/Laravel AI agents connect to external Model Context Protocol servers and use their tools
 
 ### Speech & Text-to-Speech
 
@@ -295,16 +302,14 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 *Bridging PHP with native libraries, external services, and runtimes for deploying and serving ML and LLM models.*
 
 - 🌟 [deepl-php](https://github.com/DeepLcom/deepl-php "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/DeepLcom/deepl-php?style=social) Official PHP client library for the DeepL API, enabling high-quality language translation via DeepL’s AI/ML service
-- [distantmagic/resonance](https://github.com/distantmagic/resonance "Link to resource") – Asynchronous PHP framework with built-in support for serving and integrating machine learning and LLM models
+- [distantmagic/resonance](https://github.com/distantmagic/resonance "Link to resource") – Asynchronous PHP framework (Swoole-based) for building AI-powered, IO-intensive applications, with built-in web server, LLM integration (llama.cpp), WebSockets, and ML model serving capabilities
 - [FFI](https://www.php.net/manual/en/book.ffi.php "Link to resource") – Native C/C++ bindings for ML inference
 - 🧪 [garyblankenship/mcp-php](https://github.com/garyblankenship/mcp-php "Link to resource") – PHP example of a Model Context Protocol (MCP) server for connecting LLMs with application logic
 - 🌟 [googleapis/google-cloud-php](https://github.com/googleapis/google-cloud-php "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/googleapis/google-cloud-php?style=social) Official PHP client library for Google Cloud APIs (including ML/AI services like Vision, Translate, AutoML, Vertex AI, etc.)
 - [grpc/grpc-php](https://github.com/grpc/grpc-php "Link to resource") – gRPC client for model services
 - 🧪 [HossamBalaha/Deep-Learning-Classification-System-using-PHP-and-Keras](https://github.com/HossamBalaha/Deep-Learning-Classification-System-using-PHP-and-Keras "Link to resource") – Example system showing how to integrate a Keras deep learning classifier with a PHP backend
-- [logiscape/mcp-sdk-php](https://github.com/logiscape/mcp-sdk-php "Link to resource") – PHP SDK for building Model Context Protocol (MCP) clients and servers to connect LLMs with external tools and services
 - 🌟 [neuron-core/neuron-ai](https://github.com/neuron-core/neuron-ai "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/neuron-core/neuron-ai?style=social) PHP agentic AI framework for building and orchestrating LLMs, RAG etc
 - [nlpcloud/nlpcloud-php](https://github.com/nlpcloud/nlpcloud-php "Link to resource") – PHP client for the NLP Cloud API (access NLP/ML services like NER, sentiment analysis, summarization, text generation, embeddings, translation, and more)
-
 ---
 
 ## Tools & Utilities
@@ -330,7 +335,6 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [Capevace/llm-magic](https://github.com/Capevace/llm-magic "Link to resource") – Laravel-centric LLM toolkit with support for AI features like chat and structured data extraction
 - [coding-wisely/taskallama](https://github.com/coding-wisely/taskallama "Link to resource") – Laravel package for seamless integration with the Ollama LLM API for AI-powered content generation, task assistance, conversation and embeddings
 - [grok-php/laravel](https://github.com/grok-php/laravel "Link to resource") – Laravel package for integrating Grok AI models
-- [jayeshmepani/laravel-gemini-translator](https://github.com/jayeshmepani/laravel-gemini-translator "Link to resource") – Laravel Gemini AI Translation Extractor scans your Laravel project for translation keys, uses Google Gemini AI for translations, and generates language files automatically — streamlining and accelerating your localization workflow
 - 🌟 [laravel/ai](https://github.com/laravel/ai "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/laravel/ai?style=social) The Laravel AI SDK: a unified, expressive Laravel API for interacting with AI providers (LLMs, images, embeddings, agents, tools)
 - 🌟 [laravel/boost](https://github.com/laravel/boost "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/laravel/boost?style=social) Official Laravel Boost: a development server and AI context provider that accelerates AI-assisted code generation by giving AI tools detailed insight into your Laravel app (MCP server, schema inspection, docs + guidelines)
 - [maestroerror/laragent](https://github.com/maestroerror/laragent "Link to resource") – AI agent development framework for Laravel: define agents, tools, workflows, and manage LLM interactions with an Eloquent-style API
@@ -339,16 +343,36 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - 🌟 [neuron-core/neuron-laravel](https://github.com/neuron-core/neuron-laravel "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/neuron-core/neuron-laravel?style=social) Laravel integration for Neuron Core to build and orchestrate AI/LLM workflows
 - [atlas-php/atlas](https://github.com/atlas-php/atlas "Link to resource") – Laravel AI application framework for structuring agents, tools, prompts, and pipelines on top of Prism PHP
 - 🌟 [openai-php/laravel](https://github.com/openai-php/laravel "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/openai-php/laravel?style=social) Laravel OpenAI integration 
+- [opgginc/laravel-mcp-server](https://github.com/opgginc/laravel-mcp-server "Link to resource") – Laravel package for building secure Model Context Protocol (MCP) servers using Streamable HTTP/SSE, enabling real-time communication between LLM agents and application tools
 - [PapaRascal2020/sidekick](https://github.com/PapaRascal2020/sidekick "Link to resource") – Laravel package offering a unified syntax for working with multiple AI provider APIs (OpenAI, Claude, Cohere, Mistral)
 - 🌟 [php-mcp/laravel](https://github.com/php-mcp/laravel "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/php-mcp/laravel?style=social) – Laravel package for building Model Context Protocol (MCP) servers and exposing application tools to LLMs
 - [shawnveltman/laravel-openai](https://github.com/shawnveltman/laravel-openai "Link to resource") – Laravel wrapper for OpenAI
+- [vizra-ai/vizra-adk](https://github.com/vizra-ai/vizra-adk "Link to resource") – Laravel AI Agent Development Kit for building autonomous agents with tools, persistent memory, workflows, streaming, evaluations, tracing, and Prism-powered multi-model support
 - [rahasistiyakofficial/laravel-ai-integration](https://github.com/rahasistiyakofficial/laravel-ai-integration "Link to resource") – This is a comprehensive, enterprise-ready package that provides seamless integration with multiple AI providers through a unified, elegant API
 
 ### Data & DTO tools
 
 - [jeremysalmon/LaravelLLMContext](https://github.com/jeremysalmon/LaravelLLMContext "Link to resource") – Laravel package for managing and applying contextual data in LLM interactions
-- [prism-php/prism](https://github.com/prism-php/prism "Link to resource") – Laravel interface for working with LLMs and AI providers
+- 🌟 [prism-php/prism](https://github.com/prism-php/prism "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/prism-php/prism?style=social) Unified Laravel-native interface for working with LLMs (OpenAI, Anthropic, Gemini, Ollama, etc.), supporting text generation, structured outputs, tools/function calling, and multi-step AI workflows
 - [spatie/laravel-data](https://github.com/spatie/laravel-data "Link to resource") – Typed DTOs for API & AI responses
+
+### Localization & Translation
+
+- [Capevace/ai-translations-for-laravel](https://github.com/Capevace/ai-translations-for-laravel "Link to resource") – Laravel package for automatically translating language files with LLMs, detecting missing translations, updating existing locales, validating translation files, and refining translations interactively
+- [jayeshmepani/laravel-gemini-translator](https://github.com/jayeshmepani/laravel-gemini-translator "Link to resource") – Laravel Gemini AI Translation Extractor scans your Laravel project for translation keys, uses Google Gemini AI for translations, and generates language files automatically — streamlining and accelerating your localization workflow
+
+### Monitoring / Cost Control
+
+- 🧪 [subhashladumor1/laravel-ai-guard](https://github.com/subhashladumor1/laravel-ai-guard "Link to resource") – Laravel package for tracking LLM token usage, estimating AI costs, enforcing per-user or per-tenant budgets, and preventing unexpected AI billing spikes
+
+### MCP / Tooling
+
+- [RedberryProducts/mcp-client-laravel](https://github.com/RedberryProducts/mcp-client-laravel "Link to resource") – Laravel-native MCP client for connecting to Model Context Protocol servers via HTTP or STDIO, retrieving tools and resources, and integrating external agent capabilities into Laravel apps
+
+### Prompt Management
+
+- 🧪 [prismaticoder/laravel-prompt-manager](https://github.com/prismaticoder/laravel-prompt-manager "Link to resource") – Laravel package for managing, versioning, and testing AI prompts for LLM-powered applications
+- 🧪 [SabatinoMasala/laravel-llm-prompt](https://github.com/SabatinoMasala/laravel-llm-prompt "Link to resource") – Lightweight Laravel helper for defining, templating, and composing LLM prompts using PHP classes with variable interpolation and dynamic prompt building
 
 ### Search & vector search
 
@@ -358,10 +382,18 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 ---
 
 ## Symfony & Framework Integrations
+
 - [openai-php/symfony](https://github.com/openai-php/symfony "Link to resource") – OpenAI PHP for Symfony integration
 - 🌟 [symfony/ai](https://github.com/symfony/ai) – ![GitHub stars](https://img.shields.io/github/stars/symfony/ai?style=social "Link to resource") – Symfony AI: built-in AI components and bundles for Symfony apps
 - [soleinjast/symfony-markdown-response-bundle](https://github.com/soleinjast/symfony-markdown-response-bundle "Link to resource") – Symfony bundle that automatically serves Markdown versions of HTML responses to clients
+- 🧪 [symfony/ai-platform](https://github.com/symfony/ai-platform "Link to resource") – Experimental Symfony AI Platform component providing a unified abstraction for interacting with AI models, providers, messages, embeddings, speech, and provider-specific bridge packages
 - [symfony/ai-store](https://github.com/symfony/ai-store "Link to resource") – Symfony AI component providing a vector store abstraction for semantic search and RAG workflows
+
+---
+
+## WordPress Integrations
+
+- [WordPress/php-ai-client](https://github.com/WordPress/php-ai-client "Link to resource") – Provider-agnostic PHP AI SDK offering a unified API for interacting with multiple LLM providers (OpenAI, Anthropic, Gemini, etc.), supporting text, image, speech, streaming, and multimodal operations
 
 ---
 
