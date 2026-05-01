@@ -38,6 +38,7 @@ Want to add a project? See the [Contributing](#contributing) section below for i
 - [Tools & Utilities](#tools--utilities)
 - [Laravel & Framework Integrations](#laravel--framework-integrations)
 - [Symfony & Framework Integrations](#symfony--framework-integrations)
+- [WordPress Integrations](#wordPress-integrations)
 - [Resources](#resources)
 
 ---
@@ -219,6 +220,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 *Clients, SDKs, and frameworks for calling hosted LLMs and other AI providers from PHP.*
 
+- [aiaccess/ai-access](https://github.com/aiaccess/ai-access "Link to resource") – Unified PHP AI client providing a consistent interface for multiple providers (OpenAI, Anthropic, Gemini, DeepSeek, Grok) with support for chat, embeddings, batch processing, and provider switching
 - 🧪 [adrienbrault/instructrice](https://github.com/adrienbrault/instructrice "Link to resource") – Typed LLM outputs in PHP with flexible schema support (OpenAI, Claude, Gemini, etc.) and type-safe handling of structured responses
 - [ArdaGnsrn/ollama-php](https://github.com/ArdaGnsrn/ollama-php "Link to resource") – A PHP client library for the Ollama LLM server, enabling completions, chat, model management, and embeddings via Ollama’s API
 - [Clarifai/clarifai-php-grpc](https://github.com/Clarifai/clarifai-php-grpc "Link to resource") – Official Clarifai gRPC PHP client for accessing Clarifai’s AI APIs (vision and text recognition)
@@ -342,12 +344,12 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - 🌟 [neuron-core/neuron-laravel](https://github.com/neuron-core/neuron-laravel "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/neuron-core/neuron-laravel?style=social) Laravel integration for Neuron Core to build and orchestrate AI/LLM workflows
 - [atlas-php/atlas](https://github.com/atlas-php/atlas "Link to resource") – Laravel AI application framework for structuring agents, tools, prompts, and pipelines on top of Prism PHP
 - 🌟 [openai-php/laravel](https://github.com/openai-php/laravel "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/openai-php/laravel?style=social) Laravel OpenAI integration 
+- [opgginc/laravel-mcp-server](https://github.com/opgginc/laravel-mcp-server "Link to resource") – Laravel package for building secure Model Context Protocol (MCP) servers using Streamable HTTP/SSE, enabling real-time communication between LLM agents and application tools
 - [PapaRascal2020/sidekick](https://github.com/PapaRascal2020/sidekick "Link to resource") – Laravel package offering a unified syntax for working with multiple AI provider APIs (OpenAI, Claude, Cohere, Mistral)
 - 🌟 [php-mcp/laravel](https://github.com/php-mcp/laravel "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/php-mcp/laravel?style=social) – Laravel package for building Model Context Protocol (MCP) servers and exposing application tools to LLMs
 - [shawnveltman/laravel-openai](https://github.com/shawnveltman/laravel-openai "Link to resource") – Laravel wrapper for OpenAI
 - [vizra-ai/vizra-adk](https://github.com/vizra-ai/vizra-adk "Link to resource") – Laravel AI Agent Development Kit for building autonomous agents with tools, persistent memory, workflows, streaming, evaluations, tracing, and Prism-powered multi-model support
 - [rahasistiyakofficial/laravel-ai-integration](https://github.com/rahasistiyakofficial/laravel-ai-integration "Link to resource") – This is a comprehensive, enterprise-ready package that provides seamless integration with multiple AI providers through a unified, elegant API
-- [WordPress/php-ai-client](https://github.com/WordPress/php-ai-client "Link to resource") – Provider-agnostic PHP AI SDK offering a unified API for interacting with multiple LLM providers (OpenAI, Anthropic, Gemini, etc.), supporting text, image, speech, streaming, and multimodal operations
 
 ### Data & DTO tools
 
@@ -367,6 +369,11 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - 🌟 [symfony/ai](https://github.com/symfony/ai) – ![GitHub stars](https://img.shields.io/github/stars/symfony/ai?style=social "Link to resource") – Symfony AI: built-in AI components and bundles for Symfony apps
 - [soleinjast/symfony-markdown-response-bundle](https://github.com/soleinjast/symfony-markdown-response-bundle "Link to resource") – Symfony bundle that automatically serves Markdown versions of HTML responses to clients
 - [symfony/ai-store](https://github.com/symfony/ai-store "Link to resource") – Symfony AI component providing a vector store abstraction for semantic search and RAG workflows
+
+---
+
+## WordPress Integrations
+- [WordPress/php-ai-client](https://github.com/WordPress/php-ai-client "Link to resource") – Provider-agnostic PHP AI SDK offering a unified API for interacting with multiple LLM providers (OpenAI, Anthropic, Gemini, etc.), supporting text, image, speech, streaming, and multimodal operations
 
 ---
 
