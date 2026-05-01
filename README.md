@@ -358,6 +358,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [spatie/laravel-data](https://github.com/spatie/laravel-data "Link to resource") – Typed DTOs for API & AI responses
 
 ### Localization & Translation
+
 - [Capevace/ai-translations-for-laravel](https://github.com/Capevace/ai-translations-for-laravel "Link to resource") – Laravel package for automatically translating language files with LLMs, detecting missing translations, updating existing locales, validating translation files, and refining translations interactively
 - [jayeshmepani/laravel-gemini-translator](https://github.com/jayeshmepani/laravel-gemini-translator "Link to resource") – Laravel Gemini AI Translation Extractor scans your Laravel project for translation keys, uses Google Gemini AI for translations, and generates language files automatically — streamlining and accelerating your localization workflow
 
@@ -369,6 +370,11 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 - [RedberryProducts/mcp-client-laravel](https://github.com/RedberryProducts/mcp-client-laravel "Link to resource") – Laravel-native MCP client for connecting to Model Context Protocol servers via HTTP or STDIO, retrieving tools and resources, and integrating external agent capabilities into Laravel apps
 
+### Prompt Management
+
+- 🧪 [prismaticoder/laravel-prompt-manager](https://github.com/prismaticoder/laravel-prompt-manager "Link to resource") – Laravel package for managing, versioning, and testing AI prompts for LLM-powered applications
+- 🧪 [SabatinoMasala/laravel-llm-prompt](https://github.com/SabatinoMasala/laravel-llm-prompt "Link to resource") – Lightweight Laravel helper for defining, templating, and composing LLM prompts using PHP classes with variable interpolation and dynamic prompt building
+
 ### Search & vector search
 
 - 🌟 [laravel/scout](https://github.com/laravel/scout "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/laravel/scout?style=social) – Search abstraction (useful for vector search)
@@ -377,14 +383,17 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 ---
 
 ## Symfony & Framework Integrations
+
 - [openai-php/symfony](https://github.com/openai-php/symfony "Link to resource") – OpenAI PHP for Symfony integration
 - 🌟 [symfony/ai](https://github.com/symfony/ai) – ![GitHub stars](https://img.shields.io/github/stars/symfony/ai?style=social "Link to resource") – Symfony AI: built-in AI components and bundles for Symfony apps
 - [soleinjast/symfony-markdown-response-bundle](https://github.com/soleinjast/symfony-markdown-response-bundle "Link to resource") – Symfony bundle that automatically serves Markdown versions of HTML responses to clients
+- 🧪 [symfony/ai-platform](https://github.com/symfony/ai-platform "Link to resource") – Experimental Symfony AI Platform component providing a unified abstraction for interacting with AI models, providers, messages, embeddings, speech, and provider-specific bridge packages
 - [symfony/ai-store](https://github.com/symfony/ai-store "Link to resource") – Symfony AI component providing a vector store abstraction for semantic search and RAG workflows
 
 ---
 
 ## WordPress Integrations
+
 - [WordPress/php-ai-client](https://github.com/WordPress/php-ai-client "Link to resource") – Provider-agnostic PHP AI SDK offering a unified API for interacting with multiple LLM providers (OpenAI, Anthropic, Gemini, etc.), supporting text, image, speech, streaming, and multimodal operations
 
 ---
