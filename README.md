@@ -40,6 +40,7 @@ Want to add a project? See the [Contributing](#contributing) section below for i
 - [Symfony & Framework Integrations](#symfony--framework-integrations)
 - [WordPress Integrations](#wordPress-integrations)
 - [Resources](#resources)
+- [Support this project](#support-this-project)
 
 ---
 
@@ -424,6 +425,14 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [PHP-ML Tutorials](https://php-ml.readthedocs.io/en/latest/ "Link to resource") – Documentation for PHP-ML for machine learning
 - [Rubix ML Docs](https://rubixml.github.io/ML/latest/ "Link to resource") – Comprehensive documentation for Rubix ML
  
+---
+
+## Support this project
+
+If this project helps you, you can support development here:
+
+[Sponsor me on GitHub](https://github.com/sponsors/apphp)
+
 ---
 
 ## License
