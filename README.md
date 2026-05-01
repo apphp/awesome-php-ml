@@ -250,6 +250,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [utopia-php/agents](https://github.com/utopia-php/agents "Link to resource") – Simple, lightweight PHP library for AI agent orchestration with multi-provider support (OpenAI, Anthropic, Deepseek, Perplexity, XAI)
 
 ### Agents & Tooling / MCP
+
 - [logiscape/mcp-sdk-php](https://github.com/logiscape/mcp-sdk-php "Link to resource") – PHP SDK for building Model Context Protocol (MCP) clients and servers to connect LLMs with external tools and services
 - [prism-php/relay](https://github.com/prism-php/relay "Link to resource") – MCP client for Prism that lets PHP/Laravel AI agents connect to external Model Context Protocol servers and use their tools
 
@@ -358,7 +359,12 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [spatie/laravel-data](https://github.com/spatie/laravel-data "Link to resource") – Typed DTOs for API & AI responses
 
 ### Monitoring / Cost Control
+
 - 🧪 [subhashladumor1/laravel-ai-guard](https://github.com/subhashladumor1/laravel-ai-guard "Link to resource") – Laravel package for tracking LLM token usage, estimating AI costs, enforcing per-user or per-tenant budgets, and preventing unexpected AI billing spikes
+
+### MCP / Tooling
+
+- [RedberryProducts/mcp-client-laravel](https://github.com/RedberryProducts/mcp-client-laravel "Link to resource") – Laravel-native MCP client for connecting to Model Context Protocol servers via HTTP or STDIO, retrieving tools and resources, and integrating external agent capabilities into Laravel apps
 
 ### Search & vector search
 
