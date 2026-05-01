@@ -431,7 +431,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 If this project helps you, you can support development here:
 
-[Sponsor me on GitHub](https://github.com/sponsors/apphp)
+💖 [Sponsor me on GitHub](https://github.com/sponsors/apphp)
 
 ---
 
