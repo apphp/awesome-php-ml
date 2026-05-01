@@ -357,6 +357,9 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - 🌟 [prism-php/prism](https://github.com/prism-php/prism "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/prism-php/prism?style=social) Unified Laravel-native interface for working with LLMs (OpenAI, Anthropic, Gemini, Ollama, etc.), supporting text generation, structured outputs, tools/function calling, and multi-step AI workflows
 - [spatie/laravel-data](https://github.com/spatie/laravel-data "Link to resource") – Typed DTOs for API & AI responses
 
+### Monitoring / Cost Control
+- 🧪 [subhashladumor1/laravel-ai-guard](https://github.com/subhashladumor1/laravel-ai-guard "Link to resource") – Laravel package for tracking LLM token usage, estimating AI costs, enforcing per-user or per-tenant budgets, and preventing unexpected AI billing spikes
+
 ### Search & vector search
 
 - 🌟 [laravel/scout](https://github.com/laravel/scout "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/laravel/scout?style=social) – Search abstraction (useful for vector search)
