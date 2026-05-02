@@ -308,7 +308,7 @@ h1 {
 .stat {
   background: rgba(17, 24, 39, .8);
   border: 1px solid var(--border);
-  border-radius: 18px;
+  border-radius: 14px;
   padding: 18px;
   text-align: center;
 }
@@ -326,9 +326,30 @@ input, select {
   background: #020617;
   border: 1px solid var(--border);
   color: var(--text);
-  border-radius: 14px;
+  border-radius: 12px;
   padding: 14px 16px;
   font-size: 1rem;
+}
+.select-wrapper {                /* Container */
+  position: relative;                
+}
+select {
+  -webkit-appearance: none;       /* Remove Mac/Safari arrow */
+  -moz-appearance: none;          /* Firefox */
+  appearance: none;               /* Standard */
+  padding-right: 30px;            /* Make room for arrow */
+}
+.select-wrapper::after {
+  content: '';
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  border-right: 1.5px solid #94a3b8;
+  border-bottom: 1.5px solid #94a3b8;
+  transform: translateY(-65%) rotate(45deg);
+  pointer-events: none;
 }
 input { flex: 1; min-width: 260px; }
 .grid {
@@ -417,6 +438,9 @@ footer {
   text-align: center;
   padding: 40px 20px;
 }
+footer a {
+  color: var(--accent);
+}
 .empty {
   display: none;
   text-align: center;
@@ -449,19 +473,25 @@ footer {
 
   <section class="controls">
     <input id="search" placeholder="Search libraries, descriptions, categories...">
-    <select id="category">
-      <option value="">All categories</option>
-    </select>
-    <select id="legend">
-      <option value="">All legends</option>
-      <option value="🌟">🌟 Production-ready</option>
-      <option value="🧪">🧪 Experimental</option>
-      <option value="⚠️">⚠️ Caution</option>
-    </select>
-    <select id="sort">
-      <option value="name">A–Z</option>
-      <option value="category">Category</option>
-    </select>
+    <div class="select-wrapper">
+      <select id="category">
+        <option value="">All categories</option>
+      </select>
+    </div>
+    <div class="select-wrapper">
+      <select id="legend">
+        <option value="">All legends</option>
+        <option value="🌟">🌟 Production-ready</option>
+        <option value="🧪">🧪 Experimental</option>
+        <option value="⚠️">⚠️ Caution</option>
+      </select>
+    </div>
+    <div class="select-wrapper">
+      <select id="sort">
+        <option value="name">A–Z</option>
+        <option value="category">Category</option>
+      </select>
+    </div>
   </section>
 
   <section id="grid" class="grid"></section>
