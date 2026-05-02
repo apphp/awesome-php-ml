@@ -118,7 +118,7 @@ These are opinionated defaults you can reach for when you just want something th
 
 ## Legend
 
-Not all projects are tagged yet – we’re gradually adding markers as the ecosystem evolves. Treat them as rough guidance, not strict rules.
+Not all projects are tagged yet – we're gradually adding markers as the ecosystem evolves. Treat them as rough guidance, not strict rules.
 
 - `🌟` – widely used / production-ready projects
 - `🧪` – experimental or research-oriented projects
@@ -222,8 +222,8 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 - [aiaccess/ai-access](https://github.com/aiaccess/ai-access "Link to resource") – Unified PHP AI client providing a consistent interface for multiple providers (OpenAI, Anthropic, Gemini, DeepSeek, Grok) with support for chat, embeddings, batch processing, and provider switching
 - 🧪 [adrienbrault/instructrice](https://github.com/adrienbrault/instructrice "Link to resource") – Typed LLM outputs in PHP with flexible schema support (OpenAI, Claude, Gemini, etc.) and type-safe handling of structured responses
-- [ArdaGnsrn/ollama-php](https://github.com/ArdaGnsrn/ollama-php "Link to resource") – A PHP client library for the Ollama LLM server, enabling completions, chat, model management, and embeddings via Ollama’s API
-- [Clarifai/clarifai-php-grpc](https://github.com/Clarifai/clarifai-php-grpc "Link to resource") – Official Clarifai gRPC PHP client for accessing Clarifai’s AI APIs (vision and text recognition)
+- [ArdaGnsrn/ollama-php](https://github.com/ArdaGnsrn/ollama-php "Link to resource") – A PHP client library for the Ollama LLM server, enabling completions, chat, model management, and embeddings via Ollama's API
+- [Clarifai/clarifai-php-grpc](https://github.com/Clarifai/clarifai-php-grpc "Link to resource") – Official Clarifai gRPC PHP client for accessing Clarifai's AI APIs (vision and text recognition)
 - [cognesy/instructor-php](https://github.com/cognesy/instructor-php "Link to resource") – Structured-output helper for LLM responses
 - [deepseek-php/deepseek-php-client](https://github.com/deepseek-php/deepseek-php-client "Link to resource") – PHP client library for integrating with the DeepSeek AI API, providing a fluent API for model queries, streaming results, and support for multiple HTTP clients and models
 - 🌟 [dtyq/magic](https://github.com/dtyq/magic "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/dtyq/magic?style=social) Open-source enterprise AI agent platform with generalist agents, workflow orchestration, IM integration, collaborative office features, and support for multiple LLMs
@@ -244,7 +244,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 - [sarfraznawaz2005/ai-team](https://github.com/sarfraznawaz2005/ai-team "Link to resource") – Package to build and run collaborative teams of AI members with role/task assignments
 - [SearchAugmentedLLM](https://github.com/EliasPereirah/SearchAugmentedLLM "Link to resource") – PHP search-augmented LLM tool that performs web search, extracts, chunks and ranks content to provide context for LLM responses (ideal for RAG applications)
 - [skito/aipi-php](https://github.com/skito/aipi-php "Link to resource") – Universal API client for common AI models in PHP, offering a unified interface to interact with multiple LLM providers
-- [softcreatr/php-mistral-ai-sdk](https://github.com/SoftCreatR/php-mistral-ai-sdk "Link to resource") – PHP SDK for the Mistral AI API, providing an easy wrapper to call Mistral’s LLM and AI endpoints (chat, embeddings, fine-tuning etc.)
+- [softcreatr/php-mistral-ai-sdk](https://github.com/SoftCreatR/php-mistral-ai-sdk "Link to resource") – PHP SDK for the Mistral AI API, providing an easy wrapper to call Mistral's LLM and AI endpoints (chat, embeddings, fine-tuning etc.)
 - [takaaki-mizuno/php-llm-json-adapter](https://github.com/takaaki-mizuno/php-llm-json-adapter "Link to resource") – Adapter to normalize and return LLM responses as structured JSON using JSON Schema, with support for multiple providers (OpenAI, Gemini, Bedrock, Ollama)
 - [thojou/php-llm-documents](https://github.com/thojou/php-llm-documents "Link to resource") – PHP library for LLM-based document processing (splitting, embeddings, vector store, search) inspired by LangChain/DocTran
 - [utopia-php/agents](https://github.com/utopia-php/agents "Link to resource") – Simple, lightweight PHP library for AI agent orchestration with multi-provider support (OpenAI, Anthropic, Deepseek, Perplexity, XAI)
@@ -253,17 +253,18 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 - [logiscape/mcp-sdk-php](https://github.com/logiscape/mcp-sdk-php "Link to resource") – PHP SDK for building Model Context Protocol (MCP) clients and servers to connect LLMs with external tools and services
 - [prism-php/relay](https://github.com/prism-php/relay "Link to resource") – MCP client for Prism that lets PHP/Laravel AI agents connect to external Model Context Protocol servers and use their tools
+- 🧪 [symfony/mcp-sdk](https://github.com/symfony/mcp-sdk "Link to resource") – Symfony's experimental PHP SDK for building Model Context Protocol (MCP) clients and servers
 
 ### Speech & Text-to-Speech
 
-- [b7s/fluentvox](https://github.com/b7s/fluentvox "Link to resource") – Fluent PHP API for state-of-the-art text-to-speech and voice cloning (Resemble AI’s Chatterbox), with CLI, GPU acceleration, and multilingual support
+- [b7s/fluentvox](https://github.com/b7s/fluentvox "Link to resource") – Fluent PHP API for state-of-the-art text-to-speech and voice cloning (Resemble AI's Chatterbox), with CLI, GPU acceleration, and multilingual support
 - [b7s/whisper-php](https://github.com/b7s/whisper-php "Link to resource") – PHP wrapper/client for Whisper speech-to-text (ASR), enabling audio transcription via Whisper models
 
 ### Tokenizers & Prompt Utilities
 
 - [CodeWithKyrian/tokenizers-php](https://github.com/CodeWithKyrian/tokenizers-php "Link to resource") – PHP bindings for Hugging Face Tokenizers, enabling fast tokenization for transformer and LLM models
 - [Gioni06/GPT3Tokenizer](https://github.com/Gioni06/GPT3Tokenizer "Link to resource") – PHP tokenizer compatible with GPT-3 style models
-- [yethee/tiktoken-php](https://github.com/yethee/tiktoken-php "Link to resource") – PHP implementation of OpenAI’s *tiktoken* tokenizer for token counting and optimization
+- [yethee/tiktoken-php](https://github.com/yethee/tiktoken-php "Link to resource") – PHP implementation of OpenAI's *tiktoken* tokenizer for token counting and optimization
 
 ---
 
@@ -302,7 +303,7 @@ Not all projects are tagged yet – we’re gradually adding markers as the ecos
 
 *Bridging PHP with native libraries, external services, and runtimes for deploying and serving ML and LLM models.*
 
-- 🌟 [deepl-php](https://github.com/DeepLcom/deepl-php "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/DeepLcom/deepl-php?style=social) Official PHP client library for the DeepL API, enabling high-quality language translation via DeepL’s AI/ML service
+- 🌟 [deepl-php](https://github.com/DeepLcom/deepl-php "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/DeepLcom/deepl-php?style=social) Official PHP client library for the DeepL API, enabling high-quality language translation via DeepL's AI/ML service
 - [distantmagic/resonance](https://github.com/distantmagic/resonance "Link to resource") – Asynchronous PHP framework (Swoole-based) for building AI-powered, IO-intensive applications, with built-in web server, LLM integration (llama.cpp), WebSockets, and ML model serving capabilities
 - [FFI](https://www.php.net/manual/en/book.ffi.php "Link to resource") – Native C/C++ bindings for ML inference
 - 🧪 [garyblankenship/mcp-php](https://github.com/garyblankenship/mcp-php "Link to resource") – PHP example of a Model Context Protocol (MCP) server for connecting LLMs with application logic
