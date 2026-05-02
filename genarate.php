@@ -1,5 +1,7 @@
 <?php
 
+const GITHUB_URL = 'https://github.com/apphp/awesome-php-ml';
+
 $readme = file_get_contents(__DIR__ . '/README.md');
 
 function parseGitHubRepo(string $url): ?array
@@ -30,30 +32,101 @@ function parseGitHubRepo(string $url): ?array
 function fetchGitHubStars(string $owner, string $repo): ?int
 {
     $apiUrl = "https://api.github.com/repos/{$owner}/{$repo}";
+
+    $result = httpGet($apiUrl, [
+        'User-Agent: awesome-php-ml-docs-generator',
+        'Accept: application/vnd.github+json',
+    ]);
+
+    if ($result['status'] >= 200 && $result['status'] < 300) {
+        $json = json_decode($result['body'], true);
+
+        if (is_array($json) && isset($json['stargazers_count'])) {
+            return (int) $json['stargazers_count'];
+        }
+    }
+
+    $badgeUrl = "https://img.shields.io/github/stars/{$owner}/{$repo}.json";
+
+    $result = httpGet($badgeUrl, [
+        'User-Agent: awesome-php-ml-docs-generator',
+        'Accept: application/json',
+    ]);
+
+    if ($result['status'] >= 200 && $result['status'] < 300) {
+        $json = json_decode($result['body'], true);
+
+        if (is_array($json) && isset($json['value'])) {
+            return parseStarsValue((string) $json['value']);
+        }
+    }
+
+    return null;
+}
+
+function parseStarsValue(string $value): ?int
+{
+    $value = strtolower(trim(str_replace(',', '', $value)));
+
+    if (!preg_match('/^([0-9]*\.?[0-9]+)([km]?)$/', $value, $m)) {
+        return null;
+    }
+
+    $number = (float) $m[1];
+
+    return match ($m[2]) {
+        'k' => (int) round($number * 1000),
+        'm' => (int) round($number * 1000000),
+        default => (int) round($number),
+    };
+}
+
+function httpGet(string $url, array $headers): array
+{
+    if (function_exists('curl_init')) {
+        $ch = curl_init($url);
+
+        curl_setopt_array($ch, [
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_TIMEOUT => 15,
+            CURLOPT_HTTPHEADER => $headers,
+        ]);
+
+        $body = curl_exec($ch);
+        $status = (int) curl_getinfo(
+            $ch,
+            defined('CURLINFO_RESPONSE_CODE') ? CURLINFO_RESPONSE_CODE : CURLINFO_HTTP_CODE
+        );
+
+        curl_close($ch);
+
+        return [
+            'status' => $status,
+            'body' => is_string($body) ? $body : '',
+        ];
+    }
+
     $context = stream_context_create([
         'http' => [
             'method' => 'GET',
-            'header' => [
-                'User-Agent: awesome-php-ml-docs-generator',
-                'Accept: application/vnd.github+json',
-            ],
-            'timeout' => 10,
+            'header' => implode("\r\n", $headers) . "\r\n",
+            'timeout' => 15,
+            'ignore_errors' => true,
         ],
     ]);
 
-    $response = @file_get_contents($apiUrl, false, $context);
+    $body = @file_get_contents($url, false, $context);
+    $status = 0;
 
-    if ($response === false) {
-        return null;
+    if (isset($http_response_header[0]) && preg_match('/\s(\d{3})\s/', $http_response_header[0], $m)) {
+        $status = (int) $m[1];
     }
 
-    $json = json_decode($response, true);
-
-    if (!is_array($json) || !isset($json['stargazers_count'])) {
-        return null;
-    }
-
-    return (int) $json['stargazers_count'];
+    return [
+        'status' => $status,
+        'body' => is_string($body) ? $body : '',
+    ];
 }
 
 preg_match_all(
@@ -64,9 +137,18 @@ preg_match_all(
 );
 
 $items = [];
+$starsCachePath = __DIR__ . '/.cache/github-stars.json';
 $starsCache = [];
+$starsCacheChanged = false;
 $currentCategory = 'General';
 $resourceCount = 0;
+
+if (is_file($starsCachePath)) {
+    $cacheData = json_decode((string) file_get_contents($starsCachePath), true);
+    if (is_array($cacheData)) {
+        $starsCache = $cacheData;
+    }
+}
 
 $lines = explode("\n", $readme);
 
@@ -88,9 +170,10 @@ foreach ($lines as $line) {
             [$owner, $repo] = $repoData;
             $repoKey = strtolower($owner . '/' . $repo);
 
-            if (!array_key_exists($repoKey, $starsCache)) {
+            if (!array_key_exists($repoKey, $starsCache) || $starsCache[$repoKey] === null) {
                 echo " | fetching stars for {$owner}/{$repo}";
                 $starsCache[$repoKey] = fetchGitHubStars($owner, $repo);
+                $starsCacheChanged = true;
             } else {
                 echo " | using cached stars for {$owner}/{$repo}";
             }
@@ -125,6 +208,7 @@ foreach ($lines as $line) {
 $categories = array_values(array_unique(array_column($items, 'category')));
 
 $data = json_encode($items, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+$githubUrl = GITHUB_URL;
 
 $html = <<<HTML
 <!doctype html>
@@ -146,7 +230,7 @@ $html = <<<HTML
 body {
   margin: 0;
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: radial-gradient(circle at top, #1e3a8a 0, var(--bg) 32%);
+  background: radial-gradient(circle at top, #1e3a8a 0, var(--bg) 25%);
   color: var(--text);
   scrollbar-width: thin;
   scrollbar-color: #475569 #020617;
@@ -306,7 +390,7 @@ footer {
 </style>
 </head>
 <body>
-<a href="https://github.com/apphp/awesome-php-ml" target="_blank" rel="noopener" class="top-link">
+<a href="{$githubUrl}" target="_blank" rel="noopener" class="top-link">
   <svg viewBox="0 0 24 24" aria-hidden="true">
     <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path>
   </svg>
@@ -329,6 +413,12 @@ footer {
     <select id="category">
       <option value="">All categories</option>
     </select>
+    <select id="legend">
+      <option value="">All legends</option>
+      <option value="🌟">🌟 Production-ready</option>
+      <option value="🧪">🧪 Experimental</option>
+      <option value="⚠️">⚠️ Caution</option>
+    </select>
     <select id="sort">
       <option value="name">A–Z</option>
       <option value="category">Category</option>
@@ -340,7 +430,8 @@ footer {
 </main>
 
 <footer>
-  Generated from README.md
+  Generated from README.md –
+  <a href="{$githubUrl}" target="_blank" class="hover:text-gray-400 transition-colors">awesome-php-ml</a>
 </footer>
 
 <script>
@@ -349,6 +440,7 @@ const items = $data;
 const grid = document.getElementById('grid');
 const search = document.getElementById('search');
 const category = document.getElementById('category');
+const legend = document.getElementById('legend');
 const sort = document.getElementById('sort');
 const empty = document.getElementById('empty');
 
@@ -367,6 +459,7 @@ categories.forEach(cat => {
 function render() {
   const q = search.value.toLowerCase();
   const cat = category.value;
+  const selectedLegend = legend.value;
 
   let filtered = items.filter(item => {
     const haystack = [
@@ -375,7 +468,9 @@ function render() {
       item.category
     ].join(' ').toLowerCase();
 
-    return haystack.includes(q) && (!cat || item.category === cat);
+    return haystack.includes(q)
+      && (!cat || item.category === cat)
+      && (!selectedLegend || item.badge === selectedLegend);
   });
 
   filtered.sort((a, b) => {
@@ -396,8 +491,7 @@ function render() {
       <p class="desc">\${escapeHtml(item.description)}</p>
       <div class="meta">
         <span class="tag">\${escapeHtml(item.category)}</span>
-        <span class="tag">\${new URL(item.url).hostname.replace('www.', '')}</span>
-        \${item.stars !== null ? `<span class="tag">⭐ \${starsFormatter.format(item.stars)}</span>` : ''}
+        <span class="tag">⭐ \${item.stars !== null ? starsFormatter.format(item.stars) : 'N/A'}</span>
       </div>
     </article>
   `).join('');
@@ -417,6 +511,7 @@ function escapeHtml(str) {
 
 search.addEventListener('input', render);
 category.addEventListener('change', render);
+legend.addEventListener('change', render);
 sort.addEventListener('change', render);
 
 render();
@@ -427,6 +522,18 @@ HTML;
 
 if (!is_dir(__DIR__ . '/docs')) {
     mkdir(__DIR__ . '/docs');
+}
+
+if ($starsCacheChanged) {
+    $cacheDir = dirname($starsCachePath);
+    if (!is_dir($cacheDir)) {
+        mkdir($cacheDir, 0777, true);
+    }
+
+    file_put_contents(
+        $starsCachePath,
+        json_encode($starsCache, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . "\n"
+    );
 }
 
 file_put_contents(__DIR__ . '/docs/index.html', $html);
