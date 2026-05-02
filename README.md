@@ -388,8 +388,11 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 - [openai-php/symfony](https://github.com/openai-php/symfony "Link to resource") – OpenAI PHP for Symfony integration
 - 🌟 [symfony/ai](https://github.com/symfony/ai) – ![GitHub stars](https://img.shields.io/github/stars/symfony/ai?style=social "Link to resource") – Symfony AI: built-in AI components and bundles for Symfony apps
 - [soleinjast/symfony-markdown-response-bundle](https://github.com/soleinjast/symfony-markdown-response-bundle "Link to resource") – Symfony bundle that automatically serves Markdown versions of HTML responses to clients
+- 🧪 [symfony/ai-agent](https://github.com/symfony/ai-agent "Link to resource") – Symfony AI Agent component for building agentic applications that interact with users, execute tasks, and manage workflows
+- 🧪 [symfony/ai-bundle](https://github.com/symfony/ai-bundle "Link to resource") – Symfony integration bundle that brings together Symfony AI components for agents, chat, platforms, stores, RAG, tools, and configuration
 - 🧪 [symfony/ai-platform](https://github.com/symfony/ai-platform "Link to resource") – Experimental Symfony AI Platform component providing a unified abstraction for interacting with AI models, providers, messages, embeddings, speech, and provider-specific bridge packages
 - [symfony/ai-store](https://github.com/symfony/ai-store "Link to resource") – Symfony AI component providing a vector store abstraction for semantic search and RAG workflows
+- [symfony/mcp-bundle](https://github.com/symfony/mcp-bundle "Link to resource") – Symfony bundle for exposing MCP tools, prompts, and resources over HTTP or STDIO using the official MCP SDK
 
 ---
 
