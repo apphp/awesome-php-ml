@@ -38,7 +38,7 @@ Want to add a project? See the [Contributing](#contributing) section below for i
 - [Tools & Utilities](#tools--utilities)
 - [Laravel & Framework Integrations](#laravel--framework-integrations)
 - [Symfony & Framework Integrations](#symfony--framework-integrations)
-- [WordPress Integrations](#wordPress-integrations)
+- [WordPress Integrations](#wordpress-integrations)
 - [Resources](#resources)
 - [Support this project](#support-this-project)
 
@@ -47,7 +47,7 @@ Want to add a project? See the [Contributing](#contributing) section below for i
 ## Requirements
 
 **PHP Version Requirements:**
-- **Minimum**: PHP 7.4+ (most libraries)
+- **Minimum**: PHP 7.4+ (most libraries already support PHP 8.1+/8.2+)
 - **Recommended**: PHP 8.1+ for best performance and features
 - **Latest features**: PHP 8.2+ for some cutting-edge libraries
 
@@ -154,7 +154,6 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 *Text processing, tokenization, language detection, sentiment analysis and other NLP tasks in PHP.*
 
 - ⚠️ [angeloskath/php-nlp-tools](https://github.com/angeloskath/php-nlp-tools "Link to resource") – Natural Language Processing tools
-- [CodeWithKyrian/transformers-php](https://github.com/CodeWithKyrian/transformers-php "Link to resource") – Hugging Face–style Transformer inference in PHP using ONNX
 - [davmixcool/php-sentiment-analyzer](https://github.com/davmixcool/php-sentiment-analyzer "Link to resource") – Lightweight PHP library for sentiment analysis using lexical rules
 - [friteuseb/nlp_tools](https://github.com/friteuseb/nlp_tools "Link to resource") – Extension for NLP methods and text analysis
 - ⚠️ [googlei18n/myanmar-tools](https://github.com/googlei18n/myanmar-tools "Link to resource") – Myanmar text encoding detection and Zawgyi ↔ Unicode conversion using a trained model (includes PHP support)
