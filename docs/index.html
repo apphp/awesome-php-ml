@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Awesome PHP Machine Learning & AI</title>
+<style>
+:root {
+  --bg: #0f172a;
+  --card: #111827;
+  --muted: #94a3b8;
+  --text: #e5e7eb;
+  --accent: #38bdf8;
+  --border: #1f2937;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #1e3a8a 0, var(--bg) 32%);
+  color: var(--text);
+}
+.top-link {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: #9ca3af;
+  border: 1px solid #374151;
+  border-radius: 10px;
+  padding: 8px 12px;
+  transition: color .2s ease, border-color .2s ease;
+  text-decoration: none;
+  background: rgba(2, 6, 23, .65);
+  backdrop-filter: blur(4px);
+}
+.top-link:hover {
+  color: #ffffff;
+  border-color: #6b7280;
+}
+.top-link svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+header {
+  padding: 72px 20px 36px;
+  text-align: center;
+}
+h1 {
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  margin: 0;
+}
+.subtitle {
+  color: var(--muted);
+  font-size: 1.2rem;
+  margin-top: 12px;
+}
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 24px;
+}
+.stat {
+  background: rgba(17, 24, 39, .8);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 18px;
+  text-align: center;
+}
+.stat strong {
+  display: block;
+  font-size: 1.8rem;
+}
+.controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+input, select {
+  background: #020617;
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 14px;
+  padding: 14px 16px;
+  font-size: 1rem;
+}
+input { flex: 1; min-width: 260px; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 18px;
+}
+.card {
+  background: linear-gradient(180deg, rgba(17,24,39,.95), rgba(15,23,42,.95));
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 20px;
+  box-shadow: 0 18px 40px rgba(0,0,0,.22);
+}
+.card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  transition: .18s ease;
+}
+.card h2 {
+  font-size: 1.15rem;
+  margin: 0 0 10px;
+}
+.card a {
+  color: var(--text);
+  text-decoration: none;
+}
+.card a:hover { color: var(--accent); }
+.desc {
+  color: var(--muted);
+  line-height: 1.5;
+  min-height: 72px;
+}
+.meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 18px;
+  align-items: center;
+}
+.tag {
+  font-size: .8rem;
+  padding: 6px 10px;
+  background: #020617;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+}
+.badge {
+  font-size: 1.15rem;
+}
+footer {
+  color: var(--muted);
+  text-align: center;
+  padding: 40px 20px;
+}
+.empty {
+  display: none;
+  text-align: center;
+  color: var(--muted);
+  padding: 40px;
+}
+@media (max-width: 720px) {
+  .stats { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<a href="https://github.com/apphp/awesome-php-ml" target="_blank" rel="noopener" class="top-link">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path>
+  </svg>
+  GitHub
+</a>
+<header>
+  <h1>Awesome PHP ML & AI</h1>
+  <p class="subtitle">Curated PHP libraries for Machine Learning, AI, NLP, LLMs, agents, RAG and data science.</p>
+</header>
+
+<main class="container">
+  <section class="stats">
+    <div class="stat"><strong id="total">0</strong>Libraries</div>
+    <div class="stat"><strong id="categories">0</strong>Categories</div>
+    <div class="stat"><strong>PHP</strong>AI Ecosystem</div>
+  </section>
+
+  <section class="controls">
+    <input id="search" placeholder="Search libraries, descriptions, categories...">
+    <select id="category">
+      <option value="">All categories</option>
+    </select>
+    <select id="sort">
+      <option value="name">A–Z</option>
+      <option value="category">Category</option>
+    </select>
+  </section>
+
+  <section id="grid" class="grid"></section>
+  <div id="empty" class="empty">No libraries found. Try another search or category.</div>
+</main>
+
+<footer>
+  Generated from README.md
+</footer>
+
+<script>
+const items = [{"badge":"🌟","name":"CodeWithKyrian/transformers-php","url":"https://github.com/CodeWithKyrian/transformers-php","description":"A PHP toolkit for running Hugging Face–style Transformer models with ONNX Runtime (text generation, summarization, classification, etc.)","category":"Machine Learning","stars":null},{"badge":"⚠️","name":"danielefavi/brainy","url":"https://github.com/danielefavi/brainy","description":"Simple PHP class for neural networks and machine learning","category":"Machine Learning","stars":null},{"badge":"","name":"dr-que/polynomial-regression","url":"https://github.com/jbboehr/PolynomialRegression.php","description":"Polynomial regression for PHP","category":"Machine Learning","stars":null},{"badge":"⚠️","name":"pecl/svm","url":"https://pecl.php.net/package/svm/0.2.3","description":"PHP extension providing bindings to the LIBSVM library for Support Vector Machine classification and regression","category":"Machine Learning","stars":null},{"badge":"🌟","name":"php-ai/php-ml","url":"https://gitlab.com/php-ai/php-ml","description":"Core machine learning algorithms for PHP","category":"Machine Learning","stars":null},{"badge":"","name":"php-ai/php-ml-examples","url":"https://github.com/php-ai/php-ml-examples","description":"Practical examples for PHP-ML","category":"Machine Learning","stars":null},{"badge":"","name":"sphamster/bayes","url":"https://github.com/sphamster/bayes","description":"Naive Bayes classifier implementation in PHP for probabilistic classification tasks","category":"Machine Learning","stars":null},{"badge":"🧪","name":"rindow/rindow-neuralnetworks","url":"https://github.com/rindow/rindow-neuralnetworks","description":"Deep learning framework for PHP providing neural network layers, training utilities, and GPU/accelerated backends via the Rindow numerical computing ecosystem","category":"Deep Learning & Neural Networks","stars":null},{"badge":"🌟","name":"RubixML/RubixML","url":"https://github.com/RubixML/RubixML","description":"High-level ML framework with pipelines and datasets","category":"Deep Learning & Neural Networks","stars":null},{"badge":"⚠️","name":"angeloskath/php-nlp-tools","url":"https://github.com/angeloskath/php-nlp-tools","description":"Natural Language Processing tools","category":"Natural Language Processing","stars":null},{"badge":"","name":"davmixcool/php-sentiment-analyzer","url":"https://github.com/davmixcool/php-sentiment-analyzer","description":"Lightweight PHP library for sentiment analysis using lexical rules","category":"Natural Language Processing","stars":null},{"badge":"","name":"friteuseb/nlp_tools","url":"https://github.com/friteuseb/nlp_tools","description":"Extension for NLP methods and text analysis","category":"Natural Language Processing","stars":null},{"badge":"⚠️","name":"googlei18n/myanmar-tools","url":"https://github.com/googlei18n/myanmar-tools","description":"Myanmar text encoding detection and Zawgyi ↔ Unicode conversion using a trained model (includes PHP support)","category":"Natural Language Processing","stars":null},{"badge":"⚠️","name":"patrickschur/language-detection","url":"https://github.com/patrickschur/language-detection","description":"Language detection library","category":"Natural Language Processing","stars":null},{"badge":"🧪","name":"RubixML/Sentiment","url":"https://github.com/RubixML/Sentiment","description":"Example project demonstrating sentiment analysis with a neural network (IMDB reviews) using Rubix ML in PHP","category":"Natural Language Processing","stars":null},{"badge":"","name":"voku/stop-words","url":"https://github.com/voku/stop-words","description":"Stop word lists for many languages","category":"Natural Language Processing","stars":null},{"badge":"","name":"yooper/php-text-analysis","url":"https://github.com/yooper/php-text-analysis","description":"Sentiment analysis and NLP tools","category":"Natural Language Processing","stars":null},{"badge":"🧪","name":"aschmelyun/subvert","url":"https://github.com/aschmelyun/subvert","description":"Generate subtitles, summaries, and chapters from videos in seconds","category":"Computer Vision, Image & Video Processing","stars":null},{"badge":"🌟","name":"Intervention/image","url":"https://github.com/Intervention/image","description":"Image manipulation library for CV preprocessing","category":"Computer Vision, Image & Video Processing","stars":null},{"badge":"","name":"jcupitt/vips","url":"https://github.com/jcupitt/libvips","description":"Fast image processing library with PHP bindings","category":"Computer Vision, Image & Video Processing","stars":null},{"badge":"🧪","name":"mailmug/php-dlib","url":"https://github.com/mailmug/php-dlib","description":"PHP extension for Dlib, supporting face detection, facial landmarks, face recognition descriptors, CNN detection, and clustering","category":"Computer Vision, Image & Video Processing","stars":null},{"badge":"🧪","name":"php-opencv/php-opencv","url":"https://github.com/php-opencv/php-opencv","description":"OpenCV bindings for PHP","category":"Computer Vision, Image & Video Processing","stars":null},{"badge":"🌟","name":"brick/math","url":"https://github.com/brick/math","description":"Arbitrary-precision arithmetic for PHP (BigInteger, BigDecimal, BigRational)","category":"Math, Statistics & Linear Algebra","stars":null},{"badge":"🌟","name":"Hi-Folks/statistics","url":"https://github.com/Hi-Folks/statistics","description":"Probability distributions and statistical functions library for PHP","category":"Math, Statistics & Linear Algebra","stars":null},{"badge":"🌟","name":"markrogoyski/math-php","url":"https://github.com/markrogoyski/math-php","description":"Math library for linear algebra, statistics, and calculus","category":"Math, Statistics & Linear Algebra","stars":null},{"badge":"","name":"mcordingley/LinearAlgebra","url":"https://github.com/mcordingley/LinearAlgebra","description":"Stand-alone linear algebra library","category":"Math, Statistics & Linear Algebra","stars":null},{"badge":"⚠️","name":"NumPHP/NumPHP","url":"https://github.com/NumPHP/NumPHP","description":"Math library for scientific computing","category":"Math, Statistics & Linear Algebra","stars":null},{"badge":"🌟","name":"RubixML/Tensor","url":"https://github.com/RubixML/Tensor","description":"N-dimensional tensors for numerical computing","category":"Core ML Infrastructure","stars":null},{"badge":"🌟","name":"RubixML/numpower","url":"https://github.com/RubixML/numpower","description":"High-performance numerical computing library inspired by NumPy","category":"Core ML Infrastructure","stars":null},{"badge":"🧪","name":"rindow/rindow-math-matrix","url":"https://github.com/rindow/rindow-math-matrix","description":"Foundational package for scientific matrix operations","category":"Core ML Infrastructure","stars":null},{"badge":"🧪","name":"phpmlkit/ndarray","url":"https://github.com/phpmlkit/ndarray","description":"Multidimensional array (ndarray) implementation for PHP inspired by NumPy, useful for numerical computing and machine learning workloads","category":"Core ML Infrastructure","stars":null},{"badge":"🌟","name":"ankane/onnxruntime-php","url":"https://github.com/ankane/onnxruntime-php","description":"Run ONNX models from PHP","category":"Core ML Infrastructure","stars":null},{"badge":"","name":"FFI","url":"https://www.php.net/manual/en/book.ffi.php","description":"Native C/C++ bindings in PHP for high-performance ML inference","category":"Core ML Infrastructure","stars":null},{"badge":"","name":"phpmlkit/onnxruntime","url":"https://github.com/phpmlkit/onnxruntime","description":"High-performance ONNX Runtime bindings for PHP using FFI, enabling inference of models from PyTorch, TensorFlow, scikit-learn and other frameworks","category":"Core ML Infrastructure","stars":null},{"badge":"🌟","name":"swoole/phpy","url":"https://github.com/swoole/phpy","description":"Bridge for calling Python from PHP via a runtime bridge","category":"Core ML Infrastructure","stars":null},{"badge":"","name":"phpmlkit (GitHub org)","url":"https://github.com/phpmlkit","description":"Collection of high-performance ML infrastructure libraries for PHP, including NDArray (NumPy-like arrays) and ONNX Runtime bindings","category":"Core ML Infrastructure","stars":null},{"badge":"","name":"aiaccess/ai-access","url":"https://github.com/aiaccess/ai-access","description":"Unified PHP AI client providing a consistent interface for multiple providers (OpenAI, Anthropic, Gemini, DeepSeek, Grok) with support for chat, embeddings, batch processing, and provider switching","category":"LLMs & AI APIs","stars":null},{"badge":"🧪","name":"adrienbrault/instructrice","url":"https://github.com/adrienbrault/instructrice","description":"Typed LLM outputs in PHP with flexible schema support (OpenAI, Claude, Gemini, etc.) and type-safe handling of structured responses","category":"LLMs & AI APIs","stars":null},{"badge":"","name":"ArdaGnsrn/ollama-php","url":"https://github.com/ArdaGnsrn/ollama-php","description":"A PHP client library for the Ollama LLM server, enabling completions, chat, model management, and embeddings via Ollama's API","category":"LLMs & AI APIs","stars":null},{"badge":"","name":"Clarifai/clarifai-php-grpc","url":"https://github.com/Clarifai/clarifai-php-grpc","description":"Official Clarifai gRPC PHP client for accessing Clarifai's AI APIs (vision and text recognition)","category":"LLMs & AI APIs","stars":null},{"badge":"","name":"cognesy/instructor-php","url":"https://github.com/cognesy/instructor-php","description":"Structured-output helper for LLM responses","category":"LLMs & AI APIs","stars":null},{"badge":"","name":"deepseek-php/deepseek-php-client","url":"https://github.com/deepseek-php/deepseek-php-client","description":"PHP client library for integrating with the DeepSeek AI API, providing a fluent API for model queries, streaming results, and support for multiple HTTP clients and models","category":"LLMs & AI APIs","stars":null},{"badge":"🌟","name":"dtyq/magic","url":"https://github.com/dtyq/magic","description":"Open-source enterprise AI agent platform with generalist agents, workflow orchestration, IM integration, collaborative office features, and support for multiple LLMs","category":"LLMs & AI APIs","stars":null},{"badge":"","name":"elastic/elasticsearch-chatgpt-php","url":"https://github.com/elastic/elasticsearch-chatgpt-php","description":"Experimental PHP library that uses ChatGPT to translate natural language into Elasticsearch DSL queries and perform semantic search over your indices","category":"LLMs & AI APIs","stars":null},{"badge":"","name":"FunkyOz/mulagent","url":"https://github.com/FunkyOz/mulagent","description":"Multi-agent orchestration framework for LLM applications","category":"LLMs & AI APIs","stars":null},{"badge":"🌟","name":"google-gemini-php/client","url":"https://github.com/google-gemini-php/client","description":"Gemini PHP is a community-maintained PHP API client that allows you to interact with the Gemini AI API","category":"LLMs & AI APIs","stars":null},{"badge":"⚠️","name":"HosonoDE/EasyAI-PHP","url":"https://github.com/HosonoDE/EasyAI-PHP","description":"High-level AI integration library for PHP that simplifies using LLMs","category":"LLMs & AI APIs","stars":null},{"badge":"🧪","name":"carmelosantana/php-agents","url":"https://github.com/carmelosantana/php-agents","description":"PHP framework for building AI agents with tool use, provider abstraction and multi-model support","category":"LLMs & AI APIs","stars":null},{"badge":"🌟","name":"llm-agents-php/agents","url":"https://github.com/llm-agents-php/agents","description":"LM Agents is a PHP library for building and managing Language Model (LLM) based agents","category":"LLMs & AI APIs","stars":null},{"badge":"","name":"llm-agents-php/prompt-generator","url":"https://github.com/llm-agents-php/prompt-generator","description":"Prompt generator for LLM agents with interceptors","category":"LLMs & AI APIs","stars":null},{"badge":"","name":"ModelFlow-AI (GitHub org)","url":"https://github.com/modelflow-ai","description":"Collection of PHP packages for unified access to AI models, embeddings, and chat (OpenAI, Mistral, Ollama)","category":"LLMs & AI APIs","stars":null},{"badge":"","name":"mozex/anthropic-php","url":"https://github.com/mozex/anthropic-php","description":"Community-maintained PHP API client for the Anthropic (Claude) AI API, supporting messages, streaming, tool use, and batch processing","category":"LLMs & AI APIs","stars":null},{"badge":"","name":"mzarnecki/php-rag","url":"https://github.com/mzarnecki/php-rag","description":"PHP RAG toolkit for connecting vector search and LLMs in retrieval-augmented workflows","category":"LLMs & AI APIs","stars":null},{"badge":"🌟","name":"openai-php/client","url":"https://github.com/openai-php/client","description":"Official OpenAI PHP client","category":"LLMs & AI APIs","stars":null},{"badge":"🌟","name":"orhanerday/open-ai","url":"https://github.com/orhanerday/open-ai","description":"Popular OpenAI PHP SDK","category":"LLMs & AI APIs","stars":null},{"badge":"","name":"prism-php/bedrock","url":"https://github.com/prism-php/bedrock","description":"AWS Bedrock provider for the Prism PHP framework, adding Bedrock LLM and embeddings support to Laravel Prism integrations","category":"LLMs & AI APIs","stars":null},{"badge":"","name":"sarfraznawaz2005/ai-team","url":"https://github.com/sarfraznawaz2005/ai-team","description":"Package to build and run collaborative teams of AI members with role/task assignments","category":"LLMs & AI APIs","stars":null},{"badge":"","name":"SearchAugmentedLLM","url":"https://github.com/EliasPereirah/SearchAugmentedLLM","description":"PHP search-augmented LLM tool that performs web search, extracts, chunks and ranks content to provide context for LLM responses (ideal for RAG applications)","category":"LLMs & AI APIs","stars":null},{"badge":"","name":"skito/aipi-php","url":"https://github.com/skito/aipi-php","description":"Universal API client for common AI models in PHP, offering a unified interface to interact with multiple LLM providers","category":"LLMs & AI APIs","stars":null},{"badge":"","name":"softcreatr/php-mistral-ai-sdk","url":"https://github.com/SoftCreatR/php-mistral-ai-sdk","description":"PHP SDK for the Mistral AI API, providing an easy wrapper to call Mistral's LLM and AI endpoints (chat, embeddings, fine-tuning etc.)","category":"LLMs & AI APIs","stars":null},{"badge":"","name":"takaaki-mizuno/php-llm-json-adapter","url":"https://github.com/takaaki-mizuno/php-llm-json-adapter","description":"Adapter to normalize and return LLM responses as structured JSON using JSON Schema, with support for multiple providers (OpenAI, Gemini, Bedrock, Ollama)","category":"LLMs & AI APIs","stars":null},{"badge":"","name":"thojou/php-llm-documents","url":"https://github.com/thojou/php-llm-documents","description":"PHP library for LLM-based document processing (splitting, embeddings, vector store, search) inspired by LangChain/DocTran","category":"LLMs & AI APIs","stars":null},{"badge":"","name":"utopia-php/agents","url":"https://github.com/utopia-php/agents","description":"Simple, lightweight PHP library for AI agent orchestration with multi-provider support (OpenAI, Anthropic, Deepseek, Perplexity, XAI)","category":"LLMs & AI APIs","stars":null},{"badge":"","name":"logiscape/mcp-sdk-php","url":"https://github.com/logiscape/mcp-sdk-php","description":"PHP SDK for building Model Context Protocol (MCP) clients and servers to connect LLMs with external tools and services","category":"LLMs & AI APIs","stars":null},{"badge":"🧪","name":"manuelkiessling/php-ai-tool-bridge","url":"https://github.com/manuelkiessling/php-ai-tool-bridge","description":"PHP library for defining AI “tool functions” that let LLMs interact with application code and external services using structured JSON schemas","category":"LLMs & AI APIs","stars":null},{"badge":"","name":"prism-php/relay","url":"https://github.com/prism-php/relay","description":"MCP client for Prism that lets PHP/Laravel AI agents connect to external Model Context Protocol servers and use their tools","category":"LLMs & AI APIs","stars":null},{"badge":"🧪","name":"symfony/mcp-sdk","url":"https://github.com/symfony/mcp-sdk","description":"Symfony's experimental PHP SDK for building Model Context Protocol (MCP) clients and servers","category":"LLMs & AI APIs","stars":null},{"badge":"","name":"b7s/fluentvox","url":"https://github.com/b7s/fluentvox","description":"Fluent PHP API for state-of-the-art text-to-speech and voice cloning (Resemble AI's Chatterbox), with CLI, GPU acceleration, and multilingual support","category":"LLMs & AI APIs","stars":null},{"badge":"","name":"b7s/whisper-php","url":"https://github.com/b7s/whisper-php","description":"PHP wrapper/client for Whisper speech-to-text (ASR), enabling audio transcription via Whisper models","category":"LLMs & AI APIs","stars":null},{"badge":"","name":"CodeWithKyrian/tokenizers-php","url":"https://github.com/CodeWithKyrian/tokenizers-php","description":"PHP bindings for Hugging Face Tokenizers, enabling fast tokenization for transformer and LLM models","category":"LLMs & AI APIs","stars":null},{"badge":"","name":"Gioni06/GPT3Tokenizer","url":"https://github.com/Gioni06/GPT3Tokenizer","description":"PHP tokenizer compatible with GPT-3 style models","category":"LLMs & AI APIs","stars":null},{"badge":"","name":"HelgeSverre/toon-php","url":"https://github.com/HelgeSverre/toon-php","description":"PHP implementation of TOON, a compact data format for reducing token usage when sending structured data to LLMs","category":"LLMs & AI APIs","stars":null},{"badge":"","name":"yethee/tiktoken-php","url":"https://github.com/yethee/tiktoken-php","description":"PHP implementation of OpenAI's *tiktoken* tokenizer for token counting and optimization","category":"LLMs & AI APIs","stars":null},{"badge":"🌟","name":"algolia/algoliasearch-client-php","url":"https://github.com/algolia/algoliasearch-client-php","description":"Algolia search client","category":"Embeddings & Vector Search","stars":null},{"badge":"","name":"CodeWithKyrian/chromadb-php","url":"https://github.com/CodeWithKyrian/chromadb-php","description":"PHP client for ChromaDB, enabling vector similarity search and embedding storage for AI and RAG applications","category":"Embeddings & Vector Search","stars":null},{"badge":"","name":"hkulekci/qdrant-php","url":"https://github.com/hkulekci/qdrant-php","description":"PHP client for the Qdrant vector database, enabling vector similarity search and embedding storage for AI and RAG applications","category":"Embeddings & Vector Search","stars":null},{"badge":"","name":"llm-agents-php/vector-storage","url":"https://github.com/llm-agents-php/vector-storage","description":"LLM Agents Vector Storage","category":"Embeddings & Vector Search","stars":null},{"badge":"🌟","name":"LLPhant/LLPhant","url":"https://github.com/LLPhant/LLPhant","description":"Comprehensive PHP generative AI framework supporting LLMs, embeddings, vector search and more","category":"Embeddings & Vector Search","stars":null},{"badge":"🌟","name":"meilisearch/meilisearch-php","url":"https://github.com/meilisearch/meilisearch-php","description":"Client for Meilisearch search engine","category":"Embeddings & Vector Search","stars":null},{"badge":"🌟","name":"pgvector/pgvector","url":"https://github.com/pgvector/pgvector","description":"Vector similarity search extension for PostgreSQL","category":"Embeddings & Vector Search","stars":null},{"badge":"🌟","name":"pgvector/pgvector-php","url":"https://github.com/pgvector/pgvector-php","description":"PHP client for pgvector on PostgreSQL","category":"Embeddings & Vector Search","stars":null},{"badge":"","name":"probots-io/pinecone-php","url":"https://github.com/probots-io/pinecone-php","description":"PHP client for Pinecone vector database used in semantic search and RAG pipelines","category":"Embeddings & Vector Search","stars":null},{"badge":"","name":"redis-applied-ai/redis-vector-php","url":"https://github.com/redis-applied-ai/redis-vector-php","description":"PHP client for Redis Vector Library (RedisVL) to support vector similarity search and AI-oriented queries","category":"Embeddings & Vector Search","stars":null},{"badge":"","name":"voyanara/milvus-php-sdk","url":"https://github.com/voyanara/milvus-php-sdk","description":"PHP SDK for Milvus vector database API v2","category":"Embeddings & Vector Search","stars":null},{"badge":"🌟","name":"cocur/slugify","url":"https://github.com/cocur/slugify","description":"Converts strings into URL-friendly slugs, includes integrations for many frameworks","category":"Data Processing","stars":null},{"badge":"🌟","name":"flow-php/flow","url":"https://github.com/flow-php/flow","description":"Data processing and ETL framework for PHP with typed pipelines","category":"Data Processing","stars":null},{"badge":"","name":"league/csv","url":"https://github.com/thephpleague/csv","description":"CSV data processing","category":"Data Processing","stars":null},{"badge":"🌟","name":"php-ds/ext-ds","url":"https://github.com/php-ds/ext-ds","description":"PHP Data Structures extension: efficient vectors, maps, sets, etc.","category":"Data Processing","stars":null},{"badge":"","name":"spatie/data-transfer-object","url":"https://github.com/spatie/data-transfer-object","description":"Strongly typed DTOs","category":"Data Processing","stars":null},{"badge":"","name":"symfony/serializer","url":"https://github.com/symfony/serializer","description":"Data normalization & serialization","category":"Data Processing","stars":null},{"badge":"🌟","name":"deepl-php","url":"https://github.com/DeepLcom/deepl-php","description":"Official PHP client library for the DeepL API, enabling high-quality language translation via DeepL's AI/ML service","category":"Interop & Model Serving","stars":null},{"badge":"","name":"distantmagic/resonance","url":"https://github.com/distantmagic/resonance","description":"Asynchronous PHP framework (Swoole-based) for building AI-powered, IO-intensive applications, with built-in web server, LLM integration (llama.cpp), WebSockets, and ML model serving capabilities","category":"Interop & Model Serving","stars":null},{"badge":"","name":"FFI","url":"https://www.php.net/manual/en/book.ffi.php","description":"Native C/C++ bindings for ML inference","category":"Interop & Model Serving","stars":null},{"badge":"🧪","name":"garyblankenship/mcp-php","url":"https://github.com/garyblankenship/mcp-php","description":"PHP example of a Model Context Protocol (MCP) server for connecting LLMs with application logic","category":"Interop & Model Serving","stars":null},{"badge":"🌟","name":"googleapis/google-cloud-php","url":"https://github.com/googleapis/google-cloud-php","description":"Official PHP client library for Google Cloud APIs (including ML/AI services like Vision, Translate, AutoML, Vertex AI, etc.)","category":"Interop & Model Serving","stars":null},{"badge":"","name":"grpc/grpc-php","url":"https://github.com/grpc/grpc-php","description":"gRPC client for model services","category":"Interop & Model Serving","stars":null},{"badge":"🧪","name":"HossamBalaha/Deep-Learning-Classification-System-using-PHP-and-Keras","url":"https://github.com/HossamBalaha/Deep-Learning-Classification-System-using-PHP-and-Keras","description":"Example system showing how to integrate a Keras deep learning classifier with a PHP backend","category":"Interop & Model Serving","stars":null},{"badge":"🌟","name":"neuron-core/neuron-ai","url":"https://github.com/neuron-core/neuron-ai","description":"PHP agentic AI framework for building and orchestrating LLMs, RAG etc","category":"Interop & Model Serving","stars":null},{"badge":"","name":"nlpcloud/nlpcloud-php","url":"https://github.com/nlpcloud/nlpcloud-php","description":"PHP client for the NLP Cloud API (access NLP/ML services like NER, sentiment analysis, summarization, text generation, embeddings, translation, and more)","category":"Interop & Model Serving","stars":null},{"badge":"🧪","name":"apphp/pretty-print","url":"https://github.com/apphp/pretty-print","description":"Pretty-print PHP arrays and numeric data for ML debugging","category":"Tools & Utilities","stars":null},{"badge":"🧪","name":"context-hub/generator","url":"https://github.com/context-hub/generator","description":"Context-as-Code (CTX) tool that extracts and organizes codebase context into structured documents and MCP servers for LLM-assisted development","category":"Tools & Utilities","stars":null},{"badge":"","name":"guanguans/ai-commit","url":"https://github.com/guanguans/ai-commit","description":"AI-powered CLI to automatically generate conventional Git commit messages","category":"Tools & Utilities","stars":null},{"badge":"","name":"joshembling/laragenie","url":"https://github.com/joshembling/laragenie","description":"AI chatbot/assistant for Laravel that indexes and understands your codebase via the command line (OpenAI + Pinecone)","category":"Tools & Utilities","stars":null},{"badge":"🧪","name":"mariorazo97/single-file-php-ai","url":"https://github.com/mariorazo97/single-file-php-ai","description":"Drop-in single-file PHP AI chat interface for Ollama and OpenAI, with no Node.js, Docker, database, or build step","category":"Tools & Utilities","stars":null},{"badge":"","name":"nunomaduro/collision","url":"https://github.com/nunomaduro/collision","description":"CLI error handling (useful for ML tools)","category":"Tools & Utilities","stars":null},{"badge":"","name":"psr/log","url":"https://github.com/php-fig/log","description":"Logging standard","category":"Tools & Utilities","stars":null},{"badge":"","name":"symfony/console","url":"https://github.com/symfony/console","description":"CLI applications","category":"Tools & Utilities","stars":null},{"badge":"","name":"symfony/http-client","url":"https://github.com/symfony/http-client","description":"Robust HTTP client for AI APIs","category":"Tools & Utilities","stars":null},{"badge":"","name":"artisan-build/llm","url":"https://github.com/artisan-build/llm","description":"Laravel integration for multiple LLM providers (OpenAI, Azure, OpenRouter, etc.), simplifying usage of large language models in Laravel apps","category":"Laravel & Framework Integrations","stars":null},{"badge":"","name":"BorahLabs/LLM-Port-Laravel","url":"https://github.com/BorahLabs/LLM-Port-Laravel","description":"Laravel package for interchangeable LLM providers, allowing drop-in replacements of large language models","category":"Laravel & Framework Integrations","stars":null},{"badge":"","name":"Capevace/llm-magic","url":"https://github.com/Capevace/llm-magic","description":"Laravel-centric LLM toolkit with support for AI features like chat and structured data extraction","category":"Laravel & Framework Integrations","stars":null},{"badge":"","name":"coding-wisely/taskallama","url":"https://github.com/coding-wisely/taskallama","description":"Laravel package for seamless integration with the Ollama LLM API for AI-powered content generation, task assistance, conversation and embeddings","category":"Laravel & Framework Integrations","stars":null},{"badge":"","name":"grok-php/laravel","url":"https://github.com/grok-php/laravel","description":"Laravel package for integrating Grok AI models","category":"Laravel & Framework Integrations","stars":null},{"badge":"🌟","name":"laravel/ai","url":"https://github.com/laravel/ai","description":"The Laravel AI SDK: a unified, expressive Laravel API for interacting with AI providers (LLMs, images, embeddings, agents, tools)","category":"Laravel & Framework Integrations","stars":null},{"badge":"🌟","name":"laravel/boost","url":"https://github.com/laravel/boost","description":"Official Laravel Boost: a development server and AI context provider that accelerates AI-assisted code generation by giving AI tools detailed insight into your Laravel app (MCP server, schema inspection, docs + guidelines)","category":"Laravel & Framework Integrations","stars":null},{"badge":"","name":"maestroerror/laragent","url":"https://github.com/maestroerror/laragent","description":"AI agent development framework for Laravel: define agents, tools, workflows, and manage LLM interactions with an Eloquent-style API","category":"Laravel & Framework Integrations","stars":null},{"badge":"","name":"moe-mizrak/laravel-openrouter","url":"https://github.com/moe-mizrak/laravel-openrouter","description":"Laravel package to integrate OpenRouter LLM API","category":"Laravel & Framework Integrations","stars":null},{"badge":"","name":"mozex/anthropic-laravel","url":"https://github.com/mozex/anthropic-laravel","description":"Laravel integration for the Anthropic (Claude) AI API with Facades, config publishing, and testing fakes","category":"Laravel & Framework Integrations","stars":null},{"badge":"🌟","name":"neuron-core/neuron-laravel","url":"https://github.com/neuron-core/neuron-laravel","description":"Laravel integration for Neuron Core to build and orchestrate AI/LLM workflows","category":"Laravel & Framework Integrations","stars":null},{"badge":"","name":"atlas-php/atlas","url":"https://github.com/atlas-php/atlas","description":"Laravel AI application framework for structuring agents, tools, prompts, and pipelines on top of Prism PHP","category":"Laravel & Framework Integrations","stars":null},{"badge":"🌟","name":"openai-php/laravel","url":"https://github.com/openai-php/laravel","description":"Laravel OpenAI integration","category":"Laravel & Framework Integrations","stars":null},{"badge":"","name":"opgginc/laravel-mcp-server","url":"https://github.com/opgginc/laravel-mcp-server","description":"Laravel package for building secure Model Context Protocol (MCP) servers using Streamable HTTP/SSE, enabling real-time communication between LLM agents and application tools","category":"Laravel & Framework Integrations","stars":null},{"badge":"","name":"PapaRascal2020/sidekick","url":"https://github.com/PapaRascal2020/sidekick","description":"Laravel package offering a unified syntax for working with multiple AI provider APIs (OpenAI, Claude, Cohere, Mistral)","category":"Laravel & Framework Integrations","stars":null},{"badge":"🌟","name":"php-mcp/laravel","url":"https://github.com/php-mcp/laravel","description":"– Laravel package for building Model Context Protocol (MCP) servers and exposing application tools to LLMs","category":"Laravel & Framework Integrations","stars":null},{"badge":"","name":"shawnveltman/laravel-openai","url":"https://github.com/shawnveltman/laravel-openai","description":"Laravel wrapper for OpenAI","category":"Laravel & Framework Integrations","stars":null},{"badge":"","name":"vizra-ai/vizra-adk","url":"https://github.com/vizra-ai/vizra-adk","description":"Laravel AI Agent Development Kit for building autonomous agents with tools, persistent memory, workflows, streaming, evaluations, tracing, and Prism-powered multi-model support","category":"Laravel & Framework Integrations","stars":null},{"badge":"","name":"rahasistiyakofficial/laravel-ai-integration","url":"https://github.com/rahasistiyakofficial/laravel-ai-integration","description":"This is a comprehensive, enterprise-ready package that provides seamless integration with multiple AI providers through a unified, elegant API","category":"Laravel & Framework Integrations","stars":null},{"badge":"","name":"jeremysalmon/LaravelLLMContext","url":"https://github.com/jeremysalmon/LaravelLLMContext","description":"Laravel package for managing and applying contextual data in LLM interactions","category":"Laravel & Framework Integrations","stars":null},{"badge":"🌟","name":"prism-php/prism","url":"https://github.com/prism-php/prism","description":"Unified Laravel-native interface for working with LLMs (OpenAI, Anthropic, Gemini, Ollama, etc.), supporting text generation, structured outputs, tools/function calling, and multi-step AI workflows","category":"Laravel & Framework Integrations","stars":null},{"badge":"","name":"spatie/laravel-data","url":"https://github.com/spatie/laravel-data","description":"Typed DTOs for API & AI responses","category":"Laravel & Framework Integrations","stars":null},{"badge":"","name":"Capevace/ai-translations-for-laravel","url":"https://github.com/Capevace/ai-translations-for-laravel","description":"Laravel package for automatically translating language files with LLMs, detecting missing translations, updating existing locales, validating translation files, and refining translations interactively","category":"Laravel & Framework Integrations","stars":null},{"badge":"","name":"jayeshmepani/laravel-gemini-translator","url":"https://github.com/jayeshmepani/laravel-gemini-translator","description":"Laravel Gemini AI Translation Extractor scans your Laravel project for translation keys, uses Google Gemini AI for translations, and generates language files automatically — streamlining and accelerating your localization workflow","category":"Laravel & Framework Integrations","stars":null},{"badge":"🧪","name":"subhashladumor1/laravel-ai-guard","url":"https://github.com/subhashladumor1/laravel-ai-guard","description":"Laravel package for tracking LLM token usage, estimating AI costs, enforcing per-user or per-tenant budgets, and preventing unexpected AI billing spikes","category":"Laravel & Framework Integrations","stars":null},{"badge":"","name":"RedberryProducts/mcp-client-laravel","url":"https://github.com/RedberryProducts/mcp-client-laravel","description":"Laravel-native MCP client for connecting to Model Context Protocol servers via HTTP or STDIO, retrieving tools and resources, and integrating external agent capabilities into Laravel apps","category":"Laravel & Framework Integrations","stars":null},{"badge":"🧪","name":"prismaticoder/laravel-prompt-manager","url":"https://github.com/prismaticoder/laravel-prompt-manager","description":"Laravel package for managing, versioning, and testing AI prompts for LLM-powered applications","category":"Laravel & Framework Integrations","stars":null},{"badge":"🧪","name":"SabatinoMasala/laravel-llm-prompt","url":"https://github.com/SabatinoMasala/laravel-llm-prompt","description":"Lightweight Laravel helper for defining, templating, and composing LLM prompts using PHP classes with variable interpolation and dynamic prompt building","category":"Laravel & Framework Integrations","stars":null},{"badge":"🌟","name":"laravel/scout","url":"https://github.com/laravel/scout","description":"– Search abstraction (useful for vector search)","category":"Laravel & Framework Integrations","stars":null},{"badge":"","name":"teamtnt/laravel-scout-tntsearch-driver","url":"https://github.com/teamtnt/laravel-scout-tntsearch-driver","description":"Local full-text search","category":"Laravel & Framework Integrations","stars":null},{"badge":"","name":"openai-php/symfony","url":"https://github.com/openai-php/symfony","description":"OpenAI PHP for Symfony integration","category":"Symfony & Framework Integrations","stars":null},{"badge":"🌟","name":"symfony/ai","url":"https://github.com/symfony/ai","description":"– Symfony AI: built-in AI components and bundles for Symfony apps","category":"Symfony & Framework Integrations","stars":null},{"badge":"","name":"soleinjast/symfony-markdown-response-bundle","url":"https://github.com/soleinjast/symfony-markdown-response-bundle","description":"Symfony bundle that automatically serves Markdown versions of HTML responses to clients","category":"Symfony & Framework Integrations","stars":null},{"badge":"🧪","name":"symfony/ai-agent","url":"https://github.com/symfony/ai-agent","description":"Symfony AI Agent component for building agentic applications that interact with users, execute tasks, and manage workflows","category":"Symfony & Framework Integrations","stars":null},{"badge":"🧪","name":"symfony/ai-bundle","url":"https://github.com/symfony/ai-bundle","description":"Symfony integration bundle that brings together Symfony AI components for agents, chat, platforms, stores, RAG, tools, and configuration","category":"Symfony & Framework Integrations","stars":null},{"badge":"🧪","name":"symfony/ai-platform","url":"https://github.com/symfony/ai-platform","description":"Experimental Symfony AI Platform component providing a unified abstraction for interacting with AI models, providers, messages, embeddings, speech, and provider-specific bridge packages","category":"Symfony & Framework Integrations","stars":null},{"badge":"","name":"symfony/ai-store","url":"https://github.com/symfony/ai-store","description":"Symfony AI component providing a vector store abstraction for semantic search and RAG workflows","category":"Symfony & Framework Integrations","stars":null},{"badge":"","name":"symfony/mcp-bundle","url":"https://github.com/symfony/mcp-bundle","description":"Symfony bundle for exposing MCP tools, prompts, and resources over HTTP or STDIO using the official MCP SDK","category":"Symfony & Framework Integrations","stars":null},{"badge":"","name":"WordPress/php-ai-client","url":"https://github.com/WordPress/php-ai-client","description":"Provider-agnostic PHP AI SDK offering a unified API for interacting with multiple LLM providers (OpenAI, Anthropic, Gemini, etc.), supporting text, image, speech, streaming, and multimodal operations","category":"WordPress Integrations","stars":null},{"badge":"🧪","name":"dykyi-roman/awesome-claude-code","url":"https://github.com/dykyi-roman/awesome-claude-code","description":"Curated collection of commands, agents, skills, hooks, and tools for enhancing Claude Code AI workflows","category":"WordPress Integrations","stars":null},{"badge":"","name":"Fun With OpenAI and Laravel","url":"https://laracasts.com/series/fun-with-openai-and-laravel","description":"Laracasts series showing how to integrate OpenAI into Laravel apps","category":"WordPress Integrations","stars":null},{"badge":"","name":"Laravel Cloud Skills","url":"https://skills.laravel.cloud","description":"Interactive learning platform for building and deploying Laravel applications, including modern AI and cloud workflows","category":"WordPress Integrations","stars":null},{"badge":"","name":"ONNX Runtime","url":"https://onnxruntime.ai","description":"Cross-platform, high performance ML inferencing and training accelerator","category":"WordPress Integrations","stars":null},{"badge":"","name":"tensorflow/tfjs","url":"https://github.com/tensorflow/tfjs","description":"JavaScript machine learning platform for training and running models in the browser or Node.js (TensorFlow.js)","category":"WordPress Integrations","stars":null},{"badge":"","name":"Artificial Intelligence with PHP (GitBook)","url":"https://apphp.gitbook.io/artificial-intelligence-with-php/","description":"Guide and reference for doing AI/ML with PHP","category":"WordPress Integrations","stars":null},{"badge":"🌟","name":"AI for PHP Developers: Intuitive and Practical (GitBook)","url":"https://apphp.gitbook.io/ai-for-php-developers/","description":"Guide on AI with PHP in Russian / English","category":"WordPress Integrations","stars":null},{"badge":"","name":"Build Your Own LLM in PHP (GitBook)","url":"https://apphp.gitbook.io/build-your-own-llm-in-php/","description":"Guide to building an LLM from scratch in PHP","category":"WordPress Integrations","stars":null},{"badge":"","name":"PHP FANN installation","url":"https://www.php.net/manual/en/fann.installation.php","description":"Official PHP manual page for installing the FANN (Fast Artificial Neural Network) extension","category":"WordPress Integrations","stars":null},{"badge":"","name":"PHP and LLMs (eBook)","url":"https://leanpub.com/php_and_llms","description":"Practical book on integrating and using large language models with PHP","category":"WordPress Integrations","stars":null},{"badge":"","name":"PHP-ML Tutorials","url":"https://php-ml.readthedocs.io/en/latest/","description":"Documentation for PHP-ML for machine learning","category":"WordPress Integrations","stars":null},{"badge":"","name":"Rubix ML Docs","url":"https://rubixml.github.io/ML/latest/","description":"Comprehensive documentation for Rubix ML","category":"WordPress Integrations","stars":null}];
+
+const grid = document.getElementById('grid');
+const search = document.getElementById('search');
+const category = document.getElementById('category');
+const sort = document.getElementById('sort');
+const empty = document.getElementById('empty');
+
+document.getElementById('total').textContent = items.length;
+
+const categories = [...new Set(items.map(i => i.category))].sort();
+document.getElementById('categories').textContent = categories.length;
+
+categories.forEach(cat => {
+  const opt = document.createElement('option');
+  opt.value = cat;
+  opt.textContent = cat;
+  category.appendChild(opt);
+});
+
+function render() {
+  const q = search.value.toLowerCase();
+  const cat = category.value;
+
+  let filtered = items.filter(item => {
+    const haystack = [
+      item.name,
+      item.description,
+      item.category
+    ].join(' ').toLowerCase();
+
+    return haystack.includes(q) && (!cat || item.category === cat);
+  });
+
+  filtered.sort((a, b) => {
+    if (sort.value === 'category') {
+      return a.category.localeCompare(b.category) || a.name.localeCompare(b.name);
+    }
+    return a.name.localeCompare(b.name);
+  });
+
+  const starsFormatter = new Intl.NumberFormat('en-US');
+
+  grid.innerHTML = filtered.map(item => `
+    <article class="card">
+      <h2>
+        <span class="badge">${item.badge || ''}</span>
+        <a href="${item.url}" target="_blank" rel="noopener">${escapeHtml(item.name)}</a>
+      </h2>
+      <p class="desc">${escapeHtml(item.description)}</p>
+      <div class="meta">
+        <span class="tag">${escapeHtml(item.category)}</span>
+        <span class="tag">${new URL(item.url).hostname.replace('www.', '')}</span>
+        ${item.stars !== null ? `<span class="tag">⭐ ${starsFormatter.format(item.stars)}</span>` : ''}
+      </div>
+    </article>
+  `).join('');
+
+  empty.style.display = filtered.length ? 'none' : 'block';
+}
+
+function escapeHtml(str) {
+  return String(str).replace(/[&<>"']/g, s => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#039;'
+  }[s]));
+}
+
+search.addEventListener('input', render);
+category.addEventListener('change', render);
+sort.addEventListener('change', render);
+
+render();
+</script>
+</body>
+</html>
