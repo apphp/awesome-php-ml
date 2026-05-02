@@ -148,6 +148,21 @@ body {
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: radial-gradient(circle at top, #1e3a8a 0, var(--bg) 32%);
   color: var(--text);
+  scrollbar-width: thin;
+  scrollbar-color: #475569 #020617;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
 }
 .top-link {
   position: fixed;
