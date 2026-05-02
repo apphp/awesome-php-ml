@@ -237,7 +237,7 @@ $html = <<<HTML
 body {
   margin: 0;
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: radial-gradient(circle at top, #1e3a8a 0, var(--bg) 25%);
+  background: radial-gradient(circle at top, #1e3a8a 0, var(--bg) 18%);
   color: var(--text);
   scrollbar-width: thin;
   scrollbar-color: #475569 #020617;
@@ -351,10 +351,18 @@ input { flex: 1; min-width: 260px; }
 .card h2 {
   font-size: 1.15rem;
   margin: 0 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .card a {
   color: var(--text);
   text-decoration: none;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .card a:hover { color: var(--accent); }
 .desc {
