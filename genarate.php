@@ -1,6 +1,7 @@
 <?php
 
 const GITHUB_URL = 'https://github.com/apphp/awesome-php-ml';
+const STARS_CACHE_TTL_SECONDS = 86400;
 
 $readme = file_get_contents(__DIR__ . '/README.md');
 
@@ -144,9 +145,15 @@ $currentCategory = 'General';
 $resourceCount = 0;
 
 if (is_file($starsCachePath)) {
-    $cacheData = json_decode((string) file_get_contents($starsCachePath), true);
-    if (is_array($cacheData)) {
-        $starsCache = $cacheData;
+    $cacheAgeSeconds = time() - (int) filemtime($starsCachePath);
+
+    if ($cacheAgeSeconds <= STARS_CACHE_TTL_SECONDS) {
+        $cacheData = json_decode((string) file_get_contents($starsCachePath), true);
+        if (is_array($cacheData)) {
+            $starsCache = $cacheData;
+        }
+    } else {
+        echo "Stars cache expired (>24h). Refreshing...\n";
     }
 }
 
@@ -353,7 +360,12 @@ input { flex: 1; min-width: 260px; }
 .desc {
   color: var(--muted);
   line-height: 1.5;
-  min-height: 72px;
+  min-height: 95px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  font-size: 15px;
 }
 .meta {
   display: flex;
