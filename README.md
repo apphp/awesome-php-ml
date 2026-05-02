@@ -324,6 +324,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 - 🧪 [context-hub/generator](https://github.com/context-hub/generator "Link to resource") – Context-as-Code (CTX) tool that extracts and organizes codebase context into structured documents and MCP servers for LLM-assisted development
 - [guanguans/ai-commit](https://github.com/guanguans/ai-commit "Link to resource") – AI-powered CLI to automatically generate conventional Git commit messages
 - [joshembling/laragenie](https://github.com/joshembling/laragenie "Link to resource") – AI chatbot/assistant for Laravel that indexes and understands your codebase via the command line (OpenAI + Pinecone)
+- 🧪 [mariorazo97/single-file-php-ai](https://github.com/mariorazo97/single-file-php-ai "Link to resource") – Drop-in single-file PHP AI chat interface for Ollama and OpenAI, with no Node.js, Docker, database, or build step
 - [nunomaduro/collision](https://github.com/nunomaduro/collision "Link to resource") – CLI error handling (useful for ML tools)
 - [psr/log](https://github.com/php-fig/log "Link to resource") – Logging standard
 - [symfony/console](https://github.com/symfony/console "Link to resource") – CLI applications
