@@ -486,11 +486,14 @@ document.getElementById('total').textContent = items.length;
 
 const categories = [...new Set(items.map(i => i.category))].sort();
 document.getElementById('categories').textContent = categories.length;
+const categoryLabels = {
+  'Computer Vision, Image & Video Processing': 'Computer Vision, Image & Video'
+};
 
 categories.forEach(cat => {
   const opt = document.createElement('option');
   opt.value = cat;
-  opt.textContent = cat;
+  opt.textContent = categoryLabels[cat] || cat;
   category.appendChild(opt);
 });
 
@@ -534,7 +537,7 @@ function render() {
         \${item.badge ? `<span class="tag props-tag"><span class="props-tag-icon">\${item.badge}</span> \${legendLabels[item.badge] || 'Legend'}</span>` : ''}
         </div>
         <div class="tag-row">
-          <span class="tag">\${escapeHtml(item.category)}</span>
+          <span class="tag">\${escapeHtml(categoryLabels[item.category] || item.category)}</span>
           <span class="tag"><span class="stars-icon">⭐</span> \${item.stars !== null ? starsFormatter.format(item.stars) : 'N/A'}</span>
         </div>
       </div>
