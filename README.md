@@ -264,6 +264,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 
 - [CodeWithKyrian/tokenizers-php](https://github.com/CodeWithKyrian/tokenizers-php "Link to resource") – PHP bindings for Hugging Face Tokenizers, enabling fast tokenization for transformer and LLM models
 - [Gioni06/GPT3Tokenizer](https://github.com/Gioni06/GPT3Tokenizer "Link to resource") – PHP tokenizer compatible with GPT-3 style models
+- [HelgeSverre/toon-php](https://github.com/HelgeSverre/toon-php "Link to resource") – PHP implementation of TOON, a compact data format for reducing token usage when sending structured data to LLMs
 - [yethee/tiktoken-php](https://github.com/yethee/tiktoken-php "Link to resource") – PHP implementation of OpenAI's *tiktoken* tokenizer for token counting and optimization
 
 ---
@@ -319,6 +320,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 *Supporting tools, debugging helpers, logging, and HTTP/CLI utilities commonly used in ML and AI workflows.*
 
 - 🧪 [apphp/pretty-print](https://github.com/apphp/pretty-print "Link to resource") – Pretty-print PHP arrays and numeric data for ML debugging
+- 🧪 [context-hub/generator](https://github.com/context-hub/generator "Link to resource") – Context-as-Code (CTX) tool that extracts and organizes codebase context into structured documents and MCP servers for LLM-assisted development
 - [guanguans/ai-commit](https://github.com/guanguans/ai-commit "Link to resource") – AI-powered CLI to automatically generate conventional Git commit messages
 - [joshembling/laragenie](https://github.com/joshembling/laragenie "Link to resource") – AI chatbot/assistant for Laravel that indexes and understands your codebase via the command line (OpenAI + Pinecone)
 - [nunomaduro/collision](https://github.com/nunomaduro/collision "Link to resource") – CLI error handling (useful for ML tools)
