@@ -386,7 +386,7 @@ input { flex: 1; min-width: 260px; }
   padding: 6px 10px;
   background: #020617;
   border: 1px solid var(--border);
-  border-radius: 99px;
+  border-radius: 12px;
   color: var(--muted);
 }
 .tag-row {
@@ -394,9 +394,10 @@ input { flex: 1; min-width: 260px; }
   gap: 10px;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .tag-row .stars-icon {
-  font-size: .7rem;
+  font-size: .6rem;
 }
 .tag-row-props {
   min-height: 24px;
