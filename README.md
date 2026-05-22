@@ -425,7 +425,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 ### Learning Resources
 
 - [Artificial Intelligence with PHP (GitBook)](https://apphp.gitbook.io/artificial-intelligence-with-php/ "Link to resource") – Guide and reference for doing AI/ML with PHP
-- [TutorialSearch](https://tutorialsearch.io/) - Free cross-platform search engine indexing 50,000+ tutorials from Udemy, Skillshare, Pluralsight, and other major learning platforms across 45+ categories.
+- [TutorialSearch](https://tutorialsearch.io/browse/ai-machine-learning/cloud-ai-ml) - Free cross-platform search engine indexing 50,000+ tutorials from Udemy, Skillshare, Pluralsight, and other major learning platforms across 45+ categories.
 - 🌟 [AI for PHP Developers: Intuitive and Practical (GitBook)](https://apphp.gitbook.io/ai-for-php-developers/ "Link to resource") – Guide on AI with PHP in Russian / English
 - [Build Your Own LLM in PHP (GitBook)](https://apphp.gitbook.io/build-your-own-llm-in-php/ "Link to resource") – Guide to building an LLM from scratch in PHP
 - [PHP FANN installation](https://www.php.net/manual/en/fann.installation.php "Link to resource") – Official PHP manual page for installing the FANN (Fast Artificial Neural Network) extension
