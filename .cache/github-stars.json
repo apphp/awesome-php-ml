@@ -141,5 +141,12 @@
     "symfony/mcp-bundle": 41,
     "wordpress/php-ai-client": 268,
     "dykyi-roman/awesome-claude-code": 66,
-    "tensorflow/tfjs": 19000
+    "tensorflow/tfjs": 19000,
+    "serafimarts/tf-idf": 4,
+    "krakjoe/ort": 142,
+    "aimeos/prisma": 173,
+    "neuron-core/youtube-ai-agent": 30,
+    "paperdoc-dev/paperdoc-lib": 121,
+    "hiblaphp/http-client": 13,
+    "builtbyberry/laravel-swarm": 11
 }

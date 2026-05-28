@@ -141,6 +141,7 @@ $items = [];
 $starsCachePath = __DIR__ . '/.cache/github-stars.json';
 $starsCache = [];
 $starsCacheChanged = false;
+$starsCacheExpired = false;
 $currentCategory = 'General';
 $resourceCount = 0;
 
@@ -367,7 +368,7 @@ input { flex: 1; min-width: 260px; }
 .card:hover {
   border-color: var(--accent);
   transform: translateY(-2px);
-  transition: .18s ease;
+  transition: .36s ease;
 }
 .card h2 {
   font-size: 1.15rem;
