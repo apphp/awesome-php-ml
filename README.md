@@ -159,6 +159,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 - ⚠️ [googlei18n/myanmar-tools](https://github.com/googlei18n/myanmar-tools "Link to resource") – Myanmar text encoding detection and Zawgyi ↔ Unicode conversion using a trained model (includes PHP support)
 - ⚠️ [patrickschur/language-detection](https://github.com/patrickschur/language-detection "Link to resource") – Language detection library
 - 🧪 [RubixML/Sentiment](https://github.com/RubixML/Sentiment "Link to resource") – Example project demonstrating sentiment analysis with a neural network (IMDB reviews) using Rubix ML in PHP
+- 🧪 [SerafimArts/TF-IDF](https://github.com/SerafimArts/TF-IDF "Link to resource") – Simple TF-IDF implementation for keyword extraction and text relevance scoring in PHP
 - [voku/stop-words](https://github.com/voku/stop-words "Link to resource") – Stop word lists for many languages
 - [yooper/php-text-analysis](https://github.com/yooper/php-text-analysis "Link to resource") – Sentiment analysis and NLP tools
 
