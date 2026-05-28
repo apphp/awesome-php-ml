@@ -255,6 +255,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 
 - [logiscape/mcp-sdk-php](https://github.com/logiscape/mcp-sdk-php "Link to resource") – PHP SDK for building Model Context Protocol (MCP) clients and servers to connect LLMs with external tools and services
 - 🧪 [manuelkiessling/php-ai-tool-bridge](https://github.com/manuelkiessling/php-ai-tool-bridge "Link to resource") – PHP library for defining AI “tool functions” that let LLMs interact with application code and external services using structured JSON schemas
+- 🧪 [neuron-core/youtube-ai-agent](https://github.com/neuron-core/youtube-ai-agent "Link to resource") – Example PHP AI agent built with Neuron for summarizing YouTube videos and generating content from them
 - [prism-php/relay](https://github.com/prism-php/relay "Link to resource") – MCP client for Prism that lets PHP/Laravel AI agents connect to external Model Context Protocol servers and use their tools
 - 🧪 [symfony/mcp-sdk](https://github.com/symfony/mcp-sdk "Link to resource") – Symfony's experimental PHP SDK for building Model Context Protocol (MCP) clients and servers
 
