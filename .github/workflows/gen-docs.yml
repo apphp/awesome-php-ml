@@ -1,7 +1,6 @@
 name: Generate Docs
 
 on:
-  pull_request:
   push:
     branches:
       - main
