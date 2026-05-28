@@ -111,7 +111,7 @@ input, select {
   font-size: 1rem;
 }
 .select-wrapper {                /* Container */
-  position: relative;                
+  position: relative;
 }
 select {
   -webkit-appearance: none;       /* Remove Mac/Safari arrow */
@@ -252,7 +252,7 @@ footer a {
   </section>
 
   <section class="controls">
-    <input id="search" placeholder="Search libraries, descriptions, categories...">
+    <input id="search" maxlength="255" placeholder="Search libraries, descriptions, categories...">
     <div class="select-wrapper">
       <select id="category">
         <option value="">All categories</option>
@@ -368,7 +368,12 @@ function escapeHtml(str) {
   }[s]));
 }
 
-search.addEventListener('input', render);
+search.addEventListener('input', () => {
+  if (search.value.length > 255) {
+    search.value = search.value.slice(0, 255);
+  }
+  render();
+});
 category.addEventListener('change', render);
 legend.addEventListener('change', render);
 sort.addEventListener('change', render);
