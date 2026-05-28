@@ -198,6 +198,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 - 🌟 [RubixML/numpower](https://github.com/RubixML/numpower "Link to resource") – High-performance numerical computing library inspired by NumPy
 - 🧪 [rindow/rindow-math-matrix](https://github.com/rindow/rindow-math-matrix "Link to resource") – Foundational package for scientific matrix operations
 - 🧪 [phpmlkit/ndarray](https://github.com/phpmlkit/ndarray "Link to resource") – Multidimensional array (ndarray) implementation for PHP inspired by NumPy, useful for numerical computing and machine learning workloads
+- 🌟 [krakjoe/ort](https://github.com/krakjoe/ort "Link to resource") – – ![GitHub stars](https://img.shields.io/github/stars/krakjoe/ort?style=social) PHP extension for high-performance tensor mathematics, with optional ONNX Runtime integration for model inference
 
 ### Model execution & runtimes
 
