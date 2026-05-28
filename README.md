@@ -4,7 +4,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/apphp/awesome-php-ml?style=social)](https://github.com/apphp/awesome-php-ml)
 [![Resources](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/apphp/awesome-php-ml/main/badge/resources.json)](https://github.com/apphp/awesome-php-ml#readme)
 [![Last commit](https://img.shields.io/github/last-commit/apphp/awesome-php-ml)](https://github.com/apphp/awesome-php-ml/commits)
-[![License](https://img.shields.io/github/license/apphp/awesome-php-ml)](https://github.com/apphp/awesome-php-ml/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/apphp/awesome-php-ml/blob/main/LICENSE)
 [![Link Check](https://github.com/apphp/awesome-php-ml/actions/workflows/link-check.yml/badge.svg)](https://github.com/apphp/awesome-php-ml/actions/workflows/link-check.yml)
 
 The most comprehensive curated list of **Machine Learning, Artificial Intelligence, NLP, LLM and Data Science libraries for PHP**.
@@ -159,6 +159,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 - ⚠️ [googlei18n/myanmar-tools](https://github.com/googlei18n/myanmar-tools "Link to resource") – Myanmar text encoding detection and Zawgyi ↔ Unicode conversion using a trained model (includes PHP support)
 - ⚠️ [patrickschur/language-detection](https://github.com/patrickschur/language-detection "Link to resource") – Language detection library
 - 🧪 [RubixML/Sentiment](https://github.com/RubixML/Sentiment "Link to resource") – Example project demonstrating sentiment analysis with a neural network (IMDB reviews) using Rubix ML in PHP
+- 🧪 [SerafimArts/TF-IDF](https://github.com/SerafimArts/TF-IDF "Link to resource") – Simple TF-IDF implementation for keyword extraction and text relevance scoring in PHP
 - [voku/stop-words](https://github.com/voku/stop-words "Link to resource") – Stop word lists for many languages
 - [yooper/php-text-analysis](https://github.com/yooper/php-text-analysis "Link to resource") – Sentiment analysis and NLP tools
 
@@ -198,6 +199,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 - 🌟 [RubixML/numpower](https://github.com/RubixML/numpower "Link to resource") – High-performance numerical computing library inspired by NumPy
 - 🧪 [rindow/rindow-math-matrix](https://github.com/rindow/rindow-math-matrix "Link to resource") – Foundational package for scientific matrix operations
 - 🧪 [phpmlkit/ndarray](https://github.com/phpmlkit/ndarray "Link to resource") – Multidimensional array (ndarray) implementation for PHP inspired by NumPy, useful for numerical computing and machine learning workloads
+- 🌟 [krakjoe/ort](https://github.com/krakjoe/ort "Link to resource") – – ![GitHub stars](https://img.shields.io/github/stars/krakjoe/ort?style=social) PHP extension for high-performance tensor mathematics, with optional ONNX Runtime integration for model inference
 
 ### Model execution & runtimes
 
@@ -220,6 +222,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 *Clients, SDKs, and frameworks for calling hosted LLMs and other AI providers from PHP.*
 
 - [aiaccess/ai-access](https://github.com/aiaccess/ai-access "Link to resource") – Unified PHP AI client providing a consistent interface for multiple providers (OpenAI, Anthropic, Gemini, DeepSeek, Grok) with support for chat, embeddings, batch processing, and provider switching
+- [aimeos/prisma](https://github.com/aimeos/prisma "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/aimeos/prisma?style=social) Lightweight PHP package providing a unified interface for text, image, audio, and video AI providers
 - 🧪 [adrienbrault/instructrice](https://github.com/adrienbrault/instructrice "Link to resource") – Typed LLM outputs in PHP with flexible schema support (OpenAI, Claude, Gemini, etc.) and type-safe handling of structured responses
 - [ArdaGnsrn/ollama-php](https://github.com/ArdaGnsrn/ollama-php "Link to resource") – A PHP client library for the Ollama LLM server, enabling completions, chat, model management, and embeddings via Ollama's API
 - [Clarifai/clarifai-php-grpc](https://github.com/Clarifai/clarifai-php-grpc "Link to resource") – Official Clarifai gRPC PHP client for accessing Clarifai's AI APIs (vision and text recognition)
@@ -252,6 +255,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 
 - [logiscape/mcp-sdk-php](https://github.com/logiscape/mcp-sdk-php "Link to resource") – PHP SDK for building Model Context Protocol (MCP) clients and servers to connect LLMs with external tools and services
 - 🧪 [manuelkiessling/php-ai-tool-bridge](https://github.com/manuelkiessling/php-ai-tool-bridge "Link to resource") – PHP library for defining AI “tool functions” that let LLMs interact with application code and external services using structured JSON schemas
+- 🧪 [neuron-core/youtube-ai-agent](https://github.com/neuron-core/youtube-ai-agent "Link to resource") – Example PHP AI agent built with Neuron for summarizing YouTube videos and generating content from them
 - [prism-php/relay](https://github.com/prism-php/relay "Link to resource") – MCP client for Prism that lets PHP/Laravel AI agents connect to external Model Context Protocol servers and use their tools
 - 🧪 [symfony/mcp-sdk](https://github.com/symfony/mcp-sdk "Link to resource") – Symfony's experimental PHP SDK for building Model Context Protocol (MCP) clients and servers
 
@@ -294,6 +298,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 - 🌟 [cocur/slugify](https://github.com/cocur/slugify "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/cocur/slugify?style=social) Converts strings into URL-friendly slugs, includes integrations for many frameworks
 - 🌟 [flow-php/flow](https://github.com/flow-php/flow "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/flow-php/flow?style=social) Data processing and ETL framework for PHP with typed pipelines
 - [league/csv](https://github.com/thephpleague/csv "Link to resource") – CSV data processing
+- [paperdoc-dev/paperdoc-lib](https://github.com/paperdoc-dev/paperdoc-lib "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/paperdoc-dev/paperdoc-lib?style=social) Zero-dependency PHP library for generating, parsing, and converting documents such as PDF, HTML, CSV, DOCX, XLSX, PPTX, and Markdown
 - 🌟 [php-ds/ext-ds](https://github.com/php-ds/ext-ds "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/php-ds/ext-ds?style=social) PHP Data Structures extension: efficient vectors, maps, sets, etc.
 - [spatie/data-transfer-object](https://github.com/spatie/data-transfer-object "Link to resource") – Strongly typed DTOs
 - [symfony/serializer](https://github.com/symfony/serializer "Link to resource") – Data normalization & serialization
@@ -322,6 +327,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 - 🧪 [apphp/pretty-print](https://github.com/apphp/pretty-print "Link to resource") – Pretty-print PHP arrays and numeric data for ML debugging
 - 🧪 [context-hub/generator](https://github.com/context-hub/generator "Link to resource") – Context-as-Code (CTX) tool that extracts and organizes codebase context into structured documents and MCP servers for LLM-assisted development
 - [guanguans/ai-commit](https://github.com/guanguans/ai-commit "Link to resource") – AI-powered CLI to automatically generate conventional Git commit messages
+- 🧪 [hiblaphp/http-client](https://github.com/hiblaphp/http-client "Link to resource") – Lightweight PSR-7/PSR-18 compatible HTTP client for interacting with AI APIs and external services from PHP
 - [joshembling/laragenie](https://github.com/joshembling/laragenie "Link to resource") – AI chatbot/assistant for Laravel that indexes and understands your codebase via the command line (OpenAI + Pinecone)
 - 🧪 [mariorazo97/single-file-php-ai](https://github.com/mariorazo97/single-file-php-ai "Link to resource") – Drop-in single-file PHP AI chat interface for Ollama and OpenAI, with no Node.js, Docker, database, or build step
 - [nunomaduro/collision](https://github.com/nunomaduro/collision "Link to resource") – CLI error handling (useful for ML tools)
@@ -336,6 +342,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 ### LLM & AI clients
 
 - [artisan-build/llm](https://github.com/artisan-build/llm "Link to resource") – Laravel integration for multiple LLM providers (OpenAI, Azure, OpenRouter, etc.), simplifying usage of large language models in Laravel apps
+- 🧪 [builtbyberry/laravel-swarm](https://github.com/builtbyberry/laravel-swarm "Link to resource") – Multi-agent swarm orchestration for Laravel, built on Laravel AI, with sequential, parallel, hierarchical, queued, streamed, and durable workflows
 - [BorahLabs/LLM-Port-Laravel](https://github.com/BorahLabs/LLM-Port-Laravel "Link to resource") – Laravel package for interchangeable LLM providers, allowing drop-in replacements of large language models
 - [Capevace/llm-magic](https://github.com/Capevace/llm-magic "Link to resource") – Laravel-centric LLM toolkit with support for AI features like chat and structured data extraction
 - [coding-wisely/taskallama](https://github.com/coding-wisely/taskallama "Link to resource") – Laravel package for seamless integration with the Ollama LLM API for AI-powered content generation, task assistance, conversation and embeddings
