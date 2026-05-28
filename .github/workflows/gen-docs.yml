@@ -26,4 +26,6 @@ jobs:
           php-version: '8.2'
 
       - name: Run docs generator
-        run: php genarate.php
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: php generate.php

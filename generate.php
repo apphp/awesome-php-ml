@@ -2,8 +2,30 @@
 
 const GITHUB_URL = 'https://github.com/apphp/awesome-php-ml';
 const STARS_CACHE_TTL_SECONDS = 86400;
+const MAX_RESOURCES = 1000;
+
+if (!getenv('GITHUB_TOKEN')) {
+    echo "Warning: GITHUB_TOKEN is not set. GitHub API rate limit will be very low.\n";
+    sleep(5);
+}
 
 $readme = file_get_contents(__DIR__ . '/README.md');
+
+function githubApiHeaders(string $acceptHeader): array
+{
+    $headers = [
+        'User-Agent: awesome-php-ml-docs-generator',
+        'Accept: ' . $acceptHeader,
+        'X-GitHub-Api-Version: 2022-11-28',
+    ];
+
+    $token = getenv('GITHUB_TOKEN');
+    if (is_string($token) && trim($token) !== '') {
+        $headers[] = 'Authorization: Bearer ' . trim($token);
+    }
+
+    return $headers;
+}
 
 function parseGitHubRepo(string $url): ?array
 {
@@ -30,39 +52,65 @@ function parseGitHubRepo(string $url): ?array
     return [$owner, $repo];
 }
 
-function fetchGitHubStars(string $owner, string $repo): ?int
+function fetchGitHubRepoMeta(string $owner, string $repo): array
 {
     $apiUrl = "https://api.github.com/repos/{$owner}/{$repo}";
 
     $result = httpGet($apiUrl, [
-        'User-Agent: awesome-php-ml-docs-generator',
-        'Accept: application/vnd.github+json',
+        ...githubApiHeaders('application/vnd.github+json'),
     ]);
 
-    if ($result['status'] >= 200 && $result['status'] < 300) {
+    $status = (int) $result['status'];
+
+    if ($status >= 200 && $status < 300) {
         $json = json_decode($result['body'], true);
 
-        if (is_array($json) && isset($json['stargazers_count'])) {
-            return (int) $json['stargazers_count'];
-        }
+        return [
+            'stars' => isset($json['stargazers_count']) ? (int) $json['stargazers_count'] : null,
+            'topics' => isset($json['topics']) && is_array($json['topics'])
+                ? normalizeTopics($json['topics'])
+                : [],
+            'status' => $status,
+            'source' => 'repo-endpoint',
+        ];
     }
 
-    $badgeUrl = "https://img.shields.io/github/stars/{$owner}/{$repo}.json";
+    return [
+        'stars' => null,
+        'topics' => null,
+        'status' => $status,
+        'source' => 'unavailable',
+        'error' => $result['body'],
+    ];
+}
 
-    $result = httpGet($badgeUrl, [
-        'User-Agent: awesome-php-ml-docs-generator',
-        'Accept: application/json',
-    ]);
+function normalizeTopics(array $topics): array
+{
+    $aliases = [
+        'natural-language-processing' => 'nlp',
+        'natural-language-understanding' => 'nlp',
+        'natural-language-generation' => 'nlp',
+        'machine-learning' => 'ml',
+        'deep-learning' => 'dl',
+        'artificial-intelligence' => 'ai',
+        'large-language-models' => 'llm',
+        'language-model' => 'llm',
+        'language-models' => 'llm',
+        'retrieval-augmented-generation' => 'rag',
+        'convolutional-neural-networks' => 'cnn',
+    ];
 
-    if ($result['status'] >= 200 && $result['status'] < 300) {
-        $json = json_decode($result['body'], true);
+    $normalized = array_map(static function (mixed $topic) use ($aliases): string {
+        $value = strtolower(trim((string) $topic));
 
-        if (is_array($json) && isset($json['value'])) {
-            return parseStarsValue((string) $json['value']);
+        if ($value === '') {
+            return '';
         }
-    }
 
-    return null;
+        return $aliases[$value] ?? $value;
+    }, $topics);
+
+    return array_values(array_unique(array_filter($normalized, static fn(string $topic): bool => $topic !== '')));
 }
 
 function parseStarsValue(string $value): ?int
@@ -138,7 +186,7 @@ preg_match_all(
 );
 
 $items = [];
-$starsCachePath = __DIR__ . '/.cache/github-stars.json';
+$starsCachePath = __DIR__ . '/.cache/github-repos.json';
 $starsCache = [];
 $starsCacheChanged = false;
 $starsCacheExpired = false;
@@ -148,12 +196,13 @@ $resourceCount = 0;
 if (is_file($starsCachePath)) {
     $cacheAgeSeconds = time() - (int) filemtime($starsCachePath);
 
-    if ($cacheAgeSeconds <= STARS_CACHE_TTL_SECONDS) {
-        $cacheData = json_decode((string) file_get_contents($starsCachePath), true);
-        if (is_array($cacheData)) {
-            $starsCache = $cacheData;
-        }
-    } else {
+    $cacheData = json_decode((string) file_get_contents($starsCachePath), true);
+    if (is_array($cacheData)) {
+        $starsCache = $cacheData;
+    }
+
+    if ($cacheAgeSeconds > STARS_CACHE_TTL_SECONDS) {
+        $starsCacheExpired = true;
         echo "Stars cache expired (>24h). Refreshing...\n";
     }
 }
@@ -161,6 +210,7 @@ if (is_file($starsCachePath)) {
 $lines = explode("\n", $readme);
 
 foreach ($lines as $line) {
+
     if (preg_match('/^##\s+(.+)/', $line, $m) && !in_array(trim($m[1]), ['Contents', 'Requirements', 'Legend', 'Resources', 'Contributing', 'License'])) {
         $currentCategory = trim($m[1]);
     }
@@ -170,23 +220,80 @@ foreach ($lines as $line) {
         $name = $m[2];
         $url = $m[3];
         $stars = null;
+        $topics = [];
         $repoData = parseGitHubRepo($url);
+
+        if ($resourceCount > MAX_RESOURCES){
+            break;
+        }
 
         echo "[{$resourceCount}] Processing: {$name}";
 
         if ($repoData !== null) {
             [$owner, $repo] = $repoData;
             $repoKey = strtolower($owner . '/' . $repo);
+            $cachedRaw = $starsCache[$repoKey] ?? null;
 
-            if (!array_key_exists($repoKey, $starsCache) || $starsCache[$repoKey] === null) {
-                echo " | fetching stars for {$owner}/{$repo}";
-                $starsCache[$repoKey] = fetchGitHubStars($owner, $repo);
-                $starsCacheChanged = true;
-            } else {
-                echo " | using cached stars for {$owner}/{$repo}";
+            $cacheEntry = [
+                'stars' => null,
+                'topics' => [],
+            ];
+
+            if (is_array($cachedRaw)) {
+                $cacheEntry['stars'] = isset($cachedRaw['stars']) ? (is_numeric($cachedRaw['stars']) ? (int) $cachedRaw['stars'] : null) : null;
+                if (isset($cachedRaw['topics']) && is_array($cachedRaw['topics'])) {
+                    $cacheEntry['topics'] = normalizeTopics($cachedRaw['topics']);
+                }
+            } elseif (is_int($cachedRaw)) {
+                $cacheEntry['stars'] = $cachedRaw;
+            } elseif (is_numeric($cachedRaw)) {
+                $cacheEntry['stars'] = (int) $cachedRaw;
             }
 
-            $stars = $starsCache[$repoKey];
+            $hasCachedStars = $cacheEntry['stars'] !== null;
+            $hasCachedTopics = is_array($cachedRaw) && array_key_exists('topics', $cachedRaw);
+
+            $needsMetaRefresh = $starsCacheExpired || !$hasCachedStars || !$hasCachedTopics;
+
+            if ($needsMetaRefresh) {
+                echo " | fetching repo meta for {$owner}/{$repo}";
+                $metaResult = fetchGitHubRepoMeta($owner, $repo);
+                $metaStatus = (int) ($metaResult['status'] ?? 0);
+                $metaSource = (string) ($metaResult['source'] ?? 'unknown');
+                $fetchedStars = $metaResult['stars'] ?? null;
+                $fetchedTopics = $metaResult['topics'] ?? null;
+
+                if ($fetchedStars !== null) {
+                    $cacheEntry['stars'] = $fetchedStars;
+                    $starsCacheChanged = true;
+                } elseif ($hasCachedStars) {
+                    echo " | keeping cached stars";
+                }
+
+                if ($fetchedTopics !== null) {
+                    $cacheEntry['topics'] = $fetchedTopics;
+                    $starsCacheChanged = true;
+                    echo ' | topics ' . (count($fetchedTopics) > 0 ? count($fetchedTopics) : 'none') . " ({$metaSource}, HTTP {$metaStatus})";
+                } elseif ($hasCachedTopics) {
+                    echo " | keeping cached topics";
+                } else {
+                    echo " | topics unavailable ({$metaSource}, HTTP {$metaStatus})";
+                    if (isset($metaResult['error'])) {
+                        echo " | error: " . substr((string) $metaResult['error'], 0, 200);
+                    }
+                }
+            } else {
+                echo " | using cached stars for {$owner}/{$repo} | using cached topics";
+            }
+
+            if ($starsCacheExpired && ($hasCachedStars || $hasCachedTopics)) {
+                $starsCacheChanged = true;
+            }
+
+            $starsCache[$repoKey] = $cacheEntry;
+
+            $stars = $cacheEntry['stars'];
+            $topics = $cacheEntry['topics'];
 
             if ($stars !== null) {
                 echo " | ⭐ {$stars}";
@@ -195,6 +302,7 @@ foreach ($lines as $line) {
             }
         } else {
             echo " | non-GitHub link, stars skipped";
+            $topics = [];
         }
 
         echo "\n";
@@ -209,8 +317,11 @@ foreach ($lines as $line) {
             'description' => $description,
             'category' => $currentCategory,
             'stars' => $stars,
+            'tags' => $topics,
         ];
     }
+
+    usleep(10_000);
 }
 
 $categories = array_values(array_unique(array_column($items, 'category')));
@@ -327,14 +438,17 @@ input, select {
   background: #020617;
   border: 1px solid var(--border);
   color: var(--text);
-  border-radius: 12px;
+  border-radius: 6px;
   padding: 14px 16px;
   font-size: 1rem;
 }
 .select-wrapper {                /* Container */
-  position: relative;                
+  position: relative;
+  flex: 1;
+  min-width: 220px;
 }
 select {
+  width: 100%;
   -webkit-appearance: none;       /* Remove Mac/Safari arrow */
   -moz-appearance: none;          /* Firefox */
   appearance: none;               /* Standard */
@@ -408,7 +522,7 @@ input { flex: 1; min-width: 260px; }
   padding: 6px 10px;
   background: #020617;
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 6px;
   color: var(--muted);
 }
 .tag-row {
@@ -430,6 +544,25 @@ input { flex: 1; min-width: 260px; }
 }
 .tag-row .props-tag .props-tag-icon {
   font-size: .6rem;
+}
+.repo-tags {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.repo-tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: .75rem;
+  line-height: 1;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(147, 51, 234, .35);
+  background: linear-gradient(180deg, rgba(109, 40, 217, .15), rgba(76, 29, 149, .15));
+  color: #e9d5ff;
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
 .badge {
   font-size: 1.15rem;
@@ -474,6 +607,8 @@ footer a {
 
   <section class="controls">
     <input id="search" type="search" maxlength="255" placeholder="Search libraries, descriptions, categories...">
+  </section>  
+  <section class="controls">  
     <div class="select-wrapper">
       <select id="category">
         <option value="">All categories</option>
@@ -485,6 +620,11 @@ footer a {
         <option value="🌟">🌟 Production-ready</option>
         <option value="🧪">🧪 Experimental</option>
         <option value="⚠️">⚠️ Caution</option>
+      </select>
+    </div>
+    <div class="select-wrapper">
+      <select id="tag">
+        <option value="">All tags</option>
       </select>
     </div>
     <div class="select-wrapper">
@@ -515,6 +655,7 @@ const grid = document.getElementById('grid');
 const search = document.getElementById('search');
 const category = document.getElementById('category');
 const legend = document.getElementById('legend');
+const tag = document.getElementById('tag');
 const sort = document.getElementById('sort');
 const empty = document.getElementById('empty');
 
@@ -533,21 +674,34 @@ categories.forEach(cat => {
   category.appendChild(opt);
 });
 
+const tags = [...new Set(items.flatMap(i => Array.isArray(i.tags) ? i.tags : []))].sort();
+
+tags.forEach(tagValue => {
+  const opt = document.createElement('option');
+  opt.value = tagValue;
+  opt.textContent = tagValue;
+  tag.appendChild(opt);
+});
+
 function render() {
   const q = search.value.toLowerCase();
   const cat = category.value;
   const selectedLegend = legend.value;
+  const selectedTag = tag.value;
 
   let filtered = items.filter(item => {
+    const itemTags = Array.isArray(item.tags) ? item.tags : [];
     const haystack = [
       item.name,
       item.description,
-      item.category
+      item.category,
+      itemTags.join(' ')
     ].join(' ').toLowerCase();
 
     return haystack.includes(q)
       && (!cat || item.category === cat)
-      && (!selectedLegend || item.badge === selectedLegend);
+      && (!selectedLegend || item.badge === selectedLegend)
+      && (!selectedTag || itemTags.includes(selectedTag));
   });
 
   filtered.sort((a, b) => {
@@ -603,6 +757,7 @@ function render() {
           <span class="tag">\${escapeHtml(categoryLabels[item.category] || item.category)}</span>
           <span class="tag"><span class="stars-icon">⭐</span> \${item.stars !== null ? starsFormatter.format(item.stars) : 'N/A'}</span>
         </div>
+        \${(Array.isArray(item.tags) ? item.tags : []).length ? `<div class="repo-tags">\${item.tags.map(tagValue => `<span class="repo-tag">\${escapeHtml(tagValue)}</span>`).join('')}</div>` : ''}
       </div>
     </article>
   `).join('');
@@ -628,6 +783,7 @@ search.addEventListener('input', () => {
 });
 category.addEventListener('change', render);
 legend.addEventListener('change', render);
+tag.addEventListener('change', render);
 sort.addEventListener('change', render);
 
 render();
