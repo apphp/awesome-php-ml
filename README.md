@@ -338,6 +338,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 ### LLM & AI clients
 
 - [artisan-build/llm](https://github.com/artisan-build/llm "Link to resource") – Laravel integration for multiple LLM providers (OpenAI, Azure, OpenRouter, etc.), simplifying usage of large language models in Laravel apps
+- 🧪 [builtbyberry/laravel-swarm](https://github.com/builtbyberry/laravel-swarm "Link to resource") – Multi-agent swarm orchestration for Laravel, built on Laravel AI, with sequential, parallel, hierarchical, queued, streamed, and durable workflows
 - [BorahLabs/LLM-Port-Laravel](https://github.com/BorahLabs/LLM-Port-Laravel "Link to resource") – Laravel package for interchangeable LLM providers, allowing drop-in replacements of large language models
 - [Capevace/llm-magic](https://github.com/Capevace/llm-magic "Link to resource") – Laravel-centric LLM toolkit with support for AI features like chat and structured data extraction
 - [coding-wisely/taskallama](https://github.com/coding-wisely/taskallama "Link to resource") – Laravel package for seamless integration with the Ollama LLM API for AI-powered content generation, task assistance, conversation and embeddings
