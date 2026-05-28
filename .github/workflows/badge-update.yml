@@ -19,6 +19,7 @@ concurrency:
 
 jobs:
   badge-update:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       # Checkout full history so we can reset/rebase and push safely
