@@ -297,6 +297,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 - 🌟 [cocur/slugify](https://github.com/cocur/slugify "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/cocur/slugify?style=social) Converts strings into URL-friendly slugs, includes integrations for many frameworks
 - 🌟 [flow-php/flow](https://github.com/flow-php/flow "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/flow-php/flow?style=social) Data processing and ETL framework for PHP with typed pipelines
 - [league/csv](https://github.com/thephpleague/csv "Link to resource") – CSV data processing
+- [paperdoc-dev/paperdoc-lib](https://github.com/paperdoc-dev/paperdoc-lib "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/paperdoc-dev/paperdoc-lib?style=social) Zero-dependency PHP library for generating, parsing, and converting documents such as PDF, HTML, CSV, DOCX, XLSX, PPTX, and Markdown
 - 🌟 [php-ds/ext-ds](https://github.com/php-ds/ext-ds "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/php-ds/ext-ds?style=social) PHP Data Structures extension: efficient vectors, maps, sets, etc.
 - [spatie/data-transfer-object](https://github.com/spatie/data-transfer-object "Link to resource") – Strongly typed DTOs
 - [symfony/serializer](https://github.com/symfony/serializer "Link to resource") – Data normalization & serialization
