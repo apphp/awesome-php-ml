@@ -268,8 +268,12 @@ footer a {
     </div>
     <div class="select-wrapper">
       <select id="sort">
-        <option value="name">A–Z</option>
-        <option value="category">Category</option>
+        <option value="name-asc">Name (A–Z)</option>
+        <option value="name-desc">Name (Z–A)</option>
+        <option value="category-asc">Category (A–Z)</option>
+        <option value="category-desc">Category (Z–A)</option>
+        <option value="stars-desc">Stars (high to low)</option>
+        <option value="stars-asc">Stars (low to high)</option>
       </select>
     </div>
   </section>
@@ -326,9 +330,36 @@ function render() {
   });
 
   filtered.sort((a, b) => {
-    if (sort.value === 'category') {
+    if (sort.value === 'name-asc' || sort.value === 'name') {
+      return a.name.localeCompare(b.name);
+    }
+
+    if (sort.value === 'name-desc') {
+      return b.name.localeCompare(a.name);
+    }
+
+    if (sort.value === 'category-asc' || sort.value === 'category') {
       return a.category.localeCompare(b.category) || a.name.localeCompare(b.name);
     }
+
+    if (sort.value === 'category-desc') {
+      return b.category.localeCompare(a.category) || a.name.localeCompare(b.name);
+    }
+
+    if (sort.value === 'stars-desc') {
+      const aStars = a.stars === null ? -1 : a.stars;
+      const bStars = b.stars === null ? -1 : b.stars;
+
+      return bStars - aStars || a.name.localeCompare(b.name);
+    }
+
+    if (sort.value === 'stars-asc') {
+      const aStars = a.stars === null ? Number.POSITIVE_INFINITY : a.stars;
+      const bStars = b.stars === null ? Number.POSITIVE_INFINITY : b.stars;
+
+      return aStars - bStars || a.name.localeCompare(b.name);
+    }
+
     return a.name.localeCompare(b.name);
   });
 
