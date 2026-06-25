@@ -242,7 +242,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 - [mzarnecki/php-rag](https://github.com/mzarnecki/php-rag "Link to resource") – PHP RAG toolkit for connecting vector search and LLMs in retrieval-augmented workflows
 - 🌟 [openai-php/client](https://github.com/openai-php/client "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/openai-php/client?style=social) Official OpenAI PHP client
 - 🌟 [orhanerday/open-ai](https://github.com/orhanerday/open-ai "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/orhanerday/open-ai?style=social) Popular OpenAI PHP SDK
-- [runapi-ai/gpt-image-2-php](https://github.com/runapi-ai/gpt-image-2-php "Link to resource") – PHP SDK for GPT Image 2 text-to-image and image editing workflows on RunAPI
+- 🧪 [runapi-ai/gpt-image-2-php](https://github.com/runapi-ai/gpt-image-2-php "Link to resource") – PHP SDK for GPT Image 2 text-to-image and image editing workflows on RunAPI
 - [prism-php/bedrock](https://github.com/prism-php/bedrock "Link to resource") – AWS Bedrock provider for the Prism PHP framework, adding Bedrock LLM and embeddings support to Laravel Prism integrations
 - [sarfraznawaz2005/ai-team](https://github.com/sarfraznawaz2005/ai-team "Link to resource") – Package to build and run collaborative teams of AI members with role/task assignments
 - [SearchAugmentedLLM](https://github.com/EliasPereirah/SearchAugmentedLLM "Link to resource") – PHP search-augmented LLM tool that performs web search, extracts, chunks and ranks content to provide context for LLM responses (ideal for RAG applications)
