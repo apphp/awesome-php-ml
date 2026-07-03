@@ -419,6 +419,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 
 - [Awesome PHP](https://github.com/ziadoz/awesome-php "Link to resource")
 - 🧪 [dykyi-roman/awesome-claude-code](https://github.com/dykyi-roman/awesome-claude-code "Link to resource") – Curated collection of commands, agents, skills, hooks, and tools for enhancing Claude Code AI workflows
+- [Mautic](https://www.mautic.org) - Open-source marketing automation platform built with PHP and Symfony for campaigns, segmentation, and lead management.
 
 ### Courses & Tutorials
 
