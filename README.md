@@ -254,6 +254,10 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 - [thojou/php-llm-documents](https://github.com/thojou/php-llm-documents "Link to resource") – PHP library for LLM-based document processing (splitting, embeddings, vector store, search) inspired by LangChain/DocTran
 - [utopia-php/agents](https://github.com/utopia-php/agents "Link to resource") – Simple, lightweight PHP library for AI agent orchestration with multi-provider support (OpenAI, Anthropic, Deepseek, Perplexity, XAI)
 
+### AI-native Frameworks
+
+- 🧪 [univeros/framework](https://github.com/univeros/framework "Link to resource") – Agent-native PHP framework with deterministic scaffolding, MCP server, machine-readable CLI, reversible code generation, and AI-oriented development primitives for building APIs and applications
+
 ### Agents & Tooling / MCP
 
 - [logiscape/mcp-sdk-php](https://github.com/logiscape/mcp-sdk-php "Link to resource") – PHP SDK for building Model Context Protocol (MCP) clients and servers to connect LLMs with external tools and services
