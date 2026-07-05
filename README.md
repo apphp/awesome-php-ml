@@ -154,6 +154,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 *Text processing, tokenization, language detection, sentiment analysis and other NLP tasks in PHP.*
 
 - ⚠️ [angeloskath/php-nlp-tools](https://github.com/angeloskath/php-nlp-tools "Link to resource") – Natural Language Processing tools
+- 🌟 [ankane/mitie-php](https://github.com/ankane/mitie-php "Link to resource") – PHP bindings for the MITIE NLP library providing named entity recognition (NER), text classification, and feature extraction using pre-trained statistical models
 - [davmixcool/php-sentiment-analyzer](https://github.com/davmixcool/php-sentiment-analyzer "Link to resource") – Lightweight PHP library for sentiment analysis using lexical rules
 - [friteuseb/nlp_tools](https://github.com/friteuseb/nlp_tools "Link to resource") – Extension for NLP methods and text analysis
 - ⚠️ [googlei18n/myanmar-tools](https://github.com/googlei18n/myanmar-tools "Link to resource") – Myanmar text encoding detection and Zawgyi ↔ Unicode conversion using a trained model (includes PHP support)
@@ -170,6 +171,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 *Image manipulation, preprocessing, and computer vision workloads from PHP.*
 
 - 🧪 [aschmelyun/subvert](https://github.com/aschmelyun/subvert "Link to resource") - Generate subtitles, summaries, and chapters from videos in seconds
+- 🧪 [b7s/fluentvision](https://github.com/b7s/fluentvision "Link to resource") – Fluent PHP API for computer vision with YOLO and NanoDet backends, supporting object detection, segmentation, classification, image/video annotation, and open-vocabulary detection
 - 🌟 [Intervention/image](https://github.com/Intervention/image "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/Intervention/image?style=social) Image manipulation library for CV preprocessing
 - [jcupitt/vips](https://github.com/jcupitt/libvips "Link to resource") – Fast image processing library with PHP bindings
 - 🧪 [mailmug/php-dlib](https://github.com/mailmug/php-dlib "Link to resource") – PHP extension for Dlib, supporting face detection, facial landmarks, face recognition descriptors, CNN detection, and clustering
@@ -204,6 +206,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 ### Model execution & runtimes
 
 - 🌟 [ankane/onnxruntime-php](https://github.com/ankane/onnxruntime-php "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/ankane/onnxruntime-php?style=social) Run ONNX models from PHP
+- 🧪 [DisplaceTech/ext-infer](https://github.com/DisplaceTech/ext-infer "Link to resource") – PHP extension for local in-process LLM inference with GGUF models via llama.cpp, supporting chat, embeddings, and reasoning models without Python, remote APIs, or sidecar services 
 - [FFI](https://www.php.net/manual/en/book.ffi.php "Link to resource") – Native C/C++ bindings in PHP for high-performance ML inference
 - [phpmlkit/onnxruntime](https://github.com/phpmlkit/onnxruntime "Link to resource") – High-performance ONNX Runtime bindings for PHP using FFI, enabling inference of models from PyTorch, TensorFlow, scikit-learn and other frameworks
 
@@ -252,10 +255,15 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 - [thojou/php-llm-documents](https://github.com/thojou/php-llm-documents "Link to resource") – PHP library for LLM-based document processing (splitting, embeddings, vector store, search) inspired by LangChain/DocTran
 - [utopia-php/agents](https://github.com/utopia-php/agents "Link to resource") – Simple, lightweight PHP library for AI agent orchestration with multi-provider support (OpenAI, Anthropic, Deepseek, Perplexity, XAI)
 
+### AI-native Frameworks
+
+- 🧪 [univeros/framework](https://github.com/univeros/framework "Link to resource") – Agent-native PHP framework with deterministic scaffolding, MCP server, machine-readable CLI, reversible code generation, and AI-oriented development primitives for building APIs and applications
+
 ### Agents & Tooling / MCP
 
 - [logiscape/mcp-sdk-php](https://github.com/logiscape/mcp-sdk-php "Link to resource") – PHP SDK for building Model Context Protocol (MCP) clients and servers to connect LLMs with external tools and services
 - 🧪 [manuelkiessling/php-ai-tool-bridge](https://github.com/manuelkiessling/php-ai-tool-bridge "Link to resource") – PHP library for defining AI “tool functions” that let LLMs interact with application code and external services using structured JSON schemas
+- 🧪 [neuron-core/llm-classifier](https://github.com/neuron-core/llm-classifier "Link to resource") – Train lightweight classifiers that estimate prompt difficulty and route requests to the most cost-effective LLM, enabling intelligent model selection and inference cost optimization
 - 🧪 [neuron-core/youtube-ai-agent](https://github.com/neuron-core/youtube-ai-agent "Link to resource") – Example PHP AI agent built with Neuron for summarizing YouTube videos and generating content from them
 - [prism-php/relay](https://github.com/prism-php/relay "Link to resource") – MCP client for Prism that lets PHP/Laravel AI agents connect to external Model Context Protocol servers and use their tools
 - 🧪 [symfony/mcp-sdk](https://github.com/symfony/mcp-sdk "Link to resource") – Symfony's experimental PHP SDK for building Model Context Protocol (MCP) clients and servers
@@ -270,6 +278,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 - [CodeWithKyrian/tokenizers-php](https://github.com/CodeWithKyrian/tokenizers-php "Link to resource") – PHP bindings for Hugging Face Tokenizers, enabling fast tokenization for transformer and LLM models
 - [Gioni06/GPT3Tokenizer](https://github.com/Gioni06/GPT3Tokenizer "Link to resource") – PHP tokenizer compatible with GPT-3 style models
 - [HelgeSverre/toon-php](https://github.com/HelgeSverre/toon-php "Link to resource") – PHP implementation of TOON, a compact data format for reducing token usage when sending structured data to LLMs
+- [RahulDey12/tiktoken-php](https://github.com/RahulDey12/tiktoken-php "Link to resource") – PHP implementation of OpenAI's BPE tokenizer `tiktoken` for encoding, decoding, and counting tokens in GPT prompts
 - [yethee/tiktoken-php](https://github.com/yethee/tiktoken-php "Link to resource") – PHP implementation of OpenAI's *tiktoken* tokenizer for token counting and optimization
 
 ---
@@ -279,6 +288,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 *Libraries for generating embeddings and performing vector similarity search from PHP applications.*
 
 - 🌟 [algolia/algoliasearch-client-php](https://github.com/algolia/algoliasearch-client-php "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/algolia/algoliasearch-client-php?style=social) Algolia search client
+- [b7s/neuraphp](https://github.com/b7s/neuraphp "Link to resource") – Local text embeddings for PHP via FFI, powered by embedding.cpp, enabling private embedding generation without Python, APIs, or external services at runtime 
 - [CodeWithKyrian/chromadb-php](https://github.com/CodeWithKyrian/chromadb-php "Link to resource") – PHP client for ChromaDB, enabling vector similarity search and embedding storage for AI and RAG applications
 - [hkulekci/qdrant-php](https://github.com/hkulekci/qdrant-php "Link to resource") – PHP client for the Qdrant vector database, enabling vector similarity search and embedding storage for AI and RAG applications
 - [llm-agents-php/vector-storage](https://github.com/llm-agents-php/vector-storage "Link to resource") – LLM Agents Vector Storage
@@ -350,7 +360,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 - [grok-php/laravel](https://github.com/grok-php/laravel "Link to resource") – Laravel package for integrating Grok AI models
 - 🌟 [laravel/ai](https://github.com/laravel/ai "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/laravel/ai?style=social) The Laravel AI SDK: a unified, expressive Laravel API for interacting with AI providers (LLMs, images, embeddings, agents, tools)
 - 🌟 [laravel/boost](https://github.com/laravel/boost "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/laravel/boost?style=social) Official Laravel Boost: a development server and AI context provider that accelerates AI-assisted code generation by giving AI tools detailed insight into your Laravel app (MCP server, schema inspection, docs + guidelines)
-- [maestroerror/laragent](https://github.com/maestroerror/laragent "Link to resource") – AI agent development framework for Laravel: define agents, tools, workflows, and manage LLM interactions with an Eloquent-style API
+- [maestroerror/LarAgent](https://github.com/maestroerror/LarAgent "Link to resource") – AI agent development framework for Laravel: define agents, tools, workflows, and manage LLM interactions with an Eloquent-style API
 - [moe-mizrak/laravel-openrouter](https://github.com/moe-mizrak/laravel-openrouter "Link to resource") – Laravel package to integrate OpenRouter LLM API
 - [mozex/anthropic-laravel](https://github.com/mozex/anthropic-laravel "Link to resource") – Laravel integration for the Anthropic (Claude) AI API with Facades, config publishing, and testing fakes
 - 🌟 [neuron-core/neuron-laravel](https://github.com/neuron-core/neuron-laravel "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/neuron-core/neuron-laravel?style=social) Laravel integration for Neuron Core to build and orchestrate AI/LLM workflows
@@ -359,6 +369,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 - [opgginc/laravel-mcp-server](https://github.com/opgginc/laravel-mcp-server "Link to resource") – Laravel package for building secure Model Context Protocol (MCP) servers using Streamable HTTP/SSE, enabling real-time communication between LLM agents and application tools
 - [PapaRascal2020/sidekick](https://github.com/PapaRascal2020/sidekick "Link to resource") – Laravel package offering a unified syntax for working with multiple AI provider APIs (OpenAI, Claude, Cohere, Mistral)
 - 🌟 [php-mcp/laravel](https://github.com/php-mcp/laravel "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/php-mcp/laravel?style=social) – Laravel package for building Model Context Protocol (MCP) servers and exposing application tools to LLMs
+- 🌟 [promptlyagentai/promptlyagent](https://github.com/promptlyagentai/promptlyagent "Link to resource") – AI Agent development framework / workbench / harness powered by Laravel
 - [shawnveltman/laravel-openai](https://github.com/shawnveltman/laravel-openai "Link to resource") – Laravel wrapper for OpenAI
 - [vizra-ai/vizra-adk](https://github.com/vizra-ai/vizra-adk "Link to resource") – Laravel AI Agent Development Kit for building autonomous agents with tools, persistent memory, workflows, streaming, evaluations, tracing, and Prism-powered multi-model support
 - [rahasistiyakofficial/laravel-ai-integration](https://github.com/rahasistiyakofficial/laravel-ai-integration "Link to resource") – This is a comprehensive, enterprise-ready package that provides seamless integration with multiple AI providers through a unified, elegant API

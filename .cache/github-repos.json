@@ -1,0 +1,982 @@
+{
+    "codewithkyrian/transformers-php": {
+        "stars": 759,
+        "topics": [
+            "huggingface",
+            "ml",
+            "php",
+            "transformers"
+        ]
+    },
+    "danielefavi/brainy": {
+        "stars": 17,
+        "topics": []
+    },
+    "jbboehr/polynomialregression.php": {
+        "stars": 22,
+        "topics": [
+            "deus-vult",
+            "linear-regression",
+            "php",
+            "php-library",
+            "php8",
+            "polynomial-regression"
+        ]
+    },
+    "php-ai/php-ml-examples": {
+        "stars": 206,
+        "topics": []
+    },
+    "sphamster/bayes": {
+        "stars": 1,
+        "topics": []
+    },
+    "rindow/rindow-neuralnetworks": {
+        "stars": 85,
+        "topics": [
+            "cnn",
+            "dl",
+            "dnn",
+            "gpgpu",
+            "gpu",
+            "ml",
+            "neural-network",
+            "openblas",
+            "opencl",
+            "php",
+            "php8",
+            "recurrent-neural-networks",
+            "rnn",
+            "transformers"
+        ]
+    },
+    "rubixml/rubixml": {
+        "stars": 2199,
+        "topics": [
+            "analytics",
+            "anomaly-detection",
+            "classification",
+            "clustering",
+            "dl",
+            "ml",
+            "nlp",
+            "php",
+            "regression"
+        ]
+    },
+    "angeloskath/php-nlp-tools": {
+        "stars": 764,
+        "topics": []
+    },
+    "ankane/mitie-php": {
+        "stars": 32,
+        "topics": [
+            "named-entity-recognition",
+            "ner"
+        ]
+    },
+    "davmixcool/php-sentiment-analyzer": {
+        "stars": 134,
+        "topics": []
+    },
+    "friteuseb/nlp_tools": {
+        "stars": 2,
+        "topics": []
+    },
+    "googlei18n/myanmar-tools": {
+        "stars": 264,
+        "topics": []
+    },
+    "patrickschur/language-detection": {
+        "stars": 854,
+        "topics": [
+            "language",
+            "language-detection",
+            "n-grams",
+            "nlp",
+            "php",
+            "training"
+        ]
+    },
+    "rubixml/sentiment": {
+        "stars": 117,
+        "topics": [
+            "backpropagation",
+            "dataset",
+            "dl",
+            "example-project",
+            "gradient-descent",
+            "imdb",
+            "ml",
+            "machine-learning-tutorial",
+            "multi-layer-perceptron",
+            "nlp",
+            "neural-network",
+            "php",
+            "php-machine-learning",
+            "php-ml",
+            "sentiment-analysis",
+            "sentiment-classification",
+            "text-classification",
+            "text-sentiment",
+            "tf-idf",
+            "tutorial"
+        ]
+    },
+    "serafimarts/tf-idf": {
+        "stars": 4,
+        "topics": []
+    },
+    "voku/stop-words": {
+        "stars": 90,
+        "topics": [
+            "hacktoberfest",
+            "php",
+            "stop-words",
+            "stopwords"
+        ]
+    },
+    "yooper/php-text-analysis": {
+        "stars": 533,
+        "topics": [
+            "nlp",
+            "php",
+            "php-language",
+            "php-text-analysis",
+            "text-analysis",
+            "tokenization"
+        ]
+    },
+    "aschmelyun/subvert": {
+        "stars": 868,
+        "topics": [
+            "chatgpt",
+            "openai",
+            "transcription",
+            "translation",
+            "video-editing",
+            "whisper"
+        ]
+    },
+    "b7s/fluentvision": {
+        "stars": 5,
+        "topics": [
+            "laravel",
+            "llm",
+            "nanodet",
+            "object-detection",
+            "php",
+            "vision",
+            "yolo"
+        ]
+    },
+    "intervention/image": {
+        "stars": 14350,
+        "topics": [
+            "gd",
+            "image",
+            "imagick",
+            "intervention",
+            "php"
+        ]
+    },
+    "jcupitt/libvips": {
+        "stars": 69,
+        "topics": []
+    },
+    "mailmug/php-dlib": {
+        "stars": 12,
+        "topics": []
+    },
+    "php-opencv/php-opencv": {
+        "stars": 365,
+        "topics": [
+            "caffe",
+            "darknet",
+            "detector",
+            "dnn",
+            "face",
+            "ml",
+            "onnx",
+            "opencv",
+            "php",
+            "recognition",
+            "tensorflow",
+            "torch"
+        ]
+    },
+    "brick/math": {
+        "stars": 2150,
+        "topics": [
+            "arbitrary-precision",
+            "bcmath",
+            "bigdecimal",
+            "biginteger",
+            "bigrational",
+            "gmp",
+            "php"
+        ]
+    },
+    "hi-folks/statistics": {
+        "stars": 402,
+        "topics": [
+            "hacktoberfest",
+            "math",
+            "php",
+            "statistics"
+        ]
+    },
+    "markrogoyski/math-php": {
+        "stars": 2411,
+        "topics": [
+            "algebra",
+            "combinatorics",
+            "distributions",
+            "finance",
+            "information-theory",
+            "linear-algebra",
+            "math",
+            "mathematics",
+            "matrix",
+            "number-theory",
+            "numerical-analysis",
+            "php",
+            "php-library",
+            "probability",
+            "regression",
+            "statistics",
+            "vector"
+        ]
+    },
+    "mcordingley/linearalgebra": {
+        "stars": 82,
+        "topics": [
+            "linear-algebra-library",
+            "linearalgebra",
+            "matrix",
+            "php"
+        ]
+    },
+    "numphp/numphp": {
+        "stars": 145,
+        "topics": [
+            "complex-numbers",
+            "linear-algebra",
+            "math",
+            "matrix",
+            "numeric",
+            "vector"
+        ]
+    },
+    "rubixml/tensor": {
+        "stars": 280,
+        "topics": [
+            "arithmetic",
+            "engineering",
+            "lapack",
+            "linear-algebra",
+            "ml",
+            "math",
+            "matrix",
+            "matrix-decompositions",
+            "matrix-factorizations",
+            "matrix-multiplication",
+            "multithreaded",
+            "php",
+            "php-extension",
+            "rubix",
+            "scientific-computing",
+            "statistics",
+            "tensor",
+            "tensor-extension",
+            "tensor-php",
+            "vector"
+        ]
+    },
+    "rubixml/numpower": {
+        "stars": 21,
+        "topics": [
+            "ndarray",
+            "tensor"
+        ]
+    },
+    "rindow/rindow-math-matrix": {
+        "stars": 13,
+        "topics": [
+            "acceleration",
+            "array",
+            "gpu",
+            "hpc",
+            "ml",
+            "mathematics",
+            "n-dimensional",
+            "openblas",
+            "opencl",
+            "php",
+            "php8",
+            "scientific-computing"
+        ]
+    },
+    "phpmlkit/ndarray": {
+        "stars": 50,
+        "topics": []
+    },
+    "krakjoe/ort": {
+        "stars": 143,
+        "topics": []
+    },
+    "ankane/onnxruntime-php": {
+        "stars": 150,
+        "topics": []
+    },
+    "displacetech/ext-infer": {
+        "stars": 5,
+        "topics": []
+    },
+    "phpmlkit/onnxruntime": {
+        "stars": 8,
+        "topics": []
+    },
+    "swoole/phpy": {
+        "stars": 648,
+        "topics": []
+    },
+    "aiaccess/ai-access": {
+        "stars": 54,
+        "topics": [
+            "ai",
+            "anthropic",
+            "api",
+            "chatbot",
+            "client",
+            "deepseek",
+            "gemini",
+            "grok",
+            "large-language-model",
+            "llm",
+            "openai"
+        ]
+    },
+    "aimeos/prisma": {
+        "stars": 195,
+        "topics": [
+            "api",
+            "llm",
+            "media",
+            "multimedia"
+        ]
+    },
+    "adrienbrault/instructrice": {
+        "stars": 29,
+        "topics": []
+    },
+    "ardagnsrn/ollama-php": {
+        "stars": 210,
+        "topics": [
+            "llama",
+            "llama3",
+            "llm",
+            "ollama",
+            "ollama-api",
+            "ollama-php",
+            "open-source-llm"
+        ]
+    },
+    "clarifai/clarifai-php-grpc": {
+        "stars": 12,
+        "topics": [
+            "ai",
+            "clarifai",
+            "clarifai-client",
+            "grpc",
+            "php"
+        ]
+    },
+    "cognesy/instructor-php": {
+        "stars": 320,
+        "topics": [
+            "agents",
+            "ai",
+            "ai-agents",
+            "genai",
+            "llm",
+            "php"
+        ]
+    },
+    "deepseek-php/deepseek-php-client": {
+        "stars": 466,
+        "topics": [
+            "ai",
+            "api-client",
+            "deepseek",
+            "deepseek-api",
+            "deepseek-chat",
+            "deepseek-coder",
+            "deepseek-integration",
+            "deepseek-learning",
+            "deepseek-php-client",
+            "deepseek-php-library",
+            "deepseek-r1",
+            "deepseek-sdk",
+            "deepseek-symfony",
+            "deepseek-v3",
+            "deepseek-v4-flash",
+            "nlp",
+            "php-deepseek",
+            "php-openai-alternative",
+            "text-generation"
+        ]
+    },
+    "dtyq/magic": {
+        "stars": 4889,
+        "topics": [
+            "agent",
+            "agi",
+            "ai",
+            "gpt",
+            "llm",
+            "low-code",
+            "mcp",
+            "no-code",
+            "sandbox",
+            "super-magic",
+            "workflow"
+        ]
+    },
+    "elastic/elasticsearch-chatgpt-php": {
+        "stars": 29,
+        "topics": []
+    },
+    "funkyoz/mulagent": {
+        "stars": 8,
+        "topics": []
+    },
+    "google-gemini-php/client": {
+        "stars": 410,
+        "topics": [
+            "gemini",
+            "gemini-api",
+            "google-ai",
+            "google-ai-client-sdk",
+            "google-ai-studio"
+        ]
+    },
+    "hosonode/easyai-php": {
+        "stars": 10,
+        "topics": [
+            "ai",
+            "claude",
+            "claude-3",
+            "gpt4",
+            "llm",
+            "openai",
+            "rag"
+        ]
+    },
+    "carmelosantana/php-agents": {
+        "stars": 1,
+        "topics": []
+    },
+    "llm-agents-php/agents": {
+        "stars": 167,
+        "topics": [
+            "llm",
+            "llm-agents",
+            "llm-tool-call",
+            "php",
+            "php8",
+            "php83"
+        ]
+    },
+    "llm-agents-php/prompt-generator": {
+        "stars": 7,
+        "topics": [
+            "llm-agent",
+            "llm-prompting",
+            "llm-tools",
+            "php"
+        ]
+    },
+    "mozex/anthropic-php": {
+        "stars": 48,
+        "topics": [
+            "ai",
+            "anthropic",
+            "api-client",
+            "chatbot",
+            "claude",
+            "generative-ai",
+            "llm",
+            "php",
+            "sdk",
+            "streaming",
+            "tool-use"
+        ]
+    },
+    "mzarnecki/php-rag": {
+        "stars": 67,
+        "topics": [
+            "chatbot",
+            "chatgpt",
+            "claude-3",
+            "deepseek",
+            "embeddings",
+            "gemini",
+            "genai",
+            "gpt-4",
+            "llama3",
+            "llm",
+            "llms",
+            "mixtral",
+            "ollama",
+            "pgvector",
+            "php",
+            "rag",
+            "semanticsearch"
+        ]
+    },
+    "openai-php/client": {
+        "stars": 5813,
+        "topics": [
+            "api",
+            "client",
+            "codex",
+            "gpt-3",
+            "gpt-4",
+            "gpt-5",
+            "language",
+            "natural",
+            "openai",
+            "php",
+            "processing",
+            "sdk"
+        ]
+    },
+    "orhanerday/open-ai": {
+        "stars": 2367,
+        "topics": [
+            "cakephp",
+            "dall-e",
+            "dalle2",
+            "gpt-3",
+            "laravel",
+            "openai",
+            "openai-api",
+            "php",
+            "symfony",
+            "yii"
+        ]
+    },
+    "prism-php/bedrock": {
+        "stars": 34,
+        "topics": [
+            "aws",
+            "aws-bedrock",
+            "prismphp"
+        ]
+    },
+    "sarfraznawaz2005/ai-team": {
+        "stars": null,
+        "topics": []
+    },
+    "eliaspereirah/searchaugmentedllm": {
+        "stars": null,
+        "topics": []
+    },
+    "skito/aipi-php": {
+        "stars": null,
+        "topics": []
+    },
+    "softcreatr/php-mistral-ai-sdk": {
+        "stars": null,
+        "topics": []
+    },
+    "takaaki-mizuno/php-llm-json-adapter": {
+        "stars": null,
+        "topics": []
+    },
+    "thojou/php-llm-documents": {
+        "stars": null,
+        "topics": []
+    },
+    "utopia-php/agents": {
+        "stars": null,
+        "topics": []
+    },
+    "univeros/framework": {
+        "stars": null,
+        "topics": []
+    },
+    "logiscape/mcp-sdk-php": {
+        "stars": null,
+        "topics": []
+    },
+    "manuelkiessling/php-ai-tool-bridge": {
+        "stars": null,
+        "topics": []
+    },
+    "neuron-core/llm-classifier": {
+        "stars": null,
+        "topics": []
+    },
+    "neuron-core/youtube-ai-agent": {
+        "stars": null,
+        "topics": []
+    },
+    "prism-php/relay": {
+        "stars": null,
+        "topics": []
+    },
+    "symfony/mcp-sdk": {
+        "stars": null,
+        "topics": []
+    },
+    "b7s/fluentvox": {
+        "stars": null,
+        "topics": []
+    },
+    "b7s/whisper-php": {
+        "stars": null,
+        "topics": []
+    },
+    "codewithkyrian/tokenizers-php": {
+        "stars": null,
+        "topics": []
+    },
+    "gioni06/gpt3tokenizer": {
+        "stars": null,
+        "topics": []
+    },
+    "helgesverre/toon-php": {
+        "stars": null,
+        "topics": []
+    },
+    "rahuldey12/tiktoken-php": {
+        "stars": null,
+        "topics": []
+    },
+    "yethee/tiktoken-php": {
+        "stars": null,
+        "topics": []
+    },
+    "algolia/algoliasearch-client-php": {
+        "stars": null,
+        "topics": []
+    },
+    "b7s/neuraphp": {
+        "stars": null,
+        "topics": []
+    },
+    "codewithkyrian/chromadb-php": {
+        "stars": null,
+        "topics": []
+    },
+    "hkulekci/qdrant-php": {
+        "stars": null,
+        "topics": []
+    },
+    "llm-agents-php/vector-storage": {
+        "stars": null,
+        "topics": []
+    },
+    "llphant/llphant": {
+        "stars": null,
+        "topics": []
+    },
+    "meilisearch/meilisearch-php": {
+        "stars": null,
+        "topics": []
+    },
+    "pgvector/pgvector": {
+        "stars": null,
+        "topics": []
+    },
+    "pgvector/pgvector-php": {
+        "stars": null,
+        "topics": []
+    },
+    "probots-io/pinecone-php": {
+        "stars": null,
+        "topics": []
+    },
+    "redis-applied-ai/redis-vector-php": {
+        "stars": null,
+        "topics": []
+    },
+    "voyanara/milvus-php-sdk": {
+        "stars": null,
+        "topics": []
+    },
+    "cocur/slugify": {
+        "stars": null,
+        "topics": []
+    },
+    "flow-php/flow": {
+        "stars": null,
+        "topics": []
+    },
+    "thephpleague/csv": {
+        "stars": null,
+        "topics": []
+    },
+    "paperdoc-dev/paperdoc-lib": {
+        "stars": null,
+        "topics": []
+    },
+    "php-ds/ext-ds": {
+        "stars": null,
+        "topics": []
+    },
+    "spatie/data-transfer-object": {
+        "stars": null,
+        "topics": []
+    },
+    "symfony/serializer": {
+        "stars": null,
+        "topics": []
+    },
+    "deeplcom/deepl-php": {
+        "stars": null,
+        "topics": []
+    },
+    "distantmagic/resonance": {
+        "stars": null,
+        "topics": []
+    },
+    "garyblankenship/mcp-php": {
+        "stars": null,
+        "topics": []
+    },
+    "googleapis/google-cloud-php": {
+        "stars": null,
+        "topics": []
+    },
+    "grpc/grpc-php": {
+        "stars": null,
+        "topics": []
+    },
+    "hossambalaha/deep-learning-classification-system-using-php-and-keras": {
+        "stars": null,
+        "topics": []
+    },
+    "neuron-core/neuron-ai": {
+        "stars": null,
+        "topics": []
+    },
+    "nlpcloud/nlpcloud-php": {
+        "stars": null,
+        "topics": []
+    },
+    "apphp/pretty-print": {
+        "stars": null,
+        "topics": []
+    },
+    "context-hub/generator": {
+        "stars": null,
+        "topics": []
+    },
+    "guanguans/ai-commit": {
+        "stars": null,
+        "topics": []
+    },
+    "hiblaphp/http-client": {
+        "stars": null,
+        "topics": []
+    },
+    "joshembling/laragenie": {
+        "stars": null,
+        "topics": []
+    },
+    "mariorazo97/single-file-php-ai": {
+        "stars": null,
+        "topics": []
+    },
+    "nunomaduro/collision": {
+        "stars": null,
+        "topics": []
+    },
+    "php-fig/log": {
+        "stars": null,
+        "topics": []
+    },
+    "symfony/console": {
+        "stars": null,
+        "topics": []
+    },
+    "symfony/http-client": {
+        "stars": null,
+        "topics": []
+    },
+    "artisan-build/llm": {
+        "stars": null,
+        "topics": []
+    },
+    "builtbyberry/laravel-swarm": {
+        "stars": null,
+        "topics": []
+    },
+    "borahlabs/llm-port-laravel": {
+        "stars": null,
+        "topics": []
+    },
+    "capevace/llm-magic": {
+        "stars": null,
+        "topics": []
+    },
+    "coding-wisely/taskallama": {
+        "stars": null,
+        "topics": []
+    },
+    "grok-php/laravel": {
+        "stars": null,
+        "topics": []
+    },
+    "laravel/ai": {
+        "stars": null,
+        "topics": []
+    },
+    "laravel/boost": {
+        "stars": null,
+        "topics": []
+    },
+    "maestroerror/laragent": {
+        "stars": null,
+        "topics": []
+    },
+    "moe-mizrak/laravel-openrouter": {
+        "stars": null,
+        "topics": []
+    },
+    "mozex/anthropic-laravel": {
+        "stars": null,
+        "topics": []
+    },
+    "neuron-core/neuron-laravel": {
+        "stars": null,
+        "topics": []
+    },
+    "atlas-php/atlas": {
+        "stars": null,
+        "topics": []
+    },
+    "openai-php/laravel": {
+        "stars": null,
+        "topics": []
+    },
+    "opgginc/laravel-mcp-server": {
+        "stars": null,
+        "topics": []
+    },
+    "paparascal2020/sidekick": {
+        "stars": null,
+        "topics": []
+    },
+    "php-mcp/laravel": {
+        "stars": null,
+        "topics": []
+    },
+    "promptlyagentai/promptlyagent": {
+        "stars": null,
+        "topics": []
+    },
+    "shawnveltman/laravel-openai": {
+        "stars": null,
+        "topics": []
+    },
+    "vizra-ai/vizra-adk": {
+        "stars": null,
+        "topics": []
+    },
+    "rahasistiyakofficial/laravel-ai-integration": {
+        "stars": null,
+        "topics": []
+    },
+    "jeremysalmon/laravelllmcontext": {
+        "stars": null,
+        "topics": []
+    },
+    "prism-php/prism": {
+        "stars": null,
+        "topics": []
+    },
+    "spatie/laravel-data": {
+        "stars": null,
+        "topics": []
+    },
+    "capevace/ai-translations-for-laravel": {
+        "stars": null,
+        "topics": []
+    },
+    "jayeshmepani/laravel-gemini-translator": {
+        "stars": null,
+        "topics": []
+    },
+    "subhashladumor1/laravel-ai-guard": {
+        "stars": null,
+        "topics": []
+    },
+    "redberryproducts/mcp-client-laravel": {
+        "stars": null,
+        "topics": []
+    },
+    "prismaticoder/laravel-prompt-manager": {
+        "stars": null,
+        "topics": []
+    },
+    "sabatinomasala/laravel-llm-prompt": {
+        "stars": null,
+        "topics": []
+    },
+    "laravel/scout": {
+        "stars": null,
+        "topics": []
+    },
+    "teamtnt/laravel-scout-tntsearch-driver": {
+        "stars": null,
+        "topics": []
+    },
+    "openai-php/symfony": {
+        "stars": null,
+        "topics": []
+    },
+    "symfony/ai": {
+        "stars": null,
+        "topics": []
+    },
+    "soleinjast/symfony-markdown-response-bundle": {
+        "stars": null,
+        "topics": []
+    },
+    "symfony/ai-agent": {
+        "stars": null,
+        "topics": []
+    },
+    "symfony/ai-bundle": {
+        "stars": null,
+        "topics": []
+    },
+    "symfony/ai-platform": {
+        "stars": null,
+        "topics": []
+    },
+    "symfony/ai-store": {
+        "stars": null,
+        "topics": []
+    },
+    "symfony/mcp-bundle": {
+        "stars": null,
+        "topics": []
+    },
+    "wordpress/php-ai-client": {
+        "stars": null,
+        "topics": []
+    },
+    "dykyi-roman/awesome-claude-code": {
+        "stars": null,
+        "topics": []
+    },
+    "tensorflow/tfjs": {
+        "stars": null,
+        "topics": []
+    }
+}

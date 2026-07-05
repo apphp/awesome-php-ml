@@ -651,6 +651,99 @@ footer a {
 <script>
 const items = $data;
 
+const fallbackTagAliases = new Map([
+  ['machine learning', 'ml'],
+  ['deep learning', 'dl'],
+  ['artificial intelligence', 'ai'],
+  ['natural language processing', 'nlp'],
+  ['natural language understanding', 'nlp'],
+  ['natural language generation', 'nlp'],
+  ['large language model', 'llm'],
+  ['large language models', 'llm'],
+  ['language model', 'llm'],
+  ['language models', 'llm'],
+  ['retrieval augmented generation', 'rag'],
+  ['computer vision', 'cv'],
+  ['neural network', 'neural-network'],
+  ['neural networks', 'neural-network'],
+  ['classification', 'classification'],
+  ['regression', 'regression'],
+  ['clustering', 'clustering'],
+  ['recommendation', 'recommendation'],
+  ['embedding', 'embeddings'],
+  ['embeddings', 'embeddings'],
+  ['transformer', 'transformers'],
+  ['transformers', 'transformers'],
+  ['wordpress integrations', 'wordpress'],
+  ['image & video', 'image & video'],
+  ['tools & utilities', 'tools'],
+  ['laravel & framework integrations', 'laravel'],
+  ['symfony & framework integrations', 'symfony'],
+  ['onnx', 'onnx'],
+  ['nlp', 'nlp'],
+  ['llm', 'llm'],
+  ['rag', 'rag'],
+  ['ai', 'ai'],
+  ['ml', 'ml'],
+]);
+
+function normalizeTagValue(value) {
+  return String(value)
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
+function collectDerivedTags(text) {
+  const source = String(text || '').toLowerCase();
+  const derived = [];
+
+  fallbackTagAliases.forEach((tagValue, phrase) => {
+    if (source.includes(phrase)) {
+      derived.push(tagValue);
+    }
+  });
+
+  return derived;
+}
+
+function ensureItemTags(item) {
+  const existing = Array.isArray(item.tags)
+    ? item.tags.map(normalizeTagValue).filter(Boolean)
+    : [];
+
+  if (existing.length > 0) {
+    return [...new Set(existing)];
+  }
+
+  const derived = [
+    ...collectDerivedTags(item.category),
+    ...collectDerivedTags(item.description),
+  ];
+
+  if (derived.length > 0) {
+    return [...new Set(derived.map(normalizeTagValue).filter(Boolean))].slice(0, 8);
+  }
+
+  const ignoredCategoryWords = new Set(['and', 'for', 'with', 'the', 'data']);
+
+  return [...new Set(
+    String(item.category || '')
+      .toLowerCase()
+      .split(/[^a-z0-9]+/)
+      .filter(word => word.length > 2 && !ignoredCategoryWords.has(word))
+      .slice(0, 3)
+      .map(normalizeTagValue)
+      .filter(Boolean)
+  )];
+}
+
+items.forEach(item => {
+  item.tags = ensureItemTags(item);
+});
+
 const grid = document.getElementById('grid');
 const search = document.getElementById('search');
 const category = document.getElementById('category');
