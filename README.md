@@ -171,6 +171,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 *Image manipulation, preprocessing, and computer vision workloads from PHP.*
 
 - 🧪 [aschmelyun/subvert](https://github.com/aschmelyun/subvert "Link to resource") - Generate subtitles, summaries, and chapters from videos in seconds
+- 🧪 [b7s/fluentvision](https://github.com/b7s/fluentvision "Link to resource") – Fluent PHP API for computer vision with YOLO and NanoDet backends, supporting object detection, segmentation, classification, image/video annotation, and open-vocabulary detection
 - 🌟 [Intervention/image](https://github.com/Intervention/image "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/Intervention/image?style=social) Image manipulation library for CV preprocessing
 - [jcupitt/vips](https://github.com/jcupitt/libvips "Link to resource") – Fast image processing library with PHP bindings
 - 🧪 [mailmug/php-dlib](https://github.com/mailmug/php-dlib "Link to resource") – PHP extension for Dlib, supporting face detection, facial landmarks, face recognition descriptors, CNN detection, and clustering
