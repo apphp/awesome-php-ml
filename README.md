@@ -270,6 +270,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 - [CodeWithKyrian/tokenizers-php](https://github.com/CodeWithKyrian/tokenizers-php "Link to resource") – PHP bindings for Hugging Face Tokenizers, enabling fast tokenization for transformer and LLM models
 - [Gioni06/GPT3Tokenizer](https://github.com/Gioni06/GPT3Tokenizer "Link to resource") – PHP tokenizer compatible with GPT-3 style models
 - [HelgeSverre/toon-php](https://github.com/HelgeSverre/toon-php "Link to resource") – PHP implementation of TOON, a compact data format for reducing token usage when sending structured data to LLMs
+- [RahulDey12/tiktoken-php](https://github.com/RahulDey12/tiktoken-php "Link to resource") – PHP implementation of OpenAI's BPE tokenizer `tiktoken` for encoding, decoding, and counting tokens in GPT prompts
 - [yethee/tiktoken-php](https://github.com/yethee/tiktoken-php "Link to resource") – PHP implementation of OpenAI's *tiktoken* tokenizer for token counting and optimization
 
 ---
