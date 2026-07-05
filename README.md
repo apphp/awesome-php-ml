@@ -154,6 +154,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 *Text processing, tokenization, language detection, sentiment analysis and other NLP tasks in PHP.*
 
 - ⚠️ [angeloskath/php-nlp-tools](https://github.com/angeloskath/php-nlp-tools "Link to resource") – Natural Language Processing tools
+- 🌟 [ankane/mitie-php](https://github.com/ankane/mitie-php "Link to resource") – PHP bindings for the MITIE NLP library providing named entity recognition (NER), text classification, and feature extraction using pre-trained statistical models
 - [davmixcool/php-sentiment-analyzer](https://github.com/davmixcool/php-sentiment-analyzer "Link to resource") – Lightweight PHP library for sentiment analysis using lexical rules
 - [friteuseb/nlp_tools](https://github.com/friteuseb/nlp_tools "Link to resource") – Extension for NLP methods and text analysis
 - ⚠️ [googlei18n/myanmar-tools](https://github.com/googlei18n/myanmar-tools "Link to resource") – Myanmar text encoding detection and Zawgyi ↔ Unicode conversion using a trained model (includes PHP support)
