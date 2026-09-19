@@ -213,6 +213,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 ### Interoperability
 
 - 🌟 [swoole/phpy](https://github.com/swoole/phpy "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/swoole/phpy?style=social) Bridge for calling Python from PHP via a runtime bridge
+- 🌟 [zephir-lang/zephir](https://github.com/zephir-lang/zephir "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/zephir-lang/zephir?style=social) Compiled language for writing high-performance PHP C-extensions, useful for native numerical computing and ML inference without writing C by hand
 
 ### Ecosystems
 
@@ -245,6 +246,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 - [mzarnecki/php-rag](https://github.com/mzarnecki/php-rag "Link to resource") – PHP RAG toolkit for connecting vector search and LLMs in retrieval-augmented workflows
 - 🌟 [openai-php/client](https://github.com/openai-php/client "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/openai-php/client?style=social) Official OpenAI PHP client
 - 🌟 [orhanerday/open-ai](https://github.com/orhanerday/open-ai "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/orhanerday/open-ai?style=social) Popular OpenAI PHP SDK
+- 🧪 [papi-ai/papi-core](https://github.com/papi-ai/papi-core "Link to resource") – Framework-agnostic PHP library for building AI agents with multi-provider support, tool calling, structured output, streaming, and observability hooks
 - 🧪 [runapi-ai/gpt-image-2-php](https://github.com/runapi-ai/gpt-image-2-php "Link to resource") – PHP SDK for GPT Image 2 text-to-image and image editing workflows on RunAPI
 - [prism-php/bedrock](https://github.com/prism-php/bedrock "Link to resource") – AWS Bedrock provider for the Prism PHP framework, adding Bedrock LLM and embeddings support to Laravel Prism integrations
 - [sarfraznawaz2005/ai-team](https://github.com/sarfraznawaz2005/ai-team "Link to resource") – Package to build and run collaborative teams of AI members with role/task assignments
@@ -371,6 +373,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 - 🌟 [php-mcp/laravel](https://github.com/php-mcp/laravel "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/php-mcp/laravel?style=social) – Laravel package for building Model Context Protocol (MCP) servers and exposing application tools to LLMs
 - 🌟 [promptlyagentai/promptlyagent](https://github.com/promptlyagentai/promptlyagent "Link to resource") – AI Agent development framework / workbench / harness powered by Laravel
 - [shawnveltman/laravel-openai](https://github.com/shawnveltman/laravel-openai "Link to resource") – Laravel wrapper for OpenAI
+- 🧪 [twdnhfr/laravel-bes-rag](https://github.com/twdnhfr/laravel-bes-rag "Link to resource") – Laravel RAG orchestrator using Bidirectional Evolutionary Search: backward goal decomposition, evolving evidence trails, and cited, auditable answers
 - [vizra-ai/vizra-adk](https://github.com/vizra-ai/vizra-adk "Link to resource") – Laravel AI Agent Development Kit for building autonomous agents with tools, persistent memory, workflows, streaming, evaluations, tracing, and Prism-powered multi-model support
 - [rahasistiyakofficial/laravel-ai-integration](https://github.com/rahasistiyakofficial/laravel-ai-integration "Link to resource") – This is a comprehensive, enterprise-ready package that provides seamless integration with multiple AI providers through a unified, elegant API
 
