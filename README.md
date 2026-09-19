@@ -213,6 +213,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 ### Interoperability
 
 - 🌟 [swoole/phpy](https://github.com/swoole/phpy "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/swoole/phpy?style=social) Bridge for calling Python from PHP via a runtime bridge
+- 🌟 [zephir-lang/zephir](https://github.com/zephir-lang/zephir "Link to resource") – ![GitHub stars](https://img.shields.io/github/stars/zephir-lang/zephir?style=social) Compiled language for writing high-performance PHP C-extensions, useful for native numerical computing and ML inference without writing C by hand
 
 ### Ecosystems
 
