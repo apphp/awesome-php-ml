@@ -61,6 +61,36 @@ body {
   height: 16px;
   fill: currentColor;
 }
+.scroll-top {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 10;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  font: inherit;
+  font-size: 1.35rem;
+  line-height: 1;
+  color: #9ca3af;
+  border: 1px solid #374151;
+  border-radius: 10px;
+  background: rgba(2, 6, 23, .65);
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+  appearance: none;
+  transition: color .2s ease, border-color .2s ease;
+}
+.scroll-top.is-visible {
+  display: flex;
+}
+.scroll-top:hover {
+  color: #ffffff;
+  border-color: #6b7280;
+}
 header {
   padding: 72px 20px 36px;
   text-align: center;
@@ -261,6 +291,7 @@ footer a {
   </svg>
   GitHub
 </a>
+<button type="button" class="scroll-top" id="scroll-top" aria-label="Scroll to top">^</button>
 <header>
   <h1>Awesome PHP ML & AI</h1>
   <p class="subtitle">Curated PHP libraries for Machine Learning, AI, NLP, LLMs, agents, RAG and data science.</p>
@@ -524,6 +555,7 @@ function render() {
   `).join('');
 
   empty.style.display = filtered.length ? 'none' : 'block';
+  requestAnimationFrame(updateScrollTop);
 }
 
 function escapeHtml(str) {
@@ -546,6 +578,21 @@ category.addEventListener('change', render);
 legend.addEventListener('change', render);
 tag.addEventListener('change', render);
 sort.addEventListener('change', render);
+
+const scrollTop = document.getElementById('scroll-top');
+
+function updateScrollTop() {
+  const page = document.documentElement;
+  const hasOverflow = page.scrollHeight > window.innerHeight + 80;
+  const scrolled = window.scrollY > 240;
+  scrollTop.classList.toggle('is-visible', hasOverflow && scrolled);
+}
+
+scrollTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+window.addEventListener('scroll', updateScrollTop, { passive: true });
+window.addEventListener('resize', updateScrollTop);
 
 render();
 </script>
