@@ -137,7 +137,7 @@ Not all projects are tagged yet – we're gradually adding markers as the ecosys
 - 🌟 [php-ai/php-ml](https://gitlab.com/php-ai/php-ml "Link to resource") – Core machine learning algorithms for PHP
 - [php-ai/php-ml-examples](https://github.com/php-ai/php-ml-examples "Link to resource") – Practical examples for PHP-ML
 - [sphamster/bayes](https://github.com/sphamster/bayes "Link to resource") – Naive Bayes classifier implementation in PHP for probabilistic classification tasks
-
+- [PHP-ML-Native](https://github.com/nimabm/PHP-ML-Extension) - Fast machine learning for PHP, written in C++ as a native Zend extension.
 ---
 
 ## Deep Learning & Neural Networks
